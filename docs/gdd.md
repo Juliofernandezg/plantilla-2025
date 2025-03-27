@@ -93,7 +93,7 @@ Durante la batalla, lanza frases absurdas:
 
 "¡Toma, rayo de tristeza y música de flauta!"
 
-* FINAL (si ganas)
+* FINAL 
 Linkillo recupera el peluche. Pero… ¡el Señor Mocosín habla!
 
 🧸 "Gracias por salvarme, héroe. Pero... ahora debo irme. Mi planeta me necesita."
