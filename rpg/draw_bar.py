@@ -11,7 +11,7 @@ def draw_bar(current_amount,
              width,
              height,
              color_a,
-             color_b):
+             color_b):  
 
     # Draw the background
     if current_amount < max_amount:
