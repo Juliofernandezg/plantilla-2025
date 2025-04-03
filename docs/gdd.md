@@ -10,7 +10,6 @@
 
 ### **Objetivos del juego.**
 
-- Arreglar el juego(nuestro)
 - Obtener el primer arma y obtener objetos.
 - Desbloquear herrería.
 - Salvar herrero.
