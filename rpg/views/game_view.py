@@ -293,12 +293,12 @@ class GameView(arcade.View):
         )
 
     def draw_inventory(self):
-        capacity = 10
+        capacity = 3
         vertical_hotbar_location = 40
         hotbar_height = 80
         sprite_height = 16
 
-        field_width = self.window.width / (capacity + 1)
+        field_width = self.window.width / (capacity)
 
         x = self.window.width / 2
         y = vertical_hotbar_location
@@ -311,7 +311,7 @@ class GameView(arcade.View):
             x = i * field_width + 5
             if i == self.selected_item - 1:
                 arcade.draw_lrtb_rectangle_outline(
-                    x - 6, x + field_width - 15, y + 25, y - 10, arcade.color.BLACK, 2
+                    x , x + field_width - 15, y + 25 , y - 25 , arcade.color.BLACK, 2
                 )
 
             if len(self.player_sprite.inventory) > i:
@@ -320,7 +320,7 @@ class GameView(arcade.View):
                 item_name = ""
 
             hotkey_sprite = self.hotbar_sprite_list[i]
-            hotkey_sprite.draw_scaled(x + sprite_height / 2, y + sprite_height / 2, 2.0)
+            hotkey_sprite.draw_scaled((x + 8) + sprite_height / 2, (y + 1) + sprite_height / 2, 1.8)
             # Add whitespace so the item text doesn't hide behind the number pad sprite
             text = f"     {item_name}"
             arcade.draw_text(text, x, y, arcade.color.ALLOY_ORANGE, 16)
