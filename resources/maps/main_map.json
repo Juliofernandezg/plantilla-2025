@@ -5,7 +5,7 @@
  "layers":[
         {
          "compression":"zlib",
-         "data":"eJzt0CEOACAMBMFL\/\/9oBIaAqUF1JmlSe5sAAAD01HG5\/kl02CZ2qLy7J9IBAAAAAAAAAAAAAAAA\/lrzBwAv",
+         "data":"eJzt0DEKgDAMQNHQE3j\/C3X0Sg4pKBVBBwfNexAauuVHAAAA3NMOE9NeiQ6pYocW57sr0gHgPX15Pn+kQ9Ih6ZB0SDokHXbruG9++8U\/AAAAAAAAAAAAfMUGHKlW2A==",
          "encoding":"base64",
          "height":66,
          "id":17,
@@ -19,7 +19,7 @@
         }, 
         {
          "compression":"zlib",
-         "data":"eJzt2r1OwzAUBWCDhFjDi7SdGqaS92BmQDwIIzMwARPwkjiD1auL438nTu6JdKSkNdj+ch2QW6VwmOMyMheOHDulep3bzt2upcAhz8FlMTpcKThIc5iykLYupiwk1gMc4ACH8Ofkkg4p85Dk8KrzpvNOrs25JIcPnU+dL3JtziU5fOv86PySa3O+VQezBug6kPh8MPee3n+JDrFpyeHB0973fkimxpbjENtXDYfnm3NqO+z0z+wjMvazRYcjmdtd589WHPj9p\/Nq5fkQW6O+WrU50PtP05LD1BhDU9rBZpHq8Kjb3zvyRM5j1yrP0LBDTEr3YXM4OQxbcSgdm8NS\/z\/AYfms1WGO5wMc8g3gAAepDnOPEQ5waN1hiTHW6IPPS4JDyLxiHJaq2ZQ+Yv\/+wSHOoVbN1lwXpR1qjHFtDrXGKMlhDN0r5u1S9pv5vnNvee\/Q\/bfw+bgccu8VD2+Xs99MHWw5MPcdMwpxKFWzfC+Zt0vZZ+afFfXsdWpB5237TqfNYe61W6uPk6U29hO1smUHY2Grj57VxNYdbCbUYRDoQNtLej746mIQ7uALHOAABzjAIczhpSuXa3UOfZ33XaoP3k9KzMF\/b41whzn6DI05atXvWgIHOMABDnAIc8Ch1B8sj7HP",
+         "data":"eJztmr1OwzAQgA0SYjUv0nZqmEreg5kB8SCMzMAETPw8A2WinSiPhKPG6umw47MTOz8+S5\/qJE7P\/ny2hKkQXHQ59uSogaUUolCcy+Z2Q4I9tPPQ5KLycCLYA3s4eMhpXdhc5JYP7IE9UFywh2F4CBlDTh7uFQ+KR3Ct6zl5eFI8K17Ata7n5OFV8aZ4B9e6PlUPeg3AdZDj\/qDnHs5\/jh586cIDdhHq4crR3vWcgq1vFA8z9c5aMQesLfV5HSeVh9uzA7E9VO9u6vd3cs8FAt6bsofq3a2krYuxe\/iscxyzAcD7X7K\/\/WGG1iIV2xxBD9\/q2YfYjxd\/auD9bY8elmBMIbg8bDzo2sO1an\/ZwA2oQw94r6JQDjgffOg6xpDyoU988wHmxZQ9cD4I8VPP887wqYH3fye6P\/T998XYPcTuI3tgD+xhnB5S9HHoHlL1kT3Ei4HHEuoh5Vy1jUEZT4iH1DkbEsN3Xn09pMhZ9tDtuojlIcbaHZuHrvuYk4cKeFaM24WcN+Nz58LwbCH\/u3D5cXloM1cY3K7NeTP0YGKBvM+QIx8PbXMWnyXjdiHnzPh\/ZgW6D13AcZt+00nxEHvtxtofVobcmFtyxeYh5R4WM8bKkh8FygmTh1R9TB1jZfBRZugBtqfsD1P3oPOizNyDC\/bAHthDew+U+Oxh\/B7uJI1TccC3DY5NjemK0dQXKrrg740B9pAiJhVdYuXvWGAP7IE9sAf2QPPARYg\/0iQEqw==",
          "encoding":"base64",
          "height":66,
          "id":1,
@@ -28,101 +28,6 @@
          "type":"tilelayer",
          "visible":true,
          "width":66,
-         "x":0,
-         "y":0
-        }, 
-        {
-         "draworder":"topdown",
-         "id":11,
-         "name":"doors",
-         "objects":[
-                {
-                 "gid":392,
-                 "height":32,
-                 "id":2,
-                 "name":"",
-                 "properties":[
-                        {
-                         "name":"map_name",
-                         "type":"string",
-                         "value":"farmhouse"
-                        }, 
-                        {
-                         "name":"start_x",
-                         "type":"int",
-                         "value":4
-                        }, 
-                        {
-                         "name":"start_y",
-                         "type":"int",
-                         "value":12
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":32,
-                 "x":1088,
-                 "y":512
-                }, 
-                {
-                 "gid":392,
-                 "height":32,
-                 "id":3,
-                 "name":"",
-                 "properties":[
-                        {
-                         "name":"map_name",
-                         "type":"string",
-                         "value":"farmhouse"
-                        }, 
-                        {
-                         "name":"start_x",
-                         "type":"int",
-                         "value":11
-                        }, 
-                        {
-                         "name":"start_y",
-                         "type":"int",
-                         "value":12
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":32,
-                 "x":1344,
-                 "y":512
-                }, 
-                {
-                 "gid":67,
-                 "height":32,
-                 "id":5,
-                 "name":"",
-                 "properties":[
-                        {
-                         "name":"map_name",
-                         "type":"string",
-                         "value":"graveyard_dungeon"
-                        }, 
-                        {
-                         "name":"start_x",
-                         "type":"int",
-                         "value":14
-                        }, 
-                        {
-                         "name":"start_y",
-                         "type":"int",
-                         "value":1
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":32,
-                 "x":256,
-                 "y":802
-                }],
-         "opacity":1,
-         "type":"objectgroup",
-         "visible":true,
          "x":0,
          "y":0
         }, 
@@ -156,20 +61,6 @@
         }, 
         {
          "compression":"zlib",
-         "data":"eJzt2t8OwTAUBvCaJzImiFvPwpVn8QTccUW8jPeRZhrT7E9np+tpz\/dLmlmwtZ\/T2YxSAAAwVPFZLgPtfxZov3V0Fj5z2HjcNtAo1HdOcLf2vP1YcgA\/2o6HPmpj6HdB3fvPVtMulabdPi1r2G6u4p8LV6tpfXNIwcNqmsQcnlazrcbtTjBdORjH6Tj96eM0GfY8uLl3rLvIKTpChNM1F4BEh+x3KZE+Ju6tHKTmYca9s9YBqG1DdwAgME7n4zFAXnHh\/HlJvf6sGzeXe4Kc6wVkiv2eCyXKLDDX4xb7vHDtf65k1GrTGCnHHtP\/WnxDDiXJObyyshkSslg4vEZCDlXz0B1IQIiaadsn5xqmPp\/pGivnLCildH5DMY5Usqj6Z+74roui4bEE5vdMaeMGd6gNAAAAAKD2BqlsK6c=",
-         "encoding":"base64",
-         "height":66,
-         "id":9,
-         "name":"decorations_nonblocking",
-         "opacity":1,
-         "type":"tilelayer",
-         "visible":true,
-         "width":66,
-         "x":0,
-         "y":0
-        }, 
-        {
-         "compression":"zlib",
          "data":"eJzt17sOg0AMBEBfCQlIkIcUSPL\/nxlTpDnRUVDcjLS9dztHAAAAAAAAcNS1RAyZsZx9ybnu2f+RedrBDmGHv3f2\/2S+je8AAAAAmy7\/477KpcGfecrOc5Vbgzu8svNSZW1wBwAAAACAPT99xgKh",
          "encoding":"base64",
          "height":66,
@@ -184,10 +75,10 @@
         }, 
         {
          "compression":"zlib",
-         "data":"eJzt2btKxEAUBuATU2rnvoeX0jJY+Qi+h3YKKgqur2DjpXGt1tVC1MJLI\/oaooWgj+AJZnA2nkx2YLKzmfk\/+FlIQjLnD9ldCBEo05wZB5+5Oc48J+MsjG0CN2Y5HQefWem8beuhKeVeAMCNxan\/iVEsPUhz6lkSEqK6HjIhIZLutx7bHgaca4tcNjeaFWnOupj0La9ve3xT6mZeEWISag\/byXB2EvP5pLkOLY\/3QbrfekbtQf2Hl+Y6NVx\/UnrYKubLlWfWo\/brPWRalLY+F\/s8V7eYrZtUR+0\/qHkubkj+XbgqHXdXbL91Nsn4vDk+31pKtJ46PmkLbXAHm+iBdrmDPfRg9Mh51vJUbH\/wtiI\/7i23hwo9\/JLmXa7YHrIXGv5+UHn1uSgAABgZ3hUCAAAAQJV3zofvRUyAL86370UAAEToKCU65pxE\/A5vlWc\/4\/Q45xH3kOvz\/BecQeQ9wJ9P3wsAAAAAAAAAiNgPPABi7w==",
+         "data":"eJztmstO20AUhsfOAqQiUYlKdNc+AALSHewawaJ9BLZUKjsWXDallXpDKn0FNgU2bdlwWyDKIgQBAd6iIFgg0UfoP82MMpmOHU8ycXw5n\/TJcTzj+PyeeCzZjBGSB7DPwZIzAkdhCRZjq8ANA\/CRg2VJ22\/acugUei4EQbjhmf+\/eSQvOZjqVB032Aq\/4ZXTI3dLsxxKBrOI6Xyr2uawA\/ct3O1caVaY6mxmGFuWv2\/bvlM0q\/mlwTCymsMHr9GPXq3fq4J5f6a6VkN+Pyk5mM63alAOQZjq2rBsb2I4YrtWeS\/q4+g1q8rtPIfpgLHAiVrXbMHcfsjm4Nvoo\/MFda2IOle8YOX2r01yOGDmeWFPa3covv\/loIa4uXa8vwXkuWjItNP\/gaTxFhm8CxlbktVC+Hra+Yx6lpWaKvAEnsIz8bkKN7S6+XpVtOPL41iONj7KYjkhlpPaOtPWZ\/zGflmh1Xp4PxdzRlKQObwW51k\/7yxgO42H9volFVnPjHa+g64P8vqh55D2eZfGQw19vpDXAf36oM8jWc0hrn5J5YLV7otsvezGwRL\/iONZYZR7oizdN7km7fMlQRAEQRDp5QbedvsgEsA9\/NPtgyAIgsgh3wqMrcH1Fp9LFv26aWUKtX+HP+DPCDkMeow9hj2wV7xvMObXTTNbqH8b7kTI4Qlqfwr74UORw3O\/btFgXnjh1x0zmCbu2uhbxrg4ghWvcWxI84Kagzo2pHP4v81n7N0QifpMU+agypHZvEEGSxnNYVP5XEWt55ocvrzg7\/Ahg08ZzYEgCIIgCIIgCHv+Ap9onFo=",
          "encoding":"base64",
          "height":66,
-         "id":8,
+         "id":21,
          "name":"misc_blocking",
          "opacity":1,
          "type":"tilelayer",
@@ -198,11 +89,25 @@
         }, 
         {
          "compression":"zlib",
-         "data":"eJztmlluAyEMhvPaNd2bLhdoWnW5QR97\/xPVVYU0QjaLgWCG\/5MspBAweLANw2w2wHFCclqhDPVdqnOf2e6I5DihXPJE8syU1yQ3GSWHVCfpkH5380sdyyXJ1aJ8IHlkyhQ7cISefQ6SDsluIVunoLGD5vn+wa01iZCtWyCtC25MpTZ3ulIotcOLsp3vL1+LutL5awjZIWdd1WjXk5Dtc9ZVjXYgjNb3gA328b8MrQ8Aq8wUO6Wzw4j7kxKkvU1sfzKbnSSwj+vDaHm71rsKjT5Lvpp7jv2uqG9kX\/3pPQCgQopTlnyyJyP7JIgzWp6uQYpvr8X\/tyQXQl2Kb4f+M5KN7kl2jfpGjLTPSGs1xgfJp7Jtq7V66PNTL2Lv4HrcA4K54GKZ739rincSXCzz\/c9qbm7xLn+WGBwDMdgusbjkn0fXGsdy45K1OOZ\/Szkr\/reUALQC+f2f3vn9vaNuAHoxe653aHL9Gcl5g7E4rOSG10j9LcldQ\/29cwMAGmJ+MyOtY+ah4eYTup91pMTMlH6swM2Hu599U\/Td8p4XAAAAAPPwC8deFq0=",
+         "data":"eJzt2llqwzAQBmDjPqX73qbtBZqWLgco9KXQE\/Sxd8qNM2AMQoy2kWQt+T8YBHFkSRNHtmwPA8yOKI4TlLZ9x7a5Cay3ojj0KFWPFE9MeUVxHVByTNtMbZg+n8fn25cLikulXFM8MKVPHji23z6EqQ1T3my59iHJg+T3DWXLdQ6m44LrU6ox+ojNw7Ownv5\/+VS2xY6fm3NcbHmQ7C+mXipzbkPYci\/ZX0w9gJ5t3F8BAACAPdXadUKqexWS9kqvuVSh69jvhO21vOb6Ld0BAAAAxRnFeelOVOCO4r50J6CYmq6xY71TfAjrtnyNDQD8XKbfv2h5vvPtOzeX6fcvWp7vQvu+9D2sWi35Lgq44bic9HRc6u9S5lL7eUx\/lzKXls9jAD15K90BgAJqPxcvRXIuPqE4zdCX2dfBMPyNU1nSi2P7DcVtxvZ\/aPz\/41RK9L5W2Y5+3+tprdIC1\/9mH+WeM5fGjcfn+azPnNnSc15uPNzz2VfBvvGcFwAAAFLYAY3VFfw=",
          "encoding":"base64",
          "height":66,
          "id":7,
-         "name":"trees_blocking",
+         "name":"trees_blocking_and_dec_clipping",
+         "opacity":1,
+         "type":"tilelayer",
+         "visible":true,
+         "width":66,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "compression":"zlib",
+         "data":"eJzt2kFOwzAQBVC3cA9OwIJAECA2XIiDsOIE7a6sirgM90FWGxGsJE7IjGfG859ktVWaxP6xU6dJCAAAsFZ7fr0X2v+N0H6HxCw4c3hi3DbQaMPvmNDukXn7VnIAHlPnQ46+sfa3YGj9XVKifa9EH+eyHdluE+yPhUNSoqU55FyvqWAhn0mJqHOw4CspqYey1RGTy6HzelGmPku8b9YtL4l7rsLpmPk8R0NRESKc11xDx\/kls05ueW28tffqUroGtnjPy9v4gGW68WF5TjGFe\/w\/825elIVrUJCnaT5ugfa8MGf4S\/Px0nTPr6Shdmu5J6i5v4BP1u+5UKLMAmPdNuvjYm79m+Cjr461kbLtlp5r4YYcTjzn8L09lY6HLO5mfMdDDn230hWogESfmdqn5j5MPZ\/JtVVzFpRqmt9QtKOWLPr+M3a4+0U78j51TF5r0P2fSZ3vW80PXjpT43kIAAAAAGT9AMd7LQc=",
+         "encoding":"base64",
+         "height":66,
+         "id":9,
+         "name":"decorations_nonblocking",
          "opacity":1,
          "type":"tilelayer",
          "visible":true,
@@ -258,7 +163,7 @@
                  "y":592
                 }, 
                 {
-                 "height":365.333333333333,
+                 "height":1469.24166555607,
                  "id":9,
                  "name":"",
                  "properties":[
@@ -267,12 +172,12 @@
                          "type":"string",
                          "value":"grey_dog"
                         }],
-                 "rotation":0,
+                 "rotation":0.0338525131542156,
                  "type":"",
                  "visible":true,
-                 "width":371.333333333333,
-                 "x":114,
-                 "y":594.666666666667
+                 "width":55.2215187315019,
+                 "x":660.838185462871,
+                 "y":305.599576794002
                 }, 
                 {
                  "height":0,
@@ -432,9 +337,132 @@
          "visible":true,
          "x":0,
          "y":0
+        }, 
+        {
+         "draworder":"topdown",
+         "id":11,
+         "name":"doors",
+         "objects":[
+                {
+                 "gid":392,
+                 "height":32,
+                 "id":2,
+                 "name":"farmhouse_left_door",
+                 "properties":[
+                        {
+                         "name":"map_name",
+                         "type":"string",
+                         "value":"farmhouse"
+                        }, 
+                        {
+                         "name":"start_x",
+                         "type":"int",
+                         "value":4
+                        }, 
+                        {
+                         "name":"start_y",
+                         "type":"int",
+                         "value":12
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":1088,
+                 "y":512
+                }, 
+                {
+                 "gid":392,
+                 "height":32,
+                 "id":3,
+                 "name":"farmhouse_right_door",
+                 "properties":[
+                        {
+                         "name":"map_name",
+                         "type":"string",
+                         "value":"farmhouse"
+                        }, 
+                        {
+                         "name":"start_x",
+                         "type":"int",
+                         "value":11
+                        }, 
+                        {
+                         "name":"start_y",
+                         "type":"int",
+                         "value":12
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":1344,
+                 "y":512
+                }, 
+                {
+                 "gid":67,
+                 "height":32,
+                 "id":5,
+                 "name":"graveyard_hole",
+                 "properties":[
+                        {
+                         "name":"map_name",
+                         "type":"string",
+                         "value":"graveyard_dungeon"
+                        }, 
+                        {
+                         "name":"start_x",
+                         "type":"int",
+                         "value":14
+                        }, 
+                        {
+                         "name":"start_y",
+                         "type":"int",
+                         "value":1
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":352,
+                 "y":864
+                }, 
+                {
+                 "gid":642,
+                 "height":32,
+                 "id":12,
+                 "name":"smith_door",
+                 "properties":[
+                        {
+                         "name":"map_name",
+                         "type":"string",
+                         "value":"blacksmithing"
+                        }, 
+                        {
+                         "name":"start_x",
+                         "type":"int",
+                         "value":12
+                        }, 
+                        {
+                         "name":"start_y",
+                         "type":"int",
+                         "value":9
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":384,
+                 "y":1728
+                }],
+         "opacity":1,
+         "type":"objectgroup",
+         "visible":true,
+         "x":0,
+         "y":0
         }],
- "nextlayerid":18,
- "nextobjectid":12,
+ "nextlayerid":23,
+ "nextobjectid":13,
  "orientation":"orthogonal",
  "renderorder":"left-up",
  "tiledversion":"1.11.2",

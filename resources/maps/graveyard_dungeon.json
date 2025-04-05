@@ -19,7 +19,7 @@
         }, 
         {
          "compression":"zlib",
-         "data":"eJzVUu0KgCAM3MP1\/hBZEEW9Sv2YpMPDM1RqMPy87XabyGPT7WvCHXh3EtsY7IfEffjOnHvjD4nrm\/V+0\/Oiq+h6kvmRsfxZvOeZ65v3nYyf44XmgsUjHWrhrS6IJ8Ln8qI+tNLX9s\/i\/X9UH+KBeLXWz8a3dfWeXxu\/tH7WWH5\/wSMdkds+f6WOt3g0J8hrzU9p3lD\/C2VNpeY=",
+         "data":"eJzVUosKgCAM3Mf1\/xA9IIr6lQoU1+HlDI0ajHJ62+02kWDd4VPE+8i9qLi3Vv03kbi+t5zfxq9y7Xtw8dmdRwm9n9\/NWJ+Zlb8V73nezU37Ysyf4oX5fV0rnulQCo+6MJ4Mn6rL5lBLX5wf4v171h\/jwXjV1g\/zY19v7y\/mz+3falZ+f8EzHZnjnL\/Sx1M82xPmpfYnt67WfwfMXKUN",
          "encoding":"base64",
          "height":32,
          "id":2,
@@ -32,75 +32,8 @@
          "y":0
         }, 
         {
-         "draworder":"topdown",
-         "id":4,
-         "name":"doors",
-         "objects":[
-                {
-                 "gid":295,
-                 "height":32,
-                 "id":1,
-                 "name":"",
-                 "properties":[
-                        {
-                         "name":"map_name",
-                         "type":"string",
-                         "value":"main_map"
-                        }, 
-                        {
-                         "name":"start_x",
-                         "type":"int",
-                         "value":7
-                        }, 
-                        {
-                         "name":"start_y",
-                         "type":"int",
-                         "value":22
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":32,
-                 "x":448,
-                 "y":32
-                }, 
-                {
-                 "gid":336,
-                 "height":32,
-                 "id":11,
-                 "name":"",
-                 "properties":[
-                        {
-                         "name":"map_name",
-                         "type":"string",
-                         "value":"graveyard_dungeon_second_level"
-                        }, 
-                        {
-                         "name":"start_x",
-                         "type":"int",
-                         "value":26
-                        }, 
-                        {
-                         "name":"start_y",
-                         "type":"int",
-                         "value":2
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":32,
-                 "x":450.666666666667,
-                 "y":992.666666666667
-                }],
-         "opacity":1,
-         "type":"objectgroup",
-         "visible":true,
-         "x":0,
-         "y":0
-        }, 
-        {
          "compression":"zlib",
-         "data":"eJxjYBgYoM84QBaPglEwCkbBKBgFQxSkM1PPLACRAwCb",
+         "data":"eJxjYCAP6DOSqZFK+kfBKBgFo2AUjIKRBtKZqWcWAAagAMs=",
          "encoding":"base64",
          "height":32,
          "id":5,
@@ -221,6 +154,73 @@
          "visible":true,
          "x":0,
          "y":0
+        }, 
+        {
+         "draworder":"topdown",
+         "id":4,
+         "name":"doors",
+         "objects":[
+                {
+                 "gid":295,
+                 "height":32,
+                 "id":1,
+                 "name":"exit",
+                 "properties":[
+                        {
+                         "name":"map_name",
+                         "type":"string",
+                         "value":"main_map"
+                        }, 
+                        {
+                         "name":"start_x",
+                         "type":"int",
+                         "value":10
+                        }, 
+                        {
+                         "name":"start_y",
+                         "type":"int",
+                         "value":26
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":448,
+                 "y":32
+                }, 
+                {
+                 "gid":336,
+                 "height":32,
+                 "id":11,
+                 "name":"next_floor",
+                 "properties":[
+                        {
+                         "name":"map_name",
+                         "type":"string",
+                         "value":"graveyard_dungeon_second_level"
+                        }, 
+                        {
+                         "name":"start_x",
+                         "type":"int",
+                         "value":26
+                        }, 
+                        {
+                         "name":"start_y",
+                         "type":"int",
+                         "value":2
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":450.666666666667,
+                 "y":992.666666666667
+                }],
+         "opacity":1,
+         "type":"objectgroup",
+         "visible":true,
+         "x":0,
+         "y":0
         }],
  "nextlayerid":11,
  "nextobjectid":15,
@@ -232,7 +232,7 @@
          "value":"#ff0a0a0a"
         }],
  "renderorder":"left-up",
- "tiledversion":"1.8.4",
+ "tiledversion":"1.11.2",
  "tileheight":32,
  "tilesets":[
         {
@@ -241,6 +241,6 @@
         }],
  "tilewidth":32,
  "type":"map",
- "version":"1.8",
+ "version":"1.10",
  "width":16
 }
