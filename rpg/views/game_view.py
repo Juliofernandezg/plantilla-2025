@@ -545,7 +545,7 @@ class GameView(arcade.View):
         if self.message_box:
             self.message_box.on_key_press(key, modifiers)
             return
-
+        # Keys Movimiento
         if key in constants.KEY_UP:
             self.up_pressed = True
         elif key in constants.KEY_DOWN:
@@ -560,26 +560,14 @@ class GameView(arcade.View):
             self.window.show_view(self.window.views["main_menu"])
         elif key in constants.SEARCH:
             self.search()
+        # HotBar
         elif key == arcade.key.KEY_1:
             self.selected_item = 1
         elif key == arcade.key.KEY_2:
             self.selected_item = 2
         elif key == arcade.key.KEY_3:
             self.selected_item = 3
-        elif key == arcade.key.KEY_4:
-            self.selected_item = 4
-        elif key == arcade.key.KEY_5:
-            self.selected_item = 5
-        elif key == arcade.key.KEY_6:
-            self.selected_item = 6
-        elif key == arcade.key.KEY_7:
-            self.selected_item = 7
-        elif key == arcade.key.KEY_8:
-            self.selected_item = 8
-        elif key == arcade.key.KEY_9:
-            self.selected_item = 9
-        elif key == arcade.key.KEY_0:
-            self.selected_item = 10
+
         elif key == arcade.key.L:
             cur_map = self.map_list[self.cur_map_name]
             if self.player_light in cur_map.light_layer:
@@ -617,6 +605,8 @@ class GameView(arcade.View):
                 sprite.remove_from_sprite_lists()
                 lookup_item = self.item_dictionary[sprite.properties["item"]]
                 self.player_sprite.inventory.append(lookup_item)
+            elif "enemy" in sprite.properties:
+                self.window.show_view(self.window.views["battle"])
             else:
                 print(
                     "The 'item' property was not set for the sprite. Can't get any items from this."
