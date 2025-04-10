@@ -38,7 +38,9 @@ class CharacterSprite(arcade.Sprite):
         self.health = 100
         self.attack = 10
         self.exp = 0
+        self.max_exp = 100
         self.mana = 50
+        self.max_mana = 50
         self.level = 1
         self.exp_to_next_level = 100
 
@@ -73,6 +75,15 @@ class CharacterSprite(arcade.Sprite):
             self.mana -= amount
             return True
         return False
+    def heal_mana(self, amount):
+        """
+        Aumenta el mana del jugador.
+
+        :param amount: Cantidad de mana recuperado.
+        """
+        self.mana += amount
+        if self.mana > self.max_mana:
+            self.mana = self.max_mana
 
     def gain_exp(self, amount):
         """
@@ -95,6 +106,7 @@ class CharacterSprite(arcade.Sprite):
         self.health = self.max_health
         self.attack += 5
         self.mana += 10
+        self.max_exp += 50
 
     def draw_health_bar(self):
         """
@@ -107,6 +119,30 @@ class CharacterSprite(arcade.Sprite):
                                      health_bar_height, arcade.color.GRAY)
         arcade.draw_rectangle_filled(health_bar_width / 2 + 10, arcade.get_window().height - 20,
                                      health_bar_width * health_percentage, health_bar_height, arcade.color.RED)
+
+    def draw_mana_bar(self):
+        """
+        Dibuja la barra de vida en la esquina superior izquierda de la pantalla.
+        """
+        mana_bar_width = 200
+        mana_bar_height = 20
+        mana_percentage = self.mana / self.max_mana
+        arcade.draw_rectangle_filled(mana_bar_width / 2 + 10, arcade.get_window().height - 60, mana_bar_width,
+                                     mana_bar_height, arcade.color.GRAY)
+        arcade.draw_rectangle_filled(mana_bar_width / 2 + 10, arcade.get_window().height - 60,
+                                     mana_bar_width * mana_percentage, mana_bar_height, arcade.color.BLUE)
+
+    def draw_exp_bar(self):
+        """
+        Dibuja la barra de vida en la esquina superior izquierda de la pantalla.
+        """
+        exp_bar_width = 200
+        exp_bar_height = 20
+        exp_percentage = self.exp / self.max_exp
+        arcade.draw_rectangle_filled(exp_bar_width / 2 + 10, arcade.get_window().height - 100, exp_bar_width,
+                                     exp_bar_height, arcade.color.GRAY)
+        arcade.draw_rectangle_filled(exp_bar_width / 2 + 10, arcade.get_window().height - 100,
+                                     exp_bar_width * exp_percentage, exp_bar_height, arcade.color.GREEN)
 
     def on_update(self, delta_time):
         if not self.change_x and not self.change_y:
