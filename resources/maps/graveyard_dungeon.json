@@ -5,7 +5,7 @@
  "layers":[
         {
          "compression":"zlib",
-         "data":"eJxjYEAAZUbcGJc8wwjRj46dKdRPqf3k6nfGox8dkKMOV3gPtH5y0gUl+kmJP3roH2rhR21\/ker\/wRZ\/I0U\/OWAw6R\/o8CMVAwCjlDT9",
+         "data":"eJxjYIAAZUb8GJcahhGiHx07U6ifUvvJ1e9MgX5cgFS3DpR+UtLFSNdPSpoYaP3EpovR9DOqnxbph5J0NdD6ARPpOcU=",
          "encoding":"base64",
          "height":32,
          "id":9,
@@ -19,7 +19,7 @@
         }, 
         {
          "compression":"zlib",
-         "data":"eJzVUosKgCAM3Mf1\/xA9IIr6lQoU1+HlDI0ajHJ62+02kWDd4VPE+8i9qLi3Vv03kbi+t5zfxq9y7Xtw8dmdRwm9n9\/NWJ+Zlb8V73nezU37Ysyf4oX5fV0rnulQCo+6MJ4Mn6rL5lBLX5wf4v171h\/jwXjV1g\/zY19v7y\/mz+3falZ+f8EzHZnjnL\/Sx1M82xPmpfYnt67WfwfMXKUN",
+         "data":"eJzllGEKwCAIhb3\/7aIYjAVdZYuISfjSoh+NCbJRffLsSUQl\/JMnyCCcIbaewxEOB8448L8bf1Hp+aC39\/xNRl7TtZqvPgVhjWdUaln1eVBr1J9VfPUrCmvSXM\/cPdK5Ay\/5P8Jbda3iW29is59Dm99efU0Levv+Oj9f4yVvRt+\/Xv1ZjZzpzY+Fn9lH98L7vwFCW4SF",
          "encoding":"base64",
          "height":32,
          "id":2,
@@ -63,9 +63,25 @@
          "objects":[
                 {
                  "height":0,
-                 "id":6,
+                 "id":15,
                  "name":"",
-                 "point":true,
+                 "polygon":[
+                        {
+                         "x":215,
+                         "y":81
+                        }, 
+                        {
+                         "x":218.870130338993,
+                         "y":339.35961711392
+                        }, 
+                        {
+                         "x":50.7877164485566,
+                         "y":339.092103977666
+                        }, 
+                        {
+                         "x":52.8337455540512,
+                         "y":81.9561675294301
+                        }],
                  "properties":[
                         {
                          "name":"type",
@@ -76,8 +92,164 @@
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":202,
-                 "y":91
+                 "x":76,
+                 "y":108.97368288608
+                }, 
+                {
+                 "height":0,
+                 "id":31,
+                 "name":"",
+                 "polygon":[
+                        {
+                         "x":-265,
+                         "y":279.666666666667
+                        }, 
+                        {
+                         "x":-41.7316666666666,
+                         "y":274.18
+                        }, 
+                        {
+                         "x":56.2033333333334,
+                         "y":172.693333333333
+                        }, 
+                        {
+                         "x":-95.8789666666667,
+                         "y":141.758666666667
+                        }, 
+                        {
+                         "x":-247.1663,
+                         "y":153.9562
+                        }],
+                 "properties":[
+                        {
+                         "name":"type",
+                         "type":"string",
+                         "value":"skeleton"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":390.666666666667,
+                 "y":557.333333333333
+                }, 
+                {
+                 "height":0,
+                 "id":32,
+                 "name":"",
+                 "polygon":[
+                        {
+                         "x":131,
+                         "y":19.6666666666667
+                        }, 
+                        {
+                         "x":77.6016666666667,
+                         "y":-48.4866666666667
+                        }, 
+                        {
+                         "x":-26.4633333333333,
+                         "y":-95.3066666666668
+                        }, 
+                        {
+                         "x":-189.2123,
+                         "y":-36.9080000000001
+                        }, 
+                        {
+                         "x":-64.1893,
+                         "y":-8.14256666666665
+                        }, 
+                        {
+                         "x":-151.1663,
+                         "y":64.6228666666667
+                        }],
+                 "properties":[
+                        {
+                         "name":"type",
+                         "type":"string",
+                         "value":"skeleton"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":296,
+                 "y":793.333333333333
+                }, 
+                {
+                 "height":0,
+                 "id":38,
+                 "name":"",
+                 "polygon":[
+                        {
+                         "x":36.3333333333333,
+                         "y":31.6667
+                        }, 
+                        {
+                         "x":-13.0649666666667,
+                         "y":99.5133000000001
+                        }, 
+                        {
+                         "x":-91.7966333333333,
+                         "y":-33.9733666666667
+                        }, 
+                        {
+                         "x":-153.212,
+                         "y":27.092
+                        }, 
+                        {
+                         "x":-92.1893000000001,
+                         "y":101.190763333333
+                        }, 
+                        {
+                         "x":-16.4993333333334,
+                         "y":-31.3771
+                        }],
+                 "properties":[
+                        {
+                         "name":"type",
+                         "type":"string",
+                         "value":"skeleton"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":437.333333333333,
+                 "y":441.333333333333
+                }, 
+                {
+                 "height":0,
+                 "id":39,
+                 "name":"",
+                 "polygon":[
+                        {
+                         "x":61.6666666666667,
+                         "y":66.3333666666666
+                        }, 
+                        {
+                         "x":-43.8786666666667,
+                         "y":-67.5746666666667
+                        }, 
+                        {
+                         "x":55.8107,
+                         "y":-44.14257
+                        }, 
+                        {
+                         "x":-59.166,
+                         "y":35.2895666666667
+                        }],
+                 "properties":[
+                        {
+                         "name":"type",
+                         "type":"string",
+                         "value":"skeleton"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":185.333333333333,
+                 "y":120
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -223,7 +395,7 @@
          "y":0
         }],
  "nextlayerid":11,
- "nextobjectid":15,
+ "nextobjectid":40,
  "orientation":"orthogonal",
  "properties":[
         {
