@@ -317,8 +317,8 @@ class GameView(arcade.View):
             noclip_callback=self.noclip,
             hyper_callback=self.hyper,
             damage_callback=self.apply_damage,  # Añadir callback para daño
-            heal_callback=self.apply_heal,
-            heal_mana_callback=self.apply_heal_mana,# Añadir callback para curar
+            heal_callback=self.apply_heal,      # Añadir callback para curar
+            heal_mana_callback=self.apply_heal_mana,# Añadir callback para curar mana
             mana_callback=self.use_mana,        # Añadir callback para usar mana
             exp_callback=self.gain_exp          # Añadir callback para ganar experiencia
         )
