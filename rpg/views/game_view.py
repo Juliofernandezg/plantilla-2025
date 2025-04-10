@@ -139,7 +139,7 @@ class GameView(arcade.View):
         self.ui_manager.enable()
 
         # Player sprite
-        self.player_sprite = None
+        self.player_sprite= None
         self.player_sprite_list = None
 
         # Track the current state of what key is pressed
@@ -160,7 +160,7 @@ class GameView(arcade.View):
         self.message_box = None
 
         # Selected Items Hotbar
-        self.hotbar_sprite_list = None
+        self.hotbar_sprite_list = []
         self.selected_item = 1
 
         f = open("../resources/data/item_dictionary.json")
@@ -314,8 +314,8 @@ class GameView(arcade.View):
                     x , x + field_width - 15, y + 25 , y - 25 , arcade.color.BLACK, 2
                 )
 
-            if len(self.player_sprite.inventory) > i:
-                item_name = self.player_sprite.inventory[i]["short_name"]
+            if len(self.player_sprite.hotbar) > i:
+                item_name = self.player_sprite.hotbar[i]["short_name"]
             else:
                 item_name = ""
 
@@ -604,7 +604,7 @@ class GameView(arcade.View):
                 )
                 sprite.remove_from_sprite_lists()
                 lookup_item = self.item_dictionary[sprite.properties["item"]]
-                self.player_sprite.inventory.append(lookup_item)
+                self.player_sprite.hotbar.append(lookup_item)
             elif "enemy" in sprite.properties:
                 self.window.show_view(self.window.views["battle"])
             else:
