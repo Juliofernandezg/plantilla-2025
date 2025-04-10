@@ -5,7 +5,7 @@
  "layers":[
         {
          "compression":"zlib",
-         "data":"eJxjYIAAZUb8GJcahhGiHx07U6ifUvvJ1e9MgX5cgFS3DpR+UtLFSNdPSpoYaP3EpovR9DOqnxbph5J0NdD6ARPpOcU=",
+         "data":"eJxjYIAAZUb8GJcahhGiHx07U6ifUvvJ1e9MpH5cYtgAseFNT\/2khN+ofvLNHQz6iU0Xo+lnVD8t0g8l6Wqg9QMAsN85WQ==",
          "encoding":"base64",
          "height":32,
          "id":9,
@@ -33,7 +33,7 @@
         }, 
         {
          "compression":"zlib",
-         "data":"eJxjYCAP6DOSqZFK+kfBKBgFo2AUjIKRBtKZqWcWAAagAMs=",
+         "data":"eJxjYCAP6DOSqRGP\/rvMlJn5lkL99AQjya+jgDgwlNLEUHLrKKA9IDU9oKsnNT2M5PSTTkW\/AwDKkAur",
          "encoding":"base64",
          "height":32,
          "id":5,
@@ -49,7 +49,193 @@
          "draworder":"topdown",
          "id":10,
          "name":"lights",
-         "objects":[],
+         "objects":[
+                {
+                 "height":0,
+                 "id":41,
+                 "name":"",
+                 "point":true,
+                 "properties":[
+                        {
+                         "name":"color",
+                         "type":"color",
+                         "value":"#ffebffbb"
+                        }, 
+                        {
+                         "name":"radius",
+                         "type":"int",
+                         "value":80
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":450,
+                 "y":64
+                }, 
+                {
+                 "height":0,
+                 "id":42,
+                 "name":"",
+                 "point":true,
+                 "properties":[
+                        {
+                         "name":"color",
+                         "type":"color",
+                         "value":"#ffcf8d1c"
+                        }, 
+                        {
+                         "name":"radius",
+                         "type":"int",
+                         "value":60
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":110.666666666667,
+                 "y":482.666666666667
+                }, 
+                {
+                 "height":0,
+                 "id":44,
+                 "name":"",
+                 "point":true,
+                 "properties":[
+                        {
+                         "name":"color",
+                         "type":"color",
+                         "value":"#ffcf8d1c"
+                        }, 
+                        {
+                         "name":"radius",
+                         "type":"int",
+                         "value":60
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":462.666666666667,
+                 "y":543.333333333333
+                }, 
+                {
+                 "height":0,
+                 "id":45,
+                 "name":"",
+                 "point":true,
+                 "properties":[
+                        {
+                         "name":"color",
+                         "type":"color",
+                         "value":"#ffcf8d1c"
+                        }, 
+                        {
+                         "name":"radius",
+                         "type":"int",
+                         "value":60
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":462.666666666667,
+                 "y":192.666666666667
+                }, 
+                {
+                 "height":0,
+                 "id":46,
+                 "name":"",
+                 "point":true,
+                 "properties":[
+                        {
+                         "name":"color",
+                         "type":"color",
+                         "value":"#ffcf8d1c"
+                        }, 
+                        {
+                         "name":"radius",
+                         "type":"int",
+                         "value":60
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":111.333333333333,
+                 "y":95.9999999999999
+                }, 
+                {
+                 "height":0,
+                 "id":47,
+                 "name":"",
+                 "point":true,
+                 "properties":[
+                        {
+                         "name":"color",
+                         "type":"color",
+                         "value":"#ffcf8d1c"
+                        }, 
+                        {
+                         "name":"radius",
+                         "type":"int",
+                         "value":60
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":464,
+                 "y":831.333333333333
+                }, 
+                {
+                 "height":0,
+                 "id":48,
+                 "name":"",
+                 "point":true,
+                 "properties":[
+                        {
+                         "name":"color",
+                         "type":"color",
+                         "value":"#ffcf8d1c"
+                        }, 
+                        {
+                         "name":"radius",
+                         "type":"int",
+                         "value":60
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":78.6666666666667,
+                 "y":832.666666666667
+                }, 
+                {
+                 "height":0,
+                 "id":49,
+                 "name":"",
+                 "point":true,
+                 "properties":[
+                        {
+                         "name":"color",
+                         "type":"color",
+                         "value":"#ffabc1ff"
+                        }, 
+                        {
+                         "name":"radius",
+                         "type":"int",
+                         "value":40
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":396.666666666667,
+                 "y":55.3333333333333
+                }],
+         "offsetx":0.666666666666657,
+         "offsety":0.666666666666693,
          "opacity":1,
          "type":"objectgroup",
          "visible":true,
@@ -71,8 +257,8 @@
                          "y":81
                         }, 
                         {
-                         "x":218.870130338993,
-                         "y":339.35961711392
+                         "x":216.203463672326,
+                         "y":337.35961711392
                         }, 
                         {
                          "x":50.7877164485566,
@@ -84,6 +270,11 @@
                         }],
                  "properties":[
                         {
+                         "name":"radius",
+                         "type":"int",
+                         "value":60
+                        }, 
+                        {
                          "name":"type",
                          "type":"string",
                          "value":"skeleton"
@@ -93,7 +284,7 @@
                  "visible":true,
                  "width":0,
                  "x":76,
-                 "y":108.97368288608
+                 "y":96.3070162194132
                 }, 
                 {
                  "height":0,
@@ -122,16 +313,21 @@
                         }],
                  "properties":[
                         {
+                         "name":"radius",
+                         "type":"int",
+                         "value":60
+                        }, 
+                        {
                          "name":"type",
                          "type":"string",
-                         "value":"skeleton"
+                         "value":"red_wizard"
                         }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
                  "x":390.666666666667,
-                 "y":557.333333333333
+                 "y":544.666666666667
                 }, 
                 {
                  "height":0,
@@ -164,16 +360,21 @@
                         }],
                  "properties":[
                         {
+                         "name":"radius",
+                         "type":"int",
+                         "value":60
+                        }, 
+                        {
                          "name":"type",
                          "type":"string",
-                         "value":"skeleton"
+                         "value":"red_wizard"
                         }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
                  "x":296,
-                 "y":793.333333333333
+                 "y":780.666666666667
                 }, 
                 {
                  "height":0,
@@ -206,6 +407,11 @@
                         }],
                  "properties":[
                         {
+                         "name":"radius",
+                         "type":"int",
+                         "value":60
+                        }, 
+                        {
                          "name":"type",
                          "type":"string",
                          "value":"skeleton"
@@ -214,8 +420,8 @@
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":437.333333333333,
-                 "y":441.333333333333
+                 "x":448,
+                 "y":440
                 }, 
                 {
                  "height":0,
@@ -240,6 +446,11 @@
                         }],
                  "properties":[
                         {
+                         "name":"radius",
+                         "type":"int",
+                         "value":60
+                        }, 
+                        {
                          "name":"type",
                          "type":"string",
                          "value":"skeleton"
@@ -248,8 +459,51 @@
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":185.333333333333,
-                 "y":120
+                 "x":202,
+                 "y":105.333333333333
+                }, 
+                {
+                 "height":0,
+                 "id":40,
+                 "name":"",
+                 "polygon":[
+                        {
+                         "x":171.666666666667,
+                         "y":72.3336666666667
+                        }, 
+                        {
+                         "x":67.6016333333334,
+                         "y":-23.8200000000001
+                        }, 
+                        {
+                         "x":-152.463366666667,
+                         "y":60.0263333333332
+                        }, 
+                        {
+                         "x":76.121,
+                         "y":63.0923333333335
+                        }, 
+                        {
+                         "x":-157.832666666667,
+                         "y":-38.7106666666666
+                        }],
+                 "properties":[
+                        {
+                         "name":"radius",
+                         "type":"int",
+                         "value":60
+                        }, 
+                        {
+                         "name":"type",
+                         "type":"string",
+                         "value":"red_wizard"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":254.666666666667,
+                 "y":742
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -395,7 +649,7 @@
          "y":0
         }],
  "nextlayerid":11,
- "nextobjectid":40,
+ "nextobjectid":50,
  "orientation":"orthogonal",
  "properties":[
         {
