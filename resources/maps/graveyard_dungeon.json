@@ -5,7 +5,7 @@
  "layers":[
         {
          "compression":"zlib",
-         "data":"eJxjYIAAZUb8GJcahhGiHx07U6ifUvvJ1e9MpH5cYtgAseFNT\/2khN+ofvLNHQz6iU0Xo+lnVD8t0g8l6Wqg9QMAsN85WQ==",
+         "data":"eJytlQEKwzAIRQ3rTXqU7VKF7hy77ghZiFj9fsuET4j0RU2Uigx7K30eVwnw\/5PvPruyvGUq8RGrtbexPtuVR0J5ZTzKq5o\/Gz\/yecbed8Zn7434O7VHcZiz5jeWR2zU13dyZ+KfMsTUb3Podsg64\/ztmfvz+EPx7Fxbfs6erhWZ5VH\/eLI82z\/6\/vVZVT56Q+\/+pm+TJaavu2k\/4qM+0ftXW2JmwvLZLGTxq0Jm57Vqk83+i1l8r+691fhIX\/Cy5X0=",
          "encoding":"base64",
          "height":32,
          "id":9,
@@ -19,7 +19,7 @@
         }, 
         {
          "compression":"zlib",
-         "data":"eJzllGEKwCAIhb3\/7aIYjAVdZYuISfjSoh+NCbJRffLsSUQl\/JMnyCCcIbaewxEOB8448L8bf1Hp+aC39\/xNRl7TtZqvPgVhjWdUaln1eVBr1J9VfPUrCmvSXM\/cPdK5Ay\/5P8Jbda3iW29is59Dm99efU0Levv+Oj9f4yVvRt+\/Xv1ZjZzpzY+Fn9lH98L7vwFCW4SF",
+         "data":"eJzNVAEKwCAI9P+\/i2IwFuwrW0QswkuNFglSWGenJxFl86+fwANzh6p4MkfYHLjjwH43\/EW55oO+2tN6K\/ESr9n4olNgYrVHIZeWnwe5rPrMwhe9IhPj5nqk94jnDnhOfwtey2sWvtUmNufJpPnt5Ze4oL9v9fy0PKz69f63FXikoxZvNfQu178\/50eD782PBj9yjvpS1\/8AOlOQPQ==",
          "encoding":"base64",
          "height":32,
          "id":2,
@@ -33,7 +33,7 @@
         }, 
         {
          "compression":"zlib",
-         "data":"eJxjYCAP6DOSqRGP\/rvMlJn5lkL99AQjya+jgDgwlNLEUHLrKKA9IDU9oKsnNT2M5PSTTkW\/AwDKkAur",
+         "data":"eJxjYMAOklhwSECBPiOmmDxQDw8rfn349N9lhtDfCNiNC7wF6ncioEYej9nk2ksOgPmVXPCWQv30BPjCHBnsGEJ+UkRL58T6ER9AThPuZOjHliZ0yHYNBLhCzQDlDWSzsKXf2zjsh2HkvEls+oXpJReQqn8PWjwSqx+97ACVg6541ONLL\/xALIDERzcHWz6BibkBsTgQS+CxGwTO4gh\/FySMD6CnT1LLM3T1pJZn9Cz\/CNUptATY0kk6Ff0OAAC1G0U=",
          "encoding":"base64",
          "height":32,
          "id":5,
@@ -649,7 +649,7 @@
          "y":0
         }],
  "nextlayerid":11,
- "nextobjectid":50,
+ "nextobjectid":53,
  "orientation":"orthogonal",
  "properties":[
         {
@@ -664,6 +664,10 @@
         {
          "firstgid":1,
          "source":"..\/tilesets\/[Base]BaseChip_pipo.json"
+        }, 
+        {
+         "firstgid":1065,
+         "source":"Mazmorra3.tsx"
         }],
  "tilewidth":32,
  "type":"map",
