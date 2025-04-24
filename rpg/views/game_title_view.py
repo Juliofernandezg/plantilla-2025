@@ -6,6 +6,7 @@ import arcade.gui
 
 from rpg.views.loading_view import LoadingView
 from rpg.views.main_settings_view import MainSettingsView
+from rpg.views.main_controls_view import MainControlsView
 
 
 class TitleView(arcade.View):
@@ -90,8 +91,8 @@ class TitleView(arcade.View):
         self.window.views["loading"].setup()
         self.window.views["main_settings"] = MainSettingsView()
         self.window.views["main_settings"].setup()
-        self.window.views["controls"] = MainSettingsView() # Falta crear la vista Controls
-        self.window.views["controls"].setup()
+        self.window.views["main_controls"] = MainControlsView()
+        self.window.views["main_controls"].setup()
 
     # call back methods for buttons:
     def on_click_play(self, event):
@@ -104,8 +105,7 @@ class TitleView(arcade.View):
 
     def on_click_controls(self, event):
         print("controls screen")
-        self.window.views["controls"].setup()
-        self.window.show_view(self.window.views["main_settings"])
+        self.window.show_view(self.window.views["main_controls"])
 
     def on_click_quit(self, event):
         print("quitting")

@@ -1,9 +1,13 @@
 """
-Settings
+Main settings of the title menu
 """
 import arcade
 import rpg.constants as constants
 
+
+# CREAR CLASE    SettingsUI    PARA INTERFAZ
+# Luego importarla en el archivo         settings_view
+# Seguir ejemplo de los dos archivos     main_controls_view / controls_view
 
 
 class MainSettingsView(arcade.View):
