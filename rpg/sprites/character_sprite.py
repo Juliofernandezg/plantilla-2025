@@ -2,9 +2,6 @@
 Animated sprite for characters that walk around.
 """
 
-# AHORRA MAS
-
-
 import arcade
 
 from enum import Enum
