@@ -1,0 +1,57 @@
+{
+    "activeFile": "resources/maps/farmhouse.json",
+    "expandedProjectPaths": [
+        ".",
+        "resources/maps",
+        "resources"
+    ],
+    "fileStates": {
+        "resources/maps/dungeon_lvl_three_maze.json": {
+            "scale": 1,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 1288,
+                "y": 1131.5
+            }
+        },
+        "resources/maps/farmhouse.json": {
+            "expandedObjectLayers": [
+                8
+            ],
+            "scale": 1.0780273437499999,
+            "selectedLayer": 7,
+            "viewCenter": {
+                "x": 256.0231905063865,
+                "y": 255.55938037865755
+            }
+        },
+        "resources/maps/main_map.json": {
+            "scale": 1,
+            "selectedLayer": 8,
+            "viewCenter": {
+                "x": 1315,
+                "y": 661.5
+            }
+        },
+        "resources/tilesets/[A]Grass_pipo.json": {
+            "scaleInDock": 1
+        },
+        "resources/tilesets/[A]Water_pipo.json": {
+            "scaleInDock": 1
+        },
+        "resources/tilesets/[Base]BaseChip_pipo.json": {
+            "scaleInDock": 1
+        }
+    },
+    "openFiles": [
+        "resources/maps/dungeon_lvl_three_maze.json",
+        "resources/maps/main_map.json",
+        "resources/maps/farmhouse.json"
+    ],
+    "project": "sin nombre.tiled-project",
+    "recentFiles": [
+        "resources/maps/dungeon_lvl_three_maze.json",
+        "resources/maps/main_map.json",
+        "resources/maps/farmhouse.json"
+    ]
+}

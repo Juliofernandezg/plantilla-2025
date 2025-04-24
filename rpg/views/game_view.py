@@ -127,7 +127,7 @@ class GameView(arcade.View):
     """
     Main application class.
     """
-
+    player_sprite = None
     def __init__(self, map_list):
         super().__init__()
 
@@ -139,7 +139,6 @@ class GameView(arcade.View):
         self.ui_manager.enable()
 
         # Player sprite
-        self.player_sprite = None
         self.player_sprite_list = None
 
         # Track the current state of what key is pressed
@@ -160,7 +159,7 @@ class GameView(arcade.View):
         self.message_box = None
 
         # Selected Items Hotbar
-        self.hotbar_sprite_list = None
+        self.hotbar_sprite_list = []
         self.selected_item = 1
 
         f = open("../resources/data/item_dictionary.json")
@@ -199,15 +198,15 @@ class GameView(arcade.View):
             arcade.set_background_color(self.my_map.background_color)
 
         map_height = self.my_map.map_size[1]
-        self.player_sprite.center_x = (
+        GameView.player_sprite.center_x = (
             start_x * constants.SPRITE_SIZE + constants.SPRITE_SIZE / 2
         )
-        self.player_sprite.center_y = (
+        GameView.player_sprite.center_y = (
             map_height - start_y
         ) * constants.SPRITE_SIZE - constants.SPRITE_SIZE / 2
         self.scroll_to_player(1.0)
         self.player_sprite_list = arcade.SpriteList()
-        self.player_sprite_list.append(self.player_sprite)
+        self.player_sprite_list.append(GameView.player_sprite)
 
         self.setup_physics()
 
@@ -218,19 +217,19 @@ class GameView(arcade.View):
         if self.noclip_status:
             # make an empty spritelist so the character does not collide with anyting
             self.physics_engine = arcade.PhysicsEngineSimple(
-                self.player_sprite, arcade.SpriteList()
+                GameView.player_sprite, arcade.SpriteList()
             )
         else:
             # use the walls as normal
             self.physics_engine = arcade.PhysicsEngineSimple(
-                self.player_sprite, self.my_map.scene["wall_list"]
+                GameView.player_sprite, self.my_map.scene["wall_list"]
             )
 
     def setup(self):
         """Set up the game variables. Call to re-start the game."""
 
         # Create the player character
-        self.player_sprite = PlayerSprite(":characters:Female/Female 18-4.png")
+        GameView.player_sprite = PlayerSprite(":characters:Female/Female 18-4.png")
 
         # Spawn the player
         start_x = constants.STARTING_X
@@ -293,12 +292,12 @@ class GameView(arcade.View):
         )
 
     def draw_inventory(self):
-        capacity = 10
+        capacity = 3
         vertical_hotbar_location = 40
         hotbar_height = 80
         sprite_height = 16
 
-        field_width = self.window.width / (capacity + 1)
+        field_width = self.window.width / (capacity)
 
         x = self.window.width / 2
         y = vertical_hotbar_location
@@ -311,16 +310,16 @@ class GameView(arcade.View):
             x = i * field_width + 5
             if i == self.selected_item - 1:
                 arcade.draw_lrtb_rectangle_outline(
-                    x - 6, x + field_width - 15, y + 25, y - 10, arcade.color.BLACK, 2
+                    x , x + field_width - 15, y + 25 , y - 25 , arcade.color.BLACK, 2
                 )
 
-            if len(self.player_sprite.inventory) > i:
-                item_name = self.player_sprite.inventory[i]["short_name"]
+            if len(GameView.player_sprite.hotbar) > i:
+                item_name = GameView.player_sprite.hotbar[i]["short_name"]
             else:
                 item_name = ""
 
             hotkey_sprite = self.hotbar_sprite_list[i]
-            hotkey_sprite.draw_scaled(x + sprite_height / 2, y + sprite_height / 2, 2.0)
+            hotkey_sprite.draw_scaled((x + 8) + sprite_height / 2, (y + 1) + sprite_height / 2, 1.8)
             # Add whitespace so the item text doesn't hide behind the number pad sprite
             text = f"     {item_name}"
             arcade.draw_text(text, x, y, arcade.color.ALLOY_ORANGE, 16)
@@ -390,8 +389,8 @@ class GameView(arcade.View):
         """Manage Scrolling"""
 
         vector = Vec2(
-            self.player_sprite.center_x - self.window.width / 2,
-            self.player_sprite.center_y - self.window.height / 2,
+            GameView.player_sprite.center_x - self.window.width / 2,
+            GameView.player_sprite.center_y - self.window.height / 2,
         )
         self.camera_sprites.move_to(vector, speed)
 
@@ -407,8 +406,8 @@ class GameView(arcade.View):
         """
 
         # Calculate speed based on the keys pressed
-        self.player_sprite.change_x = 0
-        self.player_sprite.change_y = 0
+        GameView.player_sprite.change_x = 0
+        GameView.player_sprite.change_y = 0
 
         MOVING_UP = (
             self.up_pressed
@@ -467,32 +466,32 @@ class GameView(arcade.View):
         )
 
         if MOVING_UP:
-            self.player_sprite.change_y = constants.MOVEMENT_SPEED
+            GameView.player_sprite.change_y = constants.MOVEMENT_SPEED
 
         if MOVING_DOWN:
-            self.player_sprite.change_y = -constants.MOVEMENT_SPEED
+            GameView.player_sprite.change_y = -constants.MOVEMENT_SPEED
 
         if MOVING_LEFT:
-            self.player_sprite.change_x = -constants.MOVEMENT_SPEED
+            GameView.player_sprite.change_x = -constants.MOVEMENT_SPEED
 
         if MOVING_RIGHT:
-            self.player_sprite.change_x = constants.MOVEMENT_SPEED
+            GameView.player_sprite.change_x = constants.MOVEMENT_SPEED
 
         if MOVING_UP_LEFT:
-            self.player_sprite.change_y = constants.MOVEMENT_SPEED / 1.5
-            self.player_sprite.change_x = -constants.MOVEMENT_SPEED / 1.5
+            GameView.player_sprite.change_y = constants.MOVEMENT_SPEED / 1.5
+            GameView.player_sprite.change_x = -constants.MOVEMENT_SPEED / 1.5
 
         if MOVING_UP_RIGHT:
-            self.player_sprite.change_y = constants.MOVEMENT_SPEED / 1.5
-            self.player_sprite.change_x = constants.MOVEMENT_SPEED / 1.5
+            GameView.player_sprite.change_y = constants.MOVEMENT_SPEED / 1.5
+            GameView.player_sprite.change_x = constants.MOVEMENT_SPEED / 1.5
 
         if MOVING_DOWN_LEFT:
-            self.player_sprite.change_y = -constants.MOVEMENT_SPEED / 1.5
-            self.player_sprite.change_x = -constants.MOVEMENT_SPEED / 1.5
+            GameView.player_sprite.change_y = -constants.MOVEMENT_SPEED / 1.5
+            GameView.player_sprite.change_x = -constants.MOVEMENT_SPEED / 1.5
 
         if MOVING_DOWN_RIGHT:
-            self.player_sprite.change_y = -constants.MOVEMENT_SPEED / 1.5
-            self.player_sprite.change_x = constants.MOVEMENT_SPEED / 1.5
+            GameView.player_sprite.change_y = -constants.MOVEMENT_SPEED / 1.5
+            GameView.player_sprite.change_x = constants.MOVEMENT_SPEED / 1.5
 
         # Call update to move the sprite
         self.physics_engine.update()
@@ -500,7 +499,7 @@ class GameView(arcade.View):
         # Update player animation
         self.player_sprite_list.on_update(delta_time)
 
-        self.player_light.position = self.player_sprite.position
+        self.player_light.position = GameView.player_sprite.position
 
         # Update the characters
         try:
@@ -516,7 +515,7 @@ class GameView(arcade.View):
         if "doors" in map_layers:
             # Did we hit a door?
             doors_hit = arcade.check_for_collision_with_list(
-                self.player_sprite, map_layers["doors"]
+                GameView.player_sprite, map_layers["doors"]
             )
             # We did!
             if len(doors_hit) > 0:
@@ -545,7 +544,7 @@ class GameView(arcade.View):
         if self.message_box:
             self.message_box.on_key_press(key, modifiers)
             return
-
+        # Keys Movimiento
         if key in constants.KEY_UP:
             self.up_pressed = True
         elif key in constants.KEY_DOWN:
@@ -560,26 +559,14 @@ class GameView(arcade.View):
             self.window.show_view(self.window.views["main_menu"])
         elif key in constants.SEARCH:
             self.search()
+        # HotBar
         elif key == arcade.key.KEY_1:
             self.selected_item = 1
         elif key == arcade.key.KEY_2:
             self.selected_item = 2
         elif key == arcade.key.KEY_3:
             self.selected_item = 3
-        elif key == arcade.key.KEY_4:
-            self.selected_item = 4
-        elif key == arcade.key.KEY_5:
-            self.selected_item = 5
-        elif key == arcade.key.KEY_6:
-            self.selected_item = 6
-        elif key == arcade.key.KEY_7:
-            self.selected_item = 7
-        elif key == arcade.key.KEY_8:
-            self.selected_item = 8
-        elif key == arcade.key.KEY_9:
-            self.selected_item = 9
-        elif key == arcade.key.KEY_0:
-            self.selected_item = 10
+
         elif key == arcade.key.L:
             cur_map = self.map_list[self.cur_map_name]
             if self.player_light in cur_map.light_layer:
@@ -606,7 +593,7 @@ class GameView(arcade.View):
 
         searchable_sprites = map_layers["searchable"]
         sprites_in_range = arcade.check_for_collision_with_list(
-            self.player_sprite, searchable_sprites
+            GameView.player_sprite, searchable_sprites
         )
         print(f"Found {len(sprites_in_range)} searchable sprite(s) in range.")
         for sprite in sprites_in_range:
@@ -616,7 +603,9 @@ class GameView(arcade.View):
                 )
                 sprite.remove_from_sprite_lists()
                 lookup_item = self.item_dictionary[sprite.properties["item"]]
-                self.player_sprite.inventory.append(lookup_item)
+                GameView.player_sprite.hotbar.append(lookup_item)
+            elif "enemy" in sprite.properties:
+                self.window.show_view(self.window.views["battle"])
             else:
                 print(
                     "The 'item' property was not set for the sprite. Can't get any items from this."
@@ -641,7 +630,7 @@ class GameView(arcade.View):
     def on_mouse_press(self, x, y, button, key_modifiers):
         """Called when the user presses a mouse button."""
         if button == arcade.MOUSE_BUTTON_RIGHT:
-            self.player_sprite.destination_point = x, y
+            GameView.player_sprite.destination_point = x, y
 
     def on_mouse_release(self, x, y, button, key_modifiers):
         """Called when a user releases a mouse button."""

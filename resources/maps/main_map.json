@@ -1,212 +1,117 @@
 { "backgroundcolor":"#5f8702",
  "compressionlevel":-1,
- "height":66,
+ "height":90,
  "infinite":false,
  "layers":[
         {
          "compression":"zlib",
-         "data":"eJzt0CEOACAMBMFL\/\/9oBIaAqUF1JmlSe5sAAAD01HG5\/kl02CZ2qLy7J9IBAAAAAAAAAAAAAAAA\/lrzBwAv",
+         "data":"eJzt1rENgzAARFGHLJAdskP27yizEk2iIGOD0VVB70knEOUXMpQCAAAAAHBd02qluueYfhn9xk1l24tx+gHwL+bH+fGjX0a\/jH4Z\/TL6ZfTLvT9d6uvceQ4AAAAAAAAAAAAAAHBF99t2jGm103DMt9OzMQ33rdu13j0N++pGr8Y07NMvo1\/O+Zfz\/c35\/8tpBwBwbAGwwl3x",
          "encoding":"base64",
-         "height":66,
+         "height":90,
          "id":17,
          "name":"ground2",
          "opacity":1,
          "type":"tilelayer",
          "visible":true,
-         "width":66,
+         "width":80,
          "x":0,
          "y":0
         }, 
         {
          "compression":"zlib",
-         "data":"eJzt2r1OwzAUBWCDhFjDi7SdGqaS92BmQDwIIzMwARPwkjiD1auL438nTu6JdKSkNdj+ch2QW6VwmOMyMheOHDulep3bzt2upcAhz8FlMTpcKThIc5iykLYupiwk1gMc4ACH8Ofkkg4p85Dk8KrzpvNOrs25JIcPnU+dL3JtziU5fOv86PySa3O+VQezBug6kPh8MPee3n+JDrFpyeHB0973fkimxpbjENtXDYfnm3NqO+z0z+wjMvazRYcjmdtd589WHPj9p\/Nq5fkQW6O+WrU50PtP05LD1BhDU9rBZpHq8Kjb3zvyRM5j1yrP0LBDTEr3YXM4OQxbcSgdm8NS\/z\/AYfms1WGO5wMc8g3gAAepDnOPEQ5waN1hiTHW6IPPS4JDyLxiHJaq2ZQ+Yv\/+wSHOoVbN1lwXpR1qjHFtDrXGKMlhDN0r5u1S9pv5vnNvee\/Q\/bfw+bgccu8VD2+Xs99MHWw5MPcdMwpxKFWzfC+Zt0vZZ+afFfXsdWpB5237TqfNYe61W6uPk6U29hO1smUHY2Grj57VxNYdbCbUYRDoQNtLej746mIQ7uALHOAABzjAIczhpSuXa3UOfZ33XaoP3k9KzMF\/b41whzn6DI05atXvWgIHOMABDnAIc8Ch1B8sj7HP",
+         "data":"eJztmztOw0AQhg0SojUXSagIVcg9qCkQB6GkBiqg4nEGQkWogCOxEbEYJrZ3be\/DTr5f+pX1ZsXsfpkZCW2SZQghhBDqm3YbeqfGR3mWTYyP8\/p1fTL8hsWvjuGS314GP\/il40f9tmdI\/sEPfsPgV8YQfsPm1+YM8LPzuza+Mb4Vz8UYfnZ+d8b3xg\/iuRjDz87v0fjJ+Fk8F2P4\/edX1KqsV\/qfO78i12S+wa9b\/faVn2bYlt+ZZb3tfRdX7S0kv5GJNTceC88rxuPV\/mLxuzz4c1\/5LWMuVnG\/8l+fKMs5+K3zW8b8yN3qd1v5va5qUXshLOff8nT9b6R6hqurPlsf\/N7N33zJfjnp18Jy\/iMhvyPBoo1D8Vs0sG9+52b9aY0vxFjy073YxbMNzL8m9h3DF7+U+ZfSvvjZ8k\/mIfzW+ZF\/7fl9rvLqq+S1sJz\/pv\/945f6\/99t5Rf6bPCDH\/zg10d+Mc62qfxinQ1+\/eOnzxKbX8zc6BrD5Twx+cWurTYxmuZDLH4xagt+6fk1ZRiDX4jetC38fJ8NfvazLS3vvvS6Nvdn+h5tUvLeYb7O0MY1FL8uuaGt13W5P5P8ynyoPq+RYhuDX9fa0ndjel2bezP9HYeJmpcMJa+y36SE5Be6N4Xqf9OSXBxX5KZvfjF7e8gY04p8nKgc9Mkv1tlix5iWcJzBr3GM0P1v0\/kVeTiDX5AY8IMf\/ODnY9\/wg19TXeVu3s\/+3HSN3rNrTFuMur24uqv0fkJY84sR09VdFarOQtn3vrsqNY\/Uhh\/84Ddcwy8tP4QQQgghhBBCCCGEEEIIoaHpBx9RBKk=",
          "encoding":"base64",
-         "height":66,
+         "height":90,
          "id":1,
          "name":"ground",
          "opacity":1,
          "type":"tilelayer",
          "visible":true,
-         "width":66,
-         "x":0,
-         "y":0
-        }, 
-        {
-         "draworder":"topdown",
-         "id":11,
-         "name":"doors",
-         "objects":[
-                {
-                 "gid":392,
-                 "height":32,
-                 "id":2,
-                 "name":"",
-                 "properties":[
-                        {
-                         "name":"map_name",
-                         "type":"string",
-                         "value":"farmhouse"
-                        }, 
-                        {
-                         "name":"start_x",
-                         "type":"int",
-                         "value":4
-                        }, 
-                        {
-                         "name":"start_y",
-                         "type":"int",
-                         "value":12
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":32,
-                 "x":1088,
-                 "y":512
-                }, 
-                {
-                 "gid":392,
-                 "height":32,
-                 "id":3,
-                 "name":"",
-                 "properties":[
-                        {
-                         "name":"map_name",
-                         "type":"string",
-                         "value":"farmhouse"
-                        }, 
-                        {
-                         "name":"start_x",
-                         "type":"int",
-                         "value":11
-                        }, 
-                        {
-                         "name":"start_y",
-                         "type":"int",
-                         "value":12
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":32,
-                 "x":1344,
-                 "y":512
-                }, 
-                {
-                 "gid":67,
-                 "height":32,
-                 "id":5,
-                 "name":"",
-                 "properties":[
-                        {
-                         "name":"map_name",
-                         "type":"string",
-                         "value":"graveyard_dungeon"
-                        }, 
-                        {
-                         "name":"start_x",
-                         "type":"int",
-                         "value":14
-                        }, 
-                        {
-                         "name":"start_y",
-                         "type":"int",
-                         "value":1
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":32,
-                 "x":256,
-                 "y":802
-                }],
-         "opacity":1,
-         "type":"objectgroup",
-         "visible":true,
+         "width":80,
          "x":0,
          "y":0
         }, 
         {
          "compression":"zlib",
-         "data":"eJzt2zEOgkAYBeFt8DqeDDuPJVZ6LPQIYiaEVxl0yWIxk7zWn3yFDdofSjk22Gnao2N9o5vfPNtzeq4Wjd3i0Orm2saGz6TDcksHHfKWDjrkLR10yFs66JC3dNAhb+mgQ97SQYe8pYMOeUsHHfKWDjrkLR10yFuzw+1QyrX7fVnN58wbdnqPU7tsq8\/cw+Fc+R4u873edvk9STqQDqQD6UA6kA6kA+lAOpAOpAPpQDpQS4d\/TgfSgfx+IB1IB9KBdCAdSAfSgXQgHUgH0oF0oPezXSp\/m7J29\/hfc6ubazfEsznnnHOf9gIfrzMc",
+         "data":"eJzt2ktOhEAYRWEm3RMW48p05rLUkS6rdQmaGJMKqfcpoMFzkz92TENdPh6T5vMyTZ+O4ziOM3Aer9P0sME8Xbdfs6db63z9zBa57bBmbW6ddvr9Rj8W\/Vj0Y9GPRT8W\/Vj0Y9GPRT8W\/Vj0Y9GPRT8W\/Vj0Y9GPRT8W\/Vj0Y9GPRT8W\/ViO5vd+naa3S\/+EIfv5m9eD\/X5OJ8yofR7J7xm+bxHG9zf2z9Gef\/qxjvqxjvqxjvqxjvqxjvqxjvqxjvqxjvqxjvqxjvqxjvqxjvqxjvqdK\/qx6MdyBD+ff+M66sc66sc66sc66sc66sc66sc66sc66sc66sc66sc66sc6nsnvBb4LWjsf4Tt283neP91l5sTnygmz+7Gs5aLfOn5z8Heu3Ea\/+\/HrWK\/6WJb7b70fcyZzZhqPr8svt+Zov5hHbs2SX85uL78RhrH9lfxKFv\/Zr9eKzrJPZu1Yqu7RmmMd6XeHk8vQ83hCv5psbljazx241doNMxx1Dfb4rWDeky6rVr85su1yHyP8oOnqfsvPI\/1aj33EuVh8dxW\/S6Jv631L\/GqvteV6pW0i3xl+7aUcep59Mcu1\/VKmmTWH2cW8eg1r\/FKGqWdv6Tyn1or5NdzLyfOXum9jnci1WDoXNT169lvjF\/wvaxfbnhyz4ziO4zjOQecbgW9gfw==",
          "encoding":"base64",
-         "height":66,
+         "height":90,
          "id":4,
          "name":"water_blocking",
          "opacity":1,
          "type":"tilelayer",
          "visible":true,
-         "width":66,
+         "width":80,
          "x":0,
          "y":0
         }, 
         {
          "compression":"zlib",
-         "data":"eJzt2LENgDAMRFE3zjqMzmYkI6RAyBSUdH5P+gtceREAAAAAAADwjzOrzmZWnR2jAgAAAHhcr+9kNf5P7HCzAwAAAADAtw0LzREI",
+         "data":"eJzt2rENgEAMBEEnTzuUTmfwJRCa9HUBIM1I18CGlqsAAAAAAAAAAACg6hg91l2jx7p96wEAAAAA7zsfN8\/p7rlMv4x+AAAAAP\/hfzKjX0a\/jH4Z\/TL6ZfTL6JfRDwAAAADgG26xASrE",
          "encoding":"base64",
-         "height":66,
+         "height":90,
          "id":6,
          "name":"water_nonblocking",
          "opacity":1,
          "type":"tilelayer",
          "visible":true,
-         "width":66,
+         "width":80,
          "x":0,
          "y":0
         }, 
         {
          "compression":"zlib",
-         "data":"eJzt2t8OwTAUBvCaJzImiFvPwpVn8QTccUW8jPeRZhrT7E9np+tpz\/dLmlmwtZ\/T2YxSAAAwVPFZLgPtfxZov3V0Fj5z2HjcNtAo1HdOcLf2vP1YcgA\/2o6HPmpj6HdB3fvPVtMulabdPi1r2G6u4p8LV6tpfXNIwcNqmsQcnlazrcbtTjBdORjH6Tj96eM0GfY8uLl3rLvIKTpChNM1F4BEh+x3KZE+Ju6tHKTmYca9s9YBqG1DdwAgME7n4zFAXnHh\/HlJvf6sGzeXe4Kc6wVkiv2eCyXKLDDX4xb7vHDtf65k1GrTGCnHHtP\/WnxDDiXJObyyshkSslg4vEZCDlXz0B1IQIiaadsn5xqmPp\/pGivnLCildH5DMY5Usqj6Z+74roui4bEE5vdMaeMGd6gNAAAAAKD2BqlsK6c=",
+         "data":"eJzt2rsKwkAQhtFNqUbBSwTj5f0f02lspkoyiijnwF+kW74uy7YGAAAAAAAAAADwH\/qutW1s1337JL\/pFN2G2Fm\/RfSr0a\/mFt3usYd+AAAAALzBqmttnbZx9zTZPlod0o76TXaJVmPaVT8AAADgQ\/p07+AN6jyvt3+DN4CL6FejX41+NfrV6FejX41+NfrV5P+P\/A0AAAAAMMcTIEgGtQ==",
          "encoding":"base64",
-         "height":66,
-         "id":9,
-         "name":"decorations_nonblocking",
-         "opacity":1,
-         "type":"tilelayer",
-         "visible":true,
-         "width":66,
-         "x":0,
-         "y":0
-        }, 
-        {
-         "compression":"zlib",
-         "data":"eJzt17sOg0AMBEBfCQlIkIcUSPL\/nxlTpDnRUVDcjLS9dztHAAAAAAAAcNS1RAyZsZx9ybnu2f+RedrBDmGHv3f2\/2S+je8AAAAAmy7\/477KpcGfecrOc5Vbgzu8svNSZW1wBwAAAACAPT99xgKh",
-         "encoding":"base64",
-         "height":66,
+         "height":90,
          "id":5,
          "name":"bridges",
          "opacity":1,
          "type":"tilelayer",
          "visible":true,
-         "width":66,
+         "width":80,
          "x":0,
          "y":0
         }, 
         {
          "compression":"zlib",
-         "data":"eJzt2btKxEAUBuATU2rnvoeX0jJY+Qi+h3YKKgqur2DjpXGt1tVC1MJLI\/oaooWgj+AJZnA2nkx2YLKzmfk\/+FlIQjLnD9ldCBEo05wZB5+5Oc48J+MsjG0CN2Y5HQefWem8beuhKeVeAMCNxan\/iVEsPUhz6lkSEqK6HjIhIZLutx7bHgaca4tcNjeaFWnOupj0La9ve3xT6mZeEWISag\/byXB2EvP5pLkOLY\/3QbrfekbtQf2Hl+Y6NVx\/UnrYKubLlWfWo\/brPWRalLY+F\/s8V7eYrZtUR+0\/qHkubkj+XbgqHXdXbL91Nsn4vDk+31pKtJ46PmkLbXAHm+iBdrmDPfRg9Mh51vJUbH\/wtiI\/7i23hwo9\/JLmXa7YHrIXGv5+UHn1uSgAABgZ3hUCAAAAQJV3zofvRUyAL86370UAAEToKCU65pxE\/A5vlWc\/4\/Q45xH3kOvz\/BecQeQ9wJ9P3wsAAAAAAAAAiNgPPABi7w==",
+         "data":"eJzt28tq1FAcx\/GTRFBQUFDQXX0AUcdd3Tkooq+hYHcuvGy8gFewunRnN2o3Vje17ULURa2oY32LKroQ9BH8HyYhyfEkmTQnk6Tz\/cCPTGYyufzmTCaUVCkAANA2OyW7HEy1I5Kjkr6kN7YjaNZeyT4H076x3knpry5mnwAmyzH\/\/2B09JfP1k8yxy3ZjA3Jd6d73g5F\/fUtQcw2vpIp29+S5E2JLNd3aGNh66coeRZLbr\/s8m1T1NVZS\/LQXzq3vXTueMP3nQ\/s67P1MZez\/a73ZxtfyWT1l8XWx3zJ5V06XPP6b4W9aGZXyUSv6\/7OZYw9bdQ+Lgblli9yaEzvMT2QPmbDfma97ESvPyzo762y\/86uGMu9D59\/5+AYuuKH4\/Vdkc\/has5nUVbd39W2uSHd3XTYn2kuyJ\/vuntyPPcdHNOa5JPks+RL+HggmTfWrecH4XJ6+rH6preE1XB6MpyeMuaVMT\/jp9836Tbbg36fi9\/grov6uxCOK3OcqYzXGX9DVcYf4h5mjPGVdf6Lzo9mf5N2\/RNh\/FVj\/v5G5znz\/Gf+LtPfEOOvmnU1vB4um29N7CwqafM9IaNcC3O97N6kXrcAAACgmp+SX03vRIf9kfxteicAAGhYz4+DfPs9pQ5Itkt2hPfbTftxkG9KOjso2S3ZE\/Z3wo\/TswT5zvhxpi3pkt8NbHNVxuEHyZqXHotRkC\/ZX3IsRrkUKHV5i91TWVXynpeov2S0qNNr0t11+kt5lXg8kI6+GtH0dF3\/L4F0d5f+AAAAAAAAADjwJPG3xo3A\/jyKPZW+nkmeG71NbVPqEV2m6E5ML6SjBclLo6vTksf0V2hROnotWbKMP2TLOs9x\/sO48V0FAABAXf4BTUqhVA==",
          "encoding":"base64",
-         "height":66,
-         "id":8,
+         "height":90,
+         "id":21,
          "name":"misc_blocking",
          "opacity":1,
          "type":"tilelayer",
          "visible":true,
-         "width":66,
+         "width":80,
          "x":0,
          "y":0
         }, 
         {
          "compression":"zlib",
-         "data":"eJztmlluAyEMhvPaNd2bLhdoWnW5QR97\/xPVVYU0QjaLgWCG\/5MspBAweLANw2w2wHFCclqhDPVdqnOf2e6I5DihXPJE8syU1yQ3GSWHVCfpkH5380sdyyXJ1aJ8IHlkyhQ7cISefQ6SDsluIVunoLGD5vn+wa01iZCtWyCtC25MpTZ3ulIotcOLsp3vL1+LutL5awjZIWdd1WjXk5Dtc9ZVjXYgjNb3gA328b8MrQ8Aq8wUO6Wzw4j7kxKkvU1sfzKbnSSwj+vDaHm71rsKjT5Lvpp7jv2uqG9kX\/3pPQCgQopTlnyyJyP7JIgzWp6uQYpvr8X\/tyQXQl2Kb4f+M5KN7kl2jfpGjLTPSGs1xgfJp7Jtq7V66PNTL2Lv4HrcA4K54GKZ739rincSXCzz\/c9qbm7xLn+WGBwDMdgusbjkn0fXGsdy45K1OOZ\/Szkr\/reUALQC+f2f3vn9vaNuAHoxe653aHL9Gcl5g7E4rOSG10j9LcldQ\/29cwMAGmJ+MyOtY+ah4eYTup91pMTMlH6swM2Hu599U\/Td8p4XAAAAAPPwC8deFq0=",
+         "data":"eJzt21lqwzAQgGHjPnXf916gaelygEJfCj1BH3un3rgDwRCEZEsjRZKt\/4NBkMTWZLwLuesAAEBt9iUOErRj647tcxW43K7Enkebwr3Eg6U9l7gIaG1c37n6cH0+1MU3l1OJs432VuLO0qbgqp\/N2L6m6dPkqvfYNvKRs36a\/UnbZy6u\/TAFn7qlFlu\/R+Vy5nH9HpHDILZumnPxWP205\/aU14Schm0ZYmybadYXsxyA8lbTPwEAAMAMtXKfl2qsUNPfXMcSNoWO63wm7K\/FsYTv0gkAAICtOZY4KZ3EjF1L3JROAs1YwrNcrFeJN+WyLT7LAZgP2zneHD9s8Trg+59t53hz\/LDF60Dof849Zr00Oedwoj4cP3GWdPyY74LUpta8Bua7ILWpNS8AdXopnQAAp9rviWqnuSc6lDjaQi6xPna67qdftyU9TXx\/KXGVI5FAX1K3337davAsbffX+\/1uSc\/SSzZ1fMNfrdeS3Gx18Jn343MtaWH+kK0Otnk\/z4p1M38IAAAAAAAAAAAAAABgXv4BwFIV\/A==",
          "encoding":"base64",
-         "height":66,
+         "height":90,
          "id":7,
-         "name":"trees_blocking",
+         "name":"trees_blocking_and_dec_clipping",
          "opacity":1,
          "type":"tilelayer",
          "visible":true,
-         "width":66,
+         "width":80,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "compression":"zlib",
+         "data":"eJzt3N9OwjAYh+GK3odX4IHTGTWecENeiJ6YeK5neoTxZrwf0sAiNOu6sf75vu59kmawAe1+aUsZBGMAAAAAQId2v70rVP91oXpjshmmzO8x4WtDp9b8j13pHko3ABBg6H0ixVie+97a9\/wPp1ifB8X63pfYGqNnzvP5coqVK7+QqwJ1TvXjFEtKfhr8OsV1n7c56oTy6zyf52lPDm9n845roHmNugncT6nJWFeIxGsJff1qHXhO6Dh2yGmcy4vSLVgGcj4N4xiSdONY85owhdTz21Pal1dJwzUZLI+kz301qzVn1nxxSO4fEq\/HSNaXl\/bffkjun0AO2r+zlkBChsxlyySh75Uw9rwbw9gY4ssmZmaafg8qFfnNQ37T\/a12pUOGfrcjHkN+49yUbgAmK9G3h+qscazFXseGMqoxw5hY18Y5\/6VneOiUMZ66H7ae27FsnG0Nuu9LpPTtl1X4MaiblL4IAAAAAADie\/X834NvP469e3Ly7QcgB\/PfPMx\/AAAAAIAhW+R0MVw=",
+         "encoding":"base64",
+         "height":90,
+         "id":9,
+         "name":"decorations_nonblocking",
+         "opacity":1,
+         "type":"tilelayer",
+         "visible":true,
+         "width":80,
          "x":0,
          "y":0
         }, 
@@ -254,11 +159,11 @@
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":1031.33333333333,
-                 "y":592
+                 "x":1255.33333333333,
+                 "y":752
                 }, 
                 {
-                 "height":365.333333333333,
+                 "height":1469.24166555607,
                  "id":9,
                  "name":"",
                  "properties":[
@@ -267,12 +172,12 @@
                          "type":"string",
                          "value":"grey_dog"
                         }],
-                 "rotation":0,
+                 "rotation":0.0338525131542156,
                  "type":"",
                  "visible":true,
-                 "width":371.333333333333,
-                 "x":114,
-                 "y":594.666666666667
+                 "width":55.2215187315019,
+                 "x":884.838185462871,
+                 "y":465.599576794002
                 }, 
                 {
                  "height":0,
@@ -401,8 +306,8 @@
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":57.3333333333333,
-                 "y":1857.33333333333
+                 "x":281.333333333333,
+                 "y":2017.33333333333
                 }, 
                 {
                  "height":0,
@@ -424,8 +329,131 @@
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":1211.46345975948,
-                 "y":1033.38760407031
+                 "x":1435.46345975948,
+                 "y":1193.38760407031
+                }],
+         "opacity":1,
+         "type":"objectgroup",
+         "visible":true,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "draworder":"topdown",
+         "id":11,
+         "name":"doors",
+         "objects":[
+                {
+                 "gid":392,
+                 "height":32,
+                 "id":2,
+                 "name":"farmhouse_left_door",
+                 "properties":[
+                        {
+                         "name":"map_name",
+                         "type":"string",
+                         "value":"farmhouse"
+                        }, 
+                        {
+                         "name":"start_x",
+                         "type":"int",
+                         "value":4
+                        }, 
+                        {
+                         "name":"start_y",
+                         "type":"int",
+                         "value":12
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":1312,
+                 "y":672
+                }, 
+                {
+                 "gid":392,
+                 "height":32,
+                 "id":3,
+                 "name":"farmhouse_right_door",
+                 "properties":[
+                        {
+                         "name":"map_name",
+                         "type":"string",
+                         "value":"farmhouse"
+                        }, 
+                        {
+                         "name":"start_x",
+                         "type":"int",
+                         "value":11
+                        }, 
+                        {
+                         "name":"start_y",
+                         "type":"int",
+                         "value":12
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":1568,
+                 "y":672
+                }, 
+                {
+                 "gid":67,
+                 "height":32,
+                 "id":5,
+                 "name":"graveyard_hole",
+                 "properties":[
+                        {
+                         "name":"map_name",
+                         "type":"string",
+                         "value":"graveyard_dungeon"
+                        }, 
+                        {
+                         "name":"start_x",
+                         "type":"int",
+                         "value":14
+                        }, 
+                        {
+                         "name":"start_y",
+                         "type":"int",
+                         "value":1
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":576,
+                 "y":1024
+                }, 
+                {
+                 "gid":642,
+                 "height":32,
+                 "id":12,
+                 "name":"smith_door",
+                 "properties":[
+                        {
+                         "name":"map_name",
+                         "type":"string",
+                         "value":"blacksmithing"
+                        }, 
+                        {
+                         "name":"start_x",
+                         "type":"int",
+                         "value":12
+                        }, 
+                        {
+                         "name":"start_y",
+                         "type":"int",
+                         "value":9
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":608,
+                 "y":1888
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -433,8 +461,8 @@
          "x":0,
          "y":0
         }],
- "nextlayerid":18,
- "nextobjectid":12,
+ "nextlayerid":24,
+ "nextobjectid":13,
  "orientation":"orthogonal",
  "renderorder":"left-up",
  "tiledversion":"1.11.2",
@@ -455,5 +483,5 @@
  "tilewidth":32,
  "type":"map",
  "version":"1.10",
- "width":66
+ "width":80
 }

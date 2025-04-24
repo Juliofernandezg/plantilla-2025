@@ -6,7 +6,9 @@ from rpg.sprites.character_sprite import CharacterSprite
 class PlayerSprite(CharacterSprite):
     def __init__(self, sheet_name):
         super().__init__(sheet_name)
+        self.hotbar = []
         self.sound_update = 0
+        self.hotbar = []
         self.footstep_sound = arcade.load_sound(":sounds:footstep00.wav")
 
     def on_update(self, delta_time):
