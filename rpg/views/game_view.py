@@ -615,6 +615,36 @@ class GameView(arcade.View):
             # No doors, scroll normally
             self.scroll_to_player()
 
+        herrero = False
+
+        # Is there as layer named 'blocked_doors'?
+        if "blocked_doors" in map_layers:
+            # Did we hit a door?
+            doors_hit = arcade.check_for_collision_with_list(
+                self.player_sprite, map_layers["blocked_doors"]
+            )
+            # We did!
+            if len(doors_hit) > 0:         # if len(doors_hit) > 0 and (herrero):   FALTA PROGRAMAR INTERACCIÓN
+                try:                       # siendo herrero el booleano de haber interactuado con él
+                    # Grab the info we need
+                    map_name = doors_hit[0].properties["map_name"]
+                    start_x = doors_hit[0].properties["start_x"]
+                    start_y = doors_hit[0].properties["start_y"]
+                except KeyError:
+                    raise KeyError(
+                        "Door objects must have 'map_name', 'start_x', and 'start_y' properties defined."
+                    )
+
+                # Swap to the new map
+                self.switch_map(map_name, start_x, start_y)
+            else:
+                # We didn't hit a door, scroll normally
+                self.scroll_to_player()
+        else:
+            # No doors, scroll normally
+            self.scroll_to_player()
+
+
     def on_key_press(self, key, modifiers):
         """Called whenever a key is pressed."""
 
@@ -683,6 +713,11 @@ class GameView(arcade.View):
                 self.player_sprite.hotbar.append(lookup_item)
             elif "enemy" in sprite.properties:
                 self.window.show_view(self.window.views["battle"])
+            elif "herrero_dungeon" in sprite.properties:
+                print("DIALOGO DE HERRRERO ATRAPADO EN MAZMORRA")
+                herrero = True
+            elif "herrero_smithing" in sprite.properties:
+                print("DIALOGO DE HERRRERO EN LA HERRERIA")
             else:
                 print(
                     "The 'item' property was not set for the sprite. Can't get any items from this."
