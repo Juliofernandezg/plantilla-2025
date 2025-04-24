@@ -17,18 +17,14 @@ from rpg.sprites.player_sprite import PlayerSprite
 
 class DebugMenu(arcade.gui.UIBorder, arcade.gui.UIWindowLikeMixin):
     def __init__(
-            self,
-            *,
-            width: float,
-            height: float,
-            noclip_callback: Callable,
-            hyper_callback: Callable,
-            damage_callback: Callable,
-            heal_callback: Callable,
-            heal_mana_callback: Callable,
-            mana_callback: Callable,
-            exp_callback: Callable,
+        self,
+        *,
+        width: float,
+        height: float,
+        noclip_callback: Callable,
+        hyper_callback: Callable,
     ):
+
         self.off_style = {
             "bg_color": arcade.color.BLACK,
         }
@@ -39,11 +35,6 @@ class DebugMenu(arcade.gui.UIBorder, arcade.gui.UIWindowLikeMixin):
 
         self.setup_noclip(noclip_callback)
         self.setup_hyper(hyper_callback)
-        self.setup_damage(damage_callback)
-        self.setup_heal(heal_callback)
-        self.setup_heal_mana(heal_mana_callback)
-        self.setup_mana(mana_callback)
-        self.setup_exp(exp_callback)
 
         space = 10
 
@@ -74,25 +65,10 @@ class DebugMenu(arcade.gui.UIBorder, arcade.gui.UIWindowLikeMixin):
                             y=0,
                             children=[
                                 arcade.gui.UIPadding(
-                                    child=self.noclip_button, padding=(5, 5, 5, 5)
+                                    child=self.noclip_button, pading=(5, 5, 5, 5)
                                 ),
                                 arcade.gui.UIPadding(
                                     child=self.hyper_button, padding=(5, 5, 5, 5)
-                                ),
-                                arcade.gui.UIPadding(
-                                    child=self.damage_button, padding=(5, 5, 5, 5)
-                                ),
-                                arcade.gui.UIPadding(
-                                    child=self.heal_button, padding=(5, 5, 5, 5)
-                                ),
-                                arcade.gui.UIPadding(
-                                    child=self.heal_mana_button, padding=(5, 5, 5, 5)
-                                ),
-                                arcade.gui.UIPadding(
-                                    child=self.mana_button, padding=(5, 5, 5, 5)
-                                ),
-                                arcade.gui.UIPadding(
-                                    child=self.exp_button, padding=(5, 5, 5, 5)
                                 ),
                             ],
                             vertical=False,
@@ -105,15 +81,21 @@ class DebugMenu(arcade.gui.UIBorder, arcade.gui.UIWindowLikeMixin):
             ),
         )
 
+        # x and y don't seem to actually change where this is created. bug?
+        # TODO: make this not appear at the complete bottom left (top left would be better?)
         super().__init__(border_width=5, child=group)
 
     def setup_noclip(self, callback: Callable):
+        # disable player collision
+
         def toggle(*args):
+            # toggle state on click
             self.noclip_status = True if not self.noclip_status else False
             self.noclip_button._style = (
                 self.off_style if not self.noclip_status else self.on_style
             )
             self.noclip_button.clear()
+
             callback(status=self.noclip_status)
 
         self.noclip_status = False
@@ -123,58 +105,29 @@ class DebugMenu(arcade.gui.UIBorder, arcade.gui.UIWindowLikeMixin):
         self.noclip_button.on_click = toggle  # type: ignore
 
     def setup_hyper(self, callback: Callable):
+        # increase player speed
+
         def toggle(*args):
+            # toggle state on click
             self.hyper_status = True if not self.hyper_status else False
             self.hyper_button._style = (
                 self.off_style if not self.hyper_status else self.on_style
             )
             self.hyper_button.clear()
+
             callback(status=self.hyper_status)
 
         self.hyper_status = False
+
         self.hyper_button = arcade.gui.UIFlatButton(text="hyper", style=self.off_style)
         self.hyper_button.on_click = toggle  # type: ignore
 
-    def setup_damage(self, callback: Callable):
-        def apply_damage(*args):
-            callback(amount=10)
-
-        self.damage_button = arcade.gui.UIFlatButton(text="damage", style=self.off_style)
-        self.damage_button.on_click = apply_damage  # type: ignore
-
-    def setup_heal(self, callback: Callable):
-        def apply_heal(*args):
-            callback(amount=10)
-
-        self.heal_button = arcade.gui.UIFlatButton(text="heal", style=self.off_style)
-        self.heal_button.on_click = apply_heal  # type: ignore
-
-    def setup_heal_mana(self, callback: Callable):
-        def apply_heal_mana(*args):
-            callback(amount=10)
-
-        self.heal_mana_button = arcade.gui.UIFlatButton(text="heal_mana", style=self.off_style)
-        self.heal_mana_button.on_click = apply_heal_mana  # type: ignore
-
-    def setup_mana(self, callback: Callable):
-        def apply_mana(*args):
-            callback(amount=10)
-
-        self.mana_button = arcade.gui.UIFlatButton(text="use mana", style=self.off_style)
-        self.mana_button.on_click = apply_mana  # type: ignore
-
-    def setup_exp(self, callback: Callable):
-        def apply_exp(*args):
-            callback(amount=50)
-
-        self.exp_button = arcade.gui.UIFlatButton(text="gain exp", style=self.off_style)
-        self.exp_button.on_click = apply_exp  # type: ignore
 
 class GameView(arcade.View):
     """
     Main application class.
     """
-
+    player_sprite = None
     def __init__(self, map_list):
         super().__init__()
 
@@ -186,7 +139,6 @@ class GameView(arcade.View):
         self.ui_manager.enable()
 
         # Player sprite
-        self.player_sprite= None
         self.player_sprite_list = None
 
         # Track the current state of what key is pressed
@@ -246,15 +198,15 @@ class GameView(arcade.View):
             arcade.set_background_color(self.my_map.background_color)
 
         map_height = self.my_map.map_size[1]
-        self.player_sprite.center_x = (
+        GameView.player_sprite.center_x = (
             start_x * constants.SPRITE_SIZE + constants.SPRITE_SIZE / 2
         )
-        self.player_sprite.center_y = (
+        GameView.player_sprite.center_y = (
             map_height - start_y
         ) * constants.SPRITE_SIZE - constants.SPRITE_SIZE / 2
         self.scroll_to_player(1.0)
         self.player_sprite_list = arcade.SpriteList()
-        self.player_sprite_list.append(self.player_sprite)
+        self.player_sprite_list.append(GameView.player_sprite)
 
         self.setup_physics()
 
@@ -265,19 +217,19 @@ class GameView(arcade.View):
         if self.noclip_status:
             # make an empty spritelist so the character does not collide with anyting
             self.physics_engine = arcade.PhysicsEngineSimple(
-                self.player_sprite, arcade.SpriteList()
+                GameView.player_sprite, arcade.SpriteList()
             )
         else:
             # use the walls as normal
             self.physics_engine = arcade.PhysicsEngineSimple(
-                self.player_sprite, self.my_map.scene["wall_list"]
+                GameView.player_sprite, self.my_map.scene["wall_list"]
             )
 
     def setup(self):
         """Set up the game variables. Call to re-start the game."""
 
         # Create the player character
-        self.player_sprite = PlayerSprite(":characters:Male/linkillo.png")
+        GameView.player_sprite = PlayerSprite(":characters:Female/Female 18-4.png")
 
         # Spawn the player
         start_x = constants.STARTING_X
@@ -312,34 +264,14 @@ class GameView(arcade.View):
         self.debug = False
 
         self.debug_menu = DebugMenu(
-            width=850,
+            width=450,
             height=200,
             noclip_callback=self.noclip,
             hyper_callback=self.hyper,
-            damage_callback=self.apply_damage,  # Añadir callback para daño
-            heal_callback=self.apply_heal,      # Añadir callback para curar
-            heal_mana_callback=self.apply_heal_mana,# Añadir callback para curar mana
-            mana_callback=self.use_mana,        # Añadir callback para usar mana
-            exp_callback=self.gain_exp          # Añadir callback para ganar experiencia
         )
 
         self.original_movement_speed = constants.MOVEMENT_SPEED
         self.noclip_status = False
-
-    def apply_damage(self, amount):
-        self.player_sprite.take_damage(amount)
-
-    def apply_heal(self, amount):
-        self.player_sprite.heal(amount)
-
-    def apply_heal_mana(self, amount):
-        self.player_sprite.heal_mana(amount)
-
-    def use_mana(self, amount):
-        self.player_sprite.use_mana(amount)
-
-    def gain_exp(self, amount):
-        self.player_sprite.gain_exp(amount)
 
     def enable_debug_menu(self):
         self.ui_manager.add(self.debug_menu)
@@ -381,8 +313,8 @@ class GameView(arcade.View):
                     x , x + field_width - 15, y + 25 , y - 25 , arcade.color.BLACK, 2
                 )
 
-            if len(self.player_sprite.hotbar) > i:
-                item_name = self.player_sprite.hotbar[i]["short_name"]
+            if len(GameView.player_sprite.hotbar) > i:
+                item_name = GameView.player_sprite.hotbar[i]["short_name"]
             else:
                 item_name = ""
 
@@ -453,21 +385,12 @@ class GameView(arcade.View):
         # draw GUI
         self.ui_manager.draw()
 
-        # Draw the health bar
-        self.player_sprite.draw_health_bar()
-
-        # Draw the mana bar
-        self.player_sprite.draw_mana_bar()
-
-        # Draw the exp bar
-        self.player_sprite.draw_exp_bar()
-
     def scroll_to_player(self, speed=constants.CAMERA_SPEED):
         """Manage Scrolling"""
 
         vector = Vec2(
-            self.player_sprite.center_x - self.window.width / 2,
-            self.player_sprite.center_y - self.window.height / 2,
+            GameView.player_sprite.center_x - self.window.width / 2,
+            GameView.player_sprite.center_y - self.window.height / 2,
         )
         self.camera_sprites.move_to(vector, speed)
 
@@ -483,8 +406,8 @@ class GameView(arcade.View):
         """
 
         # Calculate speed based on the keys pressed
-        self.player_sprite.change_x = 0
-        self.player_sprite.change_y = 0
+        GameView.player_sprite.change_x = 0
+        GameView.player_sprite.change_y = 0
 
         MOVING_UP = (
             self.up_pressed
@@ -543,32 +466,32 @@ class GameView(arcade.View):
         )
 
         if MOVING_UP:
-            self.player_sprite.change_y = constants.MOVEMENT_SPEED
+            GameView.player_sprite.change_y = constants.MOVEMENT_SPEED
 
         if MOVING_DOWN:
-            self.player_sprite.change_y = -constants.MOVEMENT_SPEED
+            GameView.player_sprite.change_y = -constants.MOVEMENT_SPEED
 
         if MOVING_LEFT:
-            self.player_sprite.change_x = -constants.MOVEMENT_SPEED
+            GameView.player_sprite.change_x = -constants.MOVEMENT_SPEED
 
         if MOVING_RIGHT:
-            self.player_sprite.change_x = constants.MOVEMENT_SPEED
+            GameView.player_sprite.change_x = constants.MOVEMENT_SPEED
 
         if MOVING_UP_LEFT:
-            self.player_sprite.change_y = constants.MOVEMENT_SPEED / 1.5
-            self.player_sprite.change_x = -constants.MOVEMENT_SPEED / 1.5
+            GameView.player_sprite.change_y = constants.MOVEMENT_SPEED / 1.5
+            GameView.player_sprite.change_x = -constants.MOVEMENT_SPEED / 1.5
 
         if MOVING_UP_RIGHT:
-            self.player_sprite.change_y = constants.MOVEMENT_SPEED / 1.5
-            self.player_sprite.change_x = constants.MOVEMENT_SPEED / 1.5
+            GameView.player_sprite.change_y = constants.MOVEMENT_SPEED / 1.5
+            GameView.player_sprite.change_x = constants.MOVEMENT_SPEED / 1.5
 
         if MOVING_DOWN_LEFT:
-            self.player_sprite.change_y = -constants.MOVEMENT_SPEED / 1.5
-            self.player_sprite.change_x = -constants.MOVEMENT_SPEED / 1.5
+            GameView.player_sprite.change_y = -constants.MOVEMENT_SPEED / 1.5
+            GameView.player_sprite.change_x = -constants.MOVEMENT_SPEED / 1.5
 
         if MOVING_DOWN_RIGHT:
-            self.player_sprite.change_y = -constants.MOVEMENT_SPEED / 1.5
-            self.player_sprite.change_x = constants.MOVEMENT_SPEED / 1.5
+            GameView.player_sprite.change_y = -constants.MOVEMENT_SPEED / 1.5
+            GameView.player_sprite.change_x = constants.MOVEMENT_SPEED / 1.5
 
         # Call update to move the sprite
         self.physics_engine.update()
@@ -576,7 +499,7 @@ class GameView(arcade.View):
         # Update player animation
         self.player_sprite_list.on_update(delta_time)
 
-        self.player_light.position = self.player_sprite.position
+        self.player_light.position = GameView.player_sprite.position
 
         # Update the characters
         try:
@@ -592,7 +515,7 @@ class GameView(arcade.View):
         if "doors" in map_layers:
             # Did we hit a door?
             doors_hit = arcade.check_for_collision_with_list(
-                self.player_sprite, map_layers["doors"]
+                GameView.player_sprite, map_layers["doors"]
             )
             # We did!
             if len(doors_hit) > 0:
@@ -670,7 +593,7 @@ class GameView(arcade.View):
 
         searchable_sprites = map_layers["searchable"]
         sprites_in_range = arcade.check_for_collision_with_list(
-            self.player_sprite, searchable_sprites
+            GameView.player_sprite, searchable_sprites
         )
         print(f"Found {len(sprites_in_range)} searchable sprite(s) in range.")
         for sprite in sprites_in_range:
@@ -680,7 +603,7 @@ class GameView(arcade.View):
                 )
                 sprite.remove_from_sprite_lists()
                 lookup_item = self.item_dictionary[sprite.properties["item"]]
-                self.player_sprite.hotbar.append(lookup_item)
+                GameView.player_sprite.hotbar.append(lookup_item)
             elif "enemy" in sprite.properties:
                 self.window.show_view(self.window.views["battle"])
             else:
@@ -707,7 +630,7 @@ class GameView(arcade.View):
     def on_mouse_press(self, x, y, button, key_modifiers):
         """Called when the user presses a mouse button."""
         if button == arcade.MOUSE_BUTTON_RIGHT:
-            self.player_sprite.destination_point = x, y
+            GameView.player_sprite.destination_point = x, y
 
     def on_mouse_release(self, x, y, button, key_modifiers):
         """Called when a user releases a mouse button."""
