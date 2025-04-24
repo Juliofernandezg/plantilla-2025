@@ -28,24 +28,28 @@ class MainMenuView(arcade.View):
         # Create a vertical BoxGroup to align buttons
         self.v_box = arcade.gui.UIBoxLayout()
 
-        resume_button = arcade.gui.UIFlatButton(text="Resume Game", width=250, style=button_style)
-        self.v_box.add(resume_button.with_space_around(bottom=20))
+        resume_button = arcade.gui.UIFlatButton(text="Resume Game", width=350, style=button_style)
+        self.v_box.add(resume_button.with_space_around(bottom=40))
         resume_button.on_click = self.on_click_resume
 
-        settings_button = arcade.gui.UIFlatButton(text="Settings", width=250, style=button_style)
-        self.v_box.add(settings_button.with_space_around(bottom=20))
+        settings_button = arcade.gui.UIFlatButton(text="Settings", width=350, style=button_style)
+        self.v_box.add(settings_button.with_space_around(bottom=40))
         settings_button.on_click = self.on_click_settings
 
-        battle_button = arcade.gui.UIFlatButton(text="Battle Screen", width=250, style=button_style)
-        self.v_box.add(battle_button.with_space_around(bottom=20))
+        controls_button = arcade.gui.UIFlatButton(text="Controls", width=350, style=button_style)
+        self.v_box.add(controls_button.with_space_around(bottom=40))
+        controls_button.on_click = self.on_click_controls
+
+        battle_button = arcade.gui.UIFlatButton(text="Battle Screen", width=350, style=button_style)
+        self.v_box.add(battle_button.with_space_around(bottom=40))
         battle_button.on_click = self.on_click_battle
 
-        new_game_button = arcade.gui.UIFlatButton(text="New Game", width=250, style=button_style)
-        self.v_box.add(new_game_button.with_space_around(bottom=20))
+        new_game_button = arcade.gui.UIFlatButton(text="New Game", width=350, style=button_style)
+        self.v_box.add(new_game_button.with_space_around(bottom=40))
         new_game_button.on_click = self.on_click_new_game
 
-        quit_button = arcade.gui.UIFlatButton(text="Quit", width=250, style=button_style)
-        self.v_box.add(quit_button.with_space_around(bottom=20))
+        quit_button = arcade.gui.UIFlatButton(text="Quit", width=350, style=button_style)
+        self.v_box.add(quit_button.with_space_around(bottom=40))
         quit_button.on_click = self.on_click_quit
         # Create a widget to hold the v_box widget, that will center the buttons
         self.manager.add(
@@ -78,6 +82,10 @@ class MainMenuView(arcade.View):
     def on_click_settings(self, event):
         print("show settings view")
         self.window.show_view(self.window.views["settings"])
+
+    def on_click_controls(self, event):
+            print("show controls view")
+            self.window.show_view(self.window.views["controls"])
 
     def on_click_battle(self, event):
         print("battle screen")

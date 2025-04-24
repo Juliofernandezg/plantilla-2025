@@ -9,6 +9,7 @@ from rpg.views.game_view import GameView
 from rpg.views.inventory_view import InventoryView
 from rpg.views.main_menu_view import MainMenuView
 from rpg.views.settings_view import SettingsView
+from rpg.views.controls_view import ControlsView
 
 
 class LoadingView(arcade.View):
@@ -59,6 +60,8 @@ class LoadingView(arcade.View):
                 self.window.views["main_menu"] = MainMenuView()
                 self.window.views["settings"] = SettingsView()
                 self.window.views["settings"].setup()
+                self.window.views["controls"] = ControlsView()
+                self.window.views["controls"].setup()
                 self.window.views["battle"] = BattleView()
                 self.window.views["battle"].setup()
 
