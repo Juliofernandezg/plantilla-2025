@@ -9,6 +9,7 @@ from rpg.views.game_view import GameView
 from rpg.views.inventory_view import InventoryView
 from rpg.views.main_menu_view import MainMenuView
 from rpg.views.settings_view import SettingsView
+from rpg.views.controls_view import ControlsView
 
 
 class LoadingView(arcade.View):
@@ -22,7 +23,7 @@ class LoadingView(arcade.View):
     def on_draw(self):
         arcade.start_render()
         arcade.draw_text(
-            "Loading...",
+            "Loading game...",
             self.window.width / 2,
             self.window.height / 2,
             arcade.color.ALLOY_ORANGE,
@@ -37,11 +38,11 @@ class LoadingView(arcade.View):
             current_amount=self.progress,
             max_amount=100,
             center_x=self.window.width / 2,
-            center_y=20,
+            center_y=50,
             width=self.window.width,
-            height=10,
-            color_a=arcade.color.BLACK,
-            color_b=arcade.color.WHITE,
+            height=20,
+            color_a=arcade.color.ALMOND,
+            color_b=arcade.color.ALLOY_ORANGE,
         )
 
     def setup(self):
@@ -59,6 +60,8 @@ class LoadingView(arcade.View):
                 self.window.views["main_menu"] = MainMenuView()
                 self.window.views["settings"] = SettingsView()
                 self.window.views["settings"].setup()
+                self.window.views["controls"] = ControlsView()
+                self.window.views["controls"].setup()
                 self.window.views["battle"] = BattleView()
                 self.window.views["battle"].setup()
 
