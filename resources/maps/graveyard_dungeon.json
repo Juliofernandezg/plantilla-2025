@@ -5,7 +5,7 @@
  "layers":[
         {
          "compression":"zlib",
-         "data":"eJytlQEKwzAIRQ3rTXqU7VKF7hy77ghZiFj9fsuET4j0RU2Uigx7K30eVwnw\/5PvPruyvGUq8RGrtbexPtuVR0J5ZTzKq5o\/Gz\/yecbed8Zn7434O7VHcZiz5jeWR2zU13dyZ+KfMsTUb3Podsg64\/ztmfvz+EPx7Fxbfs6erhWZ5VH\/eLI82z\/6\/vVZVT56Q+\/+pm+TJaavu2k\/4qM+0ftXW2JmwvLZLGTxq0Jm57Vqk83+i1l8r+691fhIX\/Cy5X0=",
+         "data":"eJy1lQ0KhEAIhY32Jl1lLxW05+i6MdQw8tKnRis8YoRv\/BklkdN+Svt8lxD\/m3zz4TfLI1OJz1gmzTOxvCKe5fWv\/D2fZdl+R3z03ox\/UrsXp3IX8oz15vpJ7p1h8Tc5lckfc2i2yrhju86Z\/ln8qvjsXiO\/TPdamSHP5scS8tn50f3Xd1V57w2t\/nXfR4Yyc91M+xnvzYk+f6ehzE4gH+1CFL8qZrivVets9F+M4lt1913I8p4O5r3mZg==",
          "encoding":"base64",
          "height":32,
          "id":9,
@@ -33,7 +33,7 @@
         }, 
         {
          "compression":"zlib",
-         "data":"eJxjYMAOklhwSECBPiOmmDxQDw8rfn349N9lhtDfCNiNC7wF6ncioEYej9nk2ksOgPmVXPCWQv30BPjCHBnsGEJ+UkRL58T6ER9AThPuZOjHliZ0yHYNBLhCzQDlDWSzsKXf2zjsh2HkvEls+oXpJReQqn8PWjwSqx+97ACVg6541ONLL\/xALIDERzcHWz6BibkBsTgQS+CxGwTO4gh\/FySMD6CnT1LLM3T1pJZn9Cz\/CNUptATY0kk6Ff0OAAC1G0U=",
+         "data":"eJxjYCAP6DNiismzUKb\/LjOZjoGCt0D9TgTUkOJGWgJq+BUduFJmJM0AsWG+g8IwGUhASrrCFU\/IacKdDDdgSxM6ZJiDDJDdimwWtvR7G4\/9IBo5b2JzKy0Apf6nVD8ugC+98AOxABKflHztBsTiQCxBlqsYGFyQMD6Anj5JLc\/Q1RObHmBhQa\/0M9AAWzpJp6LfAbN3Euk=",
          "encoding":"base64",
          "height":32,
          "id":5,
@@ -504,6 +504,29 @@
                  "width":0,
                  "x":254.666666666667,
                  "y":742
+                }, 
+                {
+                 "height":0,
+                 "id":54,
+                 "name":"",
+                 "point":true,
+                 "properties":[
+                        {
+                         "name":"movement",
+                         "type":"string",
+                         "value":"random"
+                        }, 
+                        {
+                         "name":"type",
+                         "type":"string",
+                         "value":"herrero_dungeon"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":393.333333333333,
+                 "y":194.666666666667
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -600,12 +623,12 @@
                         {
                          "name":"start_x",
                          "type":"int",
-                         "value":10
+                         "value":17
                         }, 
                         {
                          "name":"start_y",
                          "type":"int",
-                         "value":26
+                         "value":32
                         }],
                  "rotation":0,
                  "type":"",
@@ -649,7 +672,7 @@
          "y":0
         }],
  "nextlayerid":11,
- "nextobjectid":53,
+ "nextobjectid":55,
  "orientation":"orthogonal",
  "properties":[
         {
