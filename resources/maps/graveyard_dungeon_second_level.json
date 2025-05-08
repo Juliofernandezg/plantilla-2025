@@ -19,7 +19,7 @@
         }, 
         {
          "compression":"zlib",
-         "data":"eJztlkEKwjAQRRPc9QhuPZx36b6brvVAUkVarV7FDDI4HYImw6SxJR+GNmnnTx98aDpjTJ+grl+enU28OsE3wJyTYJZPOztdo+9h89nDe8lMaY8Wn88bVBO+esF8mB\/MHvq2hK9dMB\/6DGzdEL5mBXx8vZZ8cp+beWeV5xNyfFfwD+1JxYd7R8IH99J5\/8a3dywPd72QvdHVU8k\/tEeLD\/LI\/6++HGJuY5WbL3buXD2FT1+FT68nB9\/w+xWVnlx8oMrGlUQ5+eZQ4UunrY0riYDNd+5IXfTMFqpRMAfOTy8rqqEd",
+         "data":"eJztllEKwjAMhjt88whe0LvsfS971gPJFHE6vYoNEgxhzCYkqxv9IaztmmQf\/LB0IYSbQ1wn3p2DXJ3iG6DPSdErRVj3sPme4VrTU5vjzVcTvnrBfOgf9B7WbQlfu2A+rNOzfUP4mhXw8f1a\/Mnr3MPHq9yf4OOHQf3UHC8+PDsSPlhr+\/0b3z6yPOPzQs6GGC+j+qk5VnzgR\/5\/HfMh+laq3HzSvnPlFD57FT67nBx8\/e8rJjm5+EDbShYa5eSbQ4XPT7tKFhoB29jc4R10ZkvVoOgD89Mb3x6g+Q==",
          "encoding":"base64",
          "height":20,
          "id":2,
@@ -328,7 +328,7 @@
          "value":"#ff000000"
         }],
  "renderorder":"right-down",
- "tiledversion":"1.8.4",
+ "tiledversion":"1.11.2",
  "tileheight":32,
  "tilesets":[
         {
@@ -341,6 +341,6 @@
         }],
  "tilewidth":32,
  "type":"map",
- "version":"1.8",
+ "version":"1.10",
  "width":56
 }
