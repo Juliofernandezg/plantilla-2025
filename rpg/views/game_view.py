@@ -710,8 +710,11 @@ class GameView(arcade.View):
                 sprite.remove_from_sprite_lists()
                 lookup_item = self.item_dictionary[sprite.properties["item"]]
                 GameView.player_sprite.hotbar.append(lookup_item)
-            elif "enemy" in sprite.properties:
+            elif "type" in sprite.properties:
                 self.window.show_view(self.window.views["battle"])
+                self.message_box = MessageBox(
+                    self, f"Found: {sprite.properties['type']}"
+                )
             elif "herrero_dungeon" in sprite.properties:
                 print("DIALOGO DE HERRRERO ATRAPADO EN MAZMORRA")
                 herrero = True

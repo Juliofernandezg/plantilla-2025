@@ -19,6 +19,17 @@
         }, 
         {
          "draworder":"topdown",
+         "id":7,
+         "name":"characters",
+         "objects":[],
+         "opacity":1,
+         "type":"objectgroup",
+         "visible":true,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "draworder":"topdown",
          "id":4,
          "name":"lights",
          "objects":[
@@ -348,7 +359,7 @@
          "x":0,
          "y":0
         }],
- "nextlayerid":6,
+ "nextlayerid":8,
  "nextobjectid":15,
  "orientation":"orthogonal",
  "properties":[
@@ -358,7 +369,7 @@
          "value":"#ff000000"
         }],
  "renderorder":"right-down",
- "tiledversion":"1.8.4",
+ "tiledversion":"1.11.2",
  "tileheight":32,
  "tilesets":[
         {
@@ -367,6 +378,6 @@
         }],
  "tilewidth":32,
  "type":"map",
- "version":"1.8",
+ "version":"1.10",
  "width":100
 }
