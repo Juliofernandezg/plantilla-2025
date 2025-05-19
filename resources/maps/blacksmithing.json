@@ -23,6 +23,7 @@
          "encoding":"base64",
          "height":12,
          "id":3,
+         "locked":true,
          "name":"walls_blocking",
          "opacity":1,
          "type":"tilelayer",
@@ -42,6 +43,28 @@
          "type":"tilelayer",
          "visible":true,
          "width":18,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "draworder":"topdown",
+         "id":11,
+         "name":"Personajes",
+         "objects":[
+                {
+                 "height":0,
+                 "id":39,
+                 "name":"Herrero",
+                 "rotation":0,
+                 "type":"Personaje",
+                 "visible":true,
+                 "width":0,
+                 "x":409.886501610093,
+                 "y":147.778071055271
+                }],
+         "opacity":1,
+         "type":"objectgroup",
+         "visible":true,
          "x":0,
          "y":0
         }, 
@@ -316,8 +339,8 @@
          "x":0,
          "y":0
         }],
- "nextlayerid":11,
- "nextobjectid":38,
+ "nextlayerid":12,
+ "nextobjectid":40,
  "orientation":"orthogonal",
  "renderorder":"left-up",
  "tiledversion":"1.11.2",
