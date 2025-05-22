@@ -5,7 +5,7 @@
  "layers":[
         {
          "compression":"zlib",
-         "data":"eJzt1LENACAIRUF0FVZw\/9mcgUaIOZLX\/2vIFZENVa9jIx8fH9\/E+Pgmx8c3OT6+yZ1dq3svH99Pvlf\/5QKyp4Xh",
+         "data":"eJzNUkEKwCAM6y5+xAfu\/7exg1CczjTNZEJQtG1Sm3qY1Q7FnndMzF8Q1XrHr3Jm7yhXNj\/T647ZoTpaHKNplJP9f1XvUR0qPYzXoz2xHF97M\/Lvah\/4OmbY3nOzWoqru1ojrtkZRYRXiRPA25xYPzO8O\/v1fSn8rZ4v6vtWd7UrOdF3FBcMflE3",
          "encoding":"base64",
          "height":20,
          "id":1,
@@ -13,13 +13,402 @@
          "opacity":1,
          "type":"tilelayer",
          "visible":true,
-         "width":56,
+         "width":30,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "draworder":"topdown",
+         "id":9,
+         "name":"characters",
+         "objects":[
+                {
+                 "height":0,
+                 "id":32,
+                 "name":"",
+                 "polygon":[
+                        {
+                         "x":-412.999666666667,
+                         "y":-31.0003333333333
+                        }, 
+                        {
+                         "x":-443.878666666667,
+                         "y":-124.907666666667
+                        }, 
+                        {
+                         "x":-8.03399999999999,
+                         "y":-171.858333333333
+                        }, 
+                        {
+                         "x":142.477,
+                         "y":-66.809
+                        }, 
+                        {
+                         "x":-30.3443333333333,
+                         "y":-91.0933333333333
+                        }, 
+                        {
+                         "x":-228.499333333333,
+                         "y":-118.043333333333
+                        }],
+                 "properties":[
+                        {
+                         "name":"radius",
+                         "type":"int",
+                         "value":0
+                        }, 
+                        {
+                         "name":"type",
+                         "type":"string",
+                         "value":"demon"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":486.666666666667,
+                 "y":226.666666666667
+                }, 
+                {
+                 "height":0,
+                 "id":33,
+                 "name":"",
+                 "polygon":[
+                        {
+                         "x":-324.431417091323,
+                         "y":-106.65550095813
+                        }, 
+                        {
+                         "x":-225.403297832716,
+                         "y":-208.846534291463
+                        }, 
+                        {
+                         "x":-180.096608758161,
+                         "y":-98.6915251451761
+                        }, 
+                        {
+                         "x":-105.456586350272,
+                         "y":-155.203182665555
+                        }, 
+                        {
+                         "x":-102.843208201161,
+                         "y":7.77350229368597
+                        }, 
+                        {
+                         "x":-319.074843219478,
+                         "y":47.5813993597084
+                        }, 
+                        {
+                         "x":-249.086463488734,
+                         "y":-42.2037174658776
+                        }],
+                 "properties":[
+                        {
+                         "name":"radius",
+                         "type":"int",
+                         "value":0
+                        }, 
+                        {
+                         "name":"type",
+                         "type":"string",
+                         "value":"demon"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":378.653541534494,
+                 "y":543.65520095813
+                }, 
+                {
+                 "height":0,
+                 "id":34,
+                 "name":"",
+                 "polygon":[
+                        {
+                         "x":19.569,
+                         "y":-63.9893333333333
+                        }, 
+                        {
+                         "x":34.597,
+                         "y":-123.513666666667
+                        }, 
+                        {
+                         "x":-113.430333333333,
+                         "y":-41.3581666666667
+                        }, 
+                        {
+                         "x":63.8763333333334,
+                         "y":102.130333333333
+                        }, 
+                        {
+                         "x":-93.5096666666667,
+                         "y":134.440166666667
+                        }, 
+                        {
+                         "x":80.9250000000001,
+                         "y":-19.0852666666667
+                        }, 
+                        {
+                         "x":-101.086,
+                         "y":36.4629666666667
+                        }],
+                 "properties":[
+                        {
+                         "name":"radius",
+                         "type":"int",
+                         "value":0
+                        }, 
+                        {
+                         "name":"type",
+                         "type":"string",
+                         "value":"demon2"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":149.666666666667,
+                 "y":337
+                }, 
+                {
+                 "height":0,
+                 "id":35,
+                 "name":"",
+                 "polygon":[
+                        {
+                         "x":-120.431,
+                         "y":127.344
+                        }, 
+                        {
+                         "x":18.2636666666667,
+                         "y":185.153
+                        }, 
+                        {
+                         "x":-165.097,
+                         "y":204.3085
+                        }, 
+                        {
+                         "x":-6.45699999999999,
+                         "y":276.797
+                        }, 
+                        {
+                         "x":-26.843,
+                         "y":53.7735
+                        }, 
+                        {
+                         "x":-192.075,
+                         "y":314.5814
+                        }, 
+                        {
+                         "x":-183.086,
+                         "y":123.7963
+                        }],
+                 "properties":[
+                        {
+                         "name":"radius",
+                         "type":"int",
+                         "value":0
+                        }, 
+                        {
+                         "name":"type",
+                         "type":"string",
+                         "value":"demon2"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":885.333333333333,
+                 "y":266.666666666667
+                }, 
+                {
+                 "height":0,
+                 "id":37,
+                 "name":"",
+                 "polygon":[
+                        {
+                         "x":-188.736,
+                         "y":-279.847
+                        }, 
+                        {
+                         "x":-185.43,
+                         "y":-178.692
+                        }, 
+                        {
+                         "x":-476.790333333333,
+                         "y":-179.203
+                        }, 
+                        {
+                         "x":-474.763333333333,
+                         "y":-278.691666666667
+                        }],
+                 "properties":[
+                        {
+                         "name":"radius",
+                         "type":"int",
+                         "value":0
+                        }, 
+                        {
+                         "name":"type",
+                         "type":"string",
+                         "value":"demon2"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":839.333333333333,
+                 "y":488
+                }, 
+                {
+                 "height":0,
+                 "id":38,
+                 "name":"",
+                 "polygon":[
+                        {
+                         "x":-122.736,
+                         "y":262.333346002525
+                        }, 
+                        {
+                         "x":-123.43,
+                         "y":204.929946585937
+                        }, 
+                        {
+                         "x":232.21,
+                         "y":206.977346002525
+                        }, 
+                        {
+                         "x":233.237,
+                         "y":268.089073429016
+                        }],
+                 "properties":[
+                        {
+                         "name":"radius",
+                         "type":"int",
+                         "value":0
+                        }, 
+                        {
+                         "name":"type",
+                         "type":"string",
+                         "value":"demon"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":466.819653997475,
+                 "y":23.3333333333333
+                }, 
+                {
+                 "height":0,
+                 "id":39,
+                 "name":"",
+                 "polygon":[
+                        {
+                         "x":166,
+                         "y":-75.0003
+                        }, 
+                        {
+                         "x":-10.879,
+                         "y":-105.908
+                        }, 
+                        {
+                         "x":63.966,
+                         "y":-150.858
+                        }, 
+                        {
+                         "x":-411.523,
+                         "y":-150.809
+                        }, 
+                        {
+                         "x":-248.3443,
+                         "y":-111.0933
+                        }, 
+                        {
+                         "x":-460.499,
+                         "y":-85.043
+                        }],
+                 "properties":[
+                        {
+                         "name":"radius",
+                         "type":"int",
+                         "value":0
+                        }, 
+                        {
+                         "name":"type",
+                         "type":"string",
+                         "value":"demon"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":523,
+                 "y":212.333333333333
+                }, 
+                {
+                 "height":0,
+                 "id":41,
+                 "name":"",
+                 "polygon":[
+                        {
+                         "x":19.569,
+                         "y":-63.9893
+                        }, 
+                        {
+                         "x":34.597,
+                         "y":-123.514
+                        }, 
+                        {
+                         "x":-113.43,
+                         "y":-41.3582
+                        }, 
+                        {
+                         "x":63.8763,
+                         "y":102.13
+                        }, 
+                        {
+                         "x":-93.5097,
+                         "y":134.44
+                        }, 
+                        {
+                         "x":80.925,
+                         "y":-19.0853
+                        }, 
+                        {
+                         "x":-101.086,
+                         "y":36.463
+                        }],
+                 "properties":[
+                        {
+                         "name":"radius",
+                         "type":"int",
+                         "value":0
+                        }, 
+                        {
+                         "name":"type",
+                         "type":"string",
+                         "value":"demon2"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":809,
+                 "y":472.333333333333
+                }],
+         "offsetx":0,
+         "offsety":-1.33333333333333,
+         "opacity":1,
+         "type":"objectgroup",
+         "visible":true,
          "x":0,
          "y":0
         }, 
         {
          "compression":"zlib",
-         "data":"eJztllEKwjAMhjt88whe0LvsfS971gPJFHE6vYoNEgxhzCYkqxv9IaztmmQf\/LB0IYSbQ1wn3p2DXJ3iG6DPSdErRVj3sPme4VrTU5vjzVcTvnrBfOgf9B7WbQlfu2A+rNOzfUP4mhXw8f1a\/Mnr3MPHq9yf4OOHQf3UHC8+PDsSPlhr+\/0b3z6yPOPzQs6GGC+j+qk5VnzgR\/5\/HfMh+laq3HzSvnPlFD57FT67nBx8\/e8rJjm5+EDbShYa5eSbQ4XPT7tKFhoB29jc4R10ZkvVoOgD89Mb3x6g+Q==",
+         "data":"eJy7zMDAcJMG+DoSGwZg\/CtAfBGIzzIzUB1cJCCHT37UXvrYe5mBuDR0FUnPXajYfQrspSQsbjNA0i06APnlDg3txaX\/Ih45dDXpZOazewyYcQAL\/8HoX1AcYSt\/iC2n7uAwE1Zeket2ctWRkn9vUVEdKfZyMjIwcBGBuRmpay81wVCwVxIYflJEYGkqh\/MlKqqD2fuJQHkkz0L9fIRcNuDD16ioDlSeAAD3YIGM",
          "encoding":"base64",
          "height":20,
          "id":2,
@@ -27,7 +416,35 @@
          "opacity":1,
          "type":"tilelayer",
          "visible":true,
-         "width":56,
+         "width":30,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "compression":"zlib",
+         "data":"eJxjYKAduMtMnBi1wVssdmATGwUjD8QOUDrIYR4Yu3MGyL+ZQHuzB0Geg5U3uGhaAVh5g4seBaNgKIHRfEQeAADgwBSZ",
+         "encoding":"base64",
+         "height":20,
+         "id":8,
+         "name":"decorative_blocking",
+         "opacity":1,
+         "type":"tilelayer",
+         "visible":true,
+         "width":30,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "compression":"zlib",
+         "data":"eJxjYKA9CGFkYAhjpINFaCAGaGccmfa6EpB3Is9YqumnBBgPoN3UBITiiB+IBejhEDQgDsQSRKp1pLLd1DYPBihJM0tppJYYcJcZP00r8JYZPw0CtIorUgEl7uAElq9cRGBuKpf\/gkDzhIjAwsPEXkmgeVJEYGk0e6lV1tMyH+Erx4nJR4MZAADvCBe1",
+         "encoding":"base64",
+         "height":20,
+         "id":4,
+         "name":"decorative_nonblocking",
+         "opacity":1,
+         "type":"tilelayer",
+         "visible":true,
+         "width":30,
          "x":0,
          "y":0
         }, 
@@ -38,187 +455,233 @@
          "objects":[
                 {
                  "height":0,
-                 "id":10,
+                 "id":21,
                  "name":"",
                  "point":true,
                  "properties":[
                         {
                          "name":"color",
                          "type":"color",
-                         "value":"#ffc9d304"
+                         "value":"#ffcf8d1c"
                         }, 
                         {
                          "name":"radius",
                          "type":"int",
-                         "value":75
+                         "value":60
                         }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":781.077399380805,
-                 "y":145.040247678019
+                 "x":399,
+                 "y":363
                 }, 
                 {
                  "height":0,
-                 "id":17,
+                 "id":22,
                  "name":"",
                  "point":true,
                  "properties":[
                         {
                          "name":"color",
                          "type":"color",
-                         "value":"#ffc9d304"
+                         "value":"#ffcf8d1c"
                         }, 
                         {
                          "name":"radius",
                          "type":"int",
-                         "value":75
+                         "value":60
                         }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":784.643962848297,
-                 "y":238.959752321981
+                 "x":464,
+                 "y":363
                 }, 
                 {
                  "height":0,
-                 "id":14,
+                 "id":23,
                  "name":"",
                  "point":true,
                  "properties":[
                         {
                          "name":"color",
                          "type":"color",
-                         "value":"#ffc9d304"
+                         "value":"#ffcf8d1c"
                         }, 
                         {
                          "name":"radius",
                          "type":"int",
-                         "value":75
+                         "value":60
                         }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":880.941176470588,
-                 "y":143.851393188855
+                 "x":528,
+                 "y":363
                 }, 
                 {
                  "height":0,
-                 "id":18,
+                 "id":24,
                  "name":"",
                  "point":true,
                  "properties":[
                         {
                          "name":"color",
                          "type":"color",
-                         "value":"#ffc9d304"
+                         "value":"#ffcf8d1c"
                         }, 
                         {
                          "name":"radius",
                          "type":"int",
-                         "value":75
+                         "value":60
                         }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":880.941176470588,
-                 "y":241.33746130031
+                 "x":591,
+                 "y":364
                 }, 
                 {
                  "height":0,
-                 "id":15,
+                 "id":25,
                  "name":"",
                  "point":true,
                  "properties":[
                         {
                          "name":"color",
                          "type":"color",
-                         "value":"#ffc9d304"
+                         "value":"#ffcf8d1c"
                         }, 
                         {
                          "name":"radius",
                          "type":"int",
-                         "value":75
+                         "value":60
                         }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":879.752321981424,
-                 "y":60.6315789473684
+                 "x":399,
+                 "y":587
                 }, 
                 {
                  "height":0,
-                 "id":16,
+                 "id":26,
                  "name":"",
                  "point":true,
                  "properties":[
                         {
                          "name":"color",
                          "type":"color",
-                         "value":"#ffc9d304"
+                         "value":"#ffcf8d1c"
                         }, 
                         {
                          "name":"radius",
                          "type":"int",
-                         "value":75
+                         "value":60
                         }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":782.266253869969,
-                 "y":51.1207430340557
+                 "x":463,
+                 "y":588
                 }, 
                 {
                  "height":0,
-                 "id":12,
+                 "id":27,
                  "name":"",
                  "point":true,
                  "properties":[
                         {
                          "name":"color",
                          "type":"color",
-                         "value":"#ffaa0a1a"
+                         "value":"#ffcf8d1c"
                         }, 
                         {
                          "name":"radius",
                          "type":"int",
-                         "value":150
+                         "value":60
                         }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":1248.29721362229,
-                 "y":567.083591331269
+                 "x":528,
+                 "y":587
                 }, 
                 {
                  "height":0,
-                 "id":13,
+                 "id":28,
                  "name":"",
                  "point":true,
                  "properties":[
                         {
                          "name":"color",
                          "type":"color",
-                         "value":"#ffaa0a1a"
+                         "value":"#ffcf8d1c"
                         }, 
                         {
                          "name":"radius",
                          "type":"int",
-                         "value":150
+                         "value":60
                         }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":1087.80185758514,
-                 "y":568.272445820433
+                 "x":592,
+                 "y":586
+                }, 
+                {
+                 "height":0,
+                 "id":29,
+                 "name":"",
+                 "point":true,
+                 "properties":[
+                        {
+                         "name":"color",
+                         "type":"color",
+                         "value":"#ffcf8d1c"
+                        }, 
+                        {
+                         "name":"radius",
+                         "type":"int",
+                         "value":60
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":752,
+                 "y":44
+                }, 
+                {
+                 "height":0,
+                 "id":30,
+                 "name":"",
+                 "point":true,
+                 "properties":[
+                        {
+                         "name":"color",
+                         "type":"color",
+                         "value":"#ffcf8d1c"
+                        }, 
+                        {
+                         "name":"radius",
+                         "type":"int",
+                         "value":60
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":912,
+                 "y":42
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -284,26 +747,12 @@
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":25.6666666666667,
-                 "y":62.3333333333333
+                 "x":670,
+                 "y":70
                 }],
          "opacity":1,
          "type":"objectgroup",
          "visible":true,
-         "x":0,
-         "y":0
-        }, 
-        {
-         "compression":"zlib",
-         "data":"eJzt1ysOgEAMBNA2VYACFHAtgiLcCIkDB\/ekydoKVvDZMi9pMnJGluheqxD1TDRwyN7sumnUbROHDGmZxc5eLGJnSMMmdvbiEDsDAAD8Taa\/RB55Bb\/d+rpSu1aRV2PfZzTatY28LqF9TzoB2VgM\/Q==",
-         "encoding":"base64",
-         "height":20,
-         "id":4,
-         "name":"decorative_nonblocking",
-         "opacity":1,
-         "type":"tilelayer",
-         "visible":true,
-         "width":56,
          "x":0,
          "y":0
         }, 
@@ -318,8 +767,8 @@
          "x":0,
          "y":0
         }],
- "nextlayerid":8,
- "nextobjectid":21,
+ "nextlayerid":10,
+ "nextobjectid":42,
  "orientation":"orthogonal",
  "properties":[
         {
@@ -342,5 +791,5 @@
  "tilewidth":32,
  "type":"map",
  "version":"1.10",
- "width":56
+ "width":30
 }

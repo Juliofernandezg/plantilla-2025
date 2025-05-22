@@ -1,4 +1,10 @@
 {
+  "demon2": {
+    "images": "Enemy/Enemy 14-1.png"
+  },
+  "demon": {
+    "images": "Enemy/Enemy 13-1.png"
+  },
   "red_wizard": {
     "images": "Enemy/Enemy 15-3.png"
   },
@@ -20,5 +26,4 @@
   "grey_dog": {
     "images": "Animal/Dog 01-2.png"
   }
-
 }
