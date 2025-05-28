@@ -20,7 +20,7 @@ class BattleView(arcade.View):
         self.player_mana = 50
         self.max_mana = 50
 
-        arcade.set_background_color(arcade.color.BLUE)
+        arcade.set_background_color(arcade.color.ALMOND)
 
     def setup(self):
         pass
@@ -55,11 +55,18 @@ class BattleView(arcade.View):
         self.intro_index = 0
 
     def on_show_view(self):
-        arcade.set_background_color(arcade.color.BLUE)
+        arcade.set_background_color(arcade.color.ALMOND)
         arcade.set_viewport(0, self.window.width, 0, self.window.height)
 
     def on_draw(self):
         arcade.start_render()
+
+        # Interfaz Personaje(WIP)
+        center_x_sprite = (self.window.width - ((self.window.width / 2) + 100)) / 2 + ((self.window.width / 2) + 100)
+        center_y_sprite = self.window.height / 2
+
+        texture = arcade.load_texture(":characters:inventory_picture.png")
+        arcade.draw_scaled_texture_rectangle(center_x_sprite, center_y_sprite, texture, 0.35)
 
         if not self.enemy_data:
             arcade.draw_text("Error: enemigo no cargado.", self.window.width / 2, self.window.height / 2,
@@ -70,30 +77,33 @@ class BattleView(arcade.View):
             self.enemy_sprite.draw()
 
         name = self.enemy_data.get("name", "???")
-        arcade.draw_text(f"Linkillo HP: {self.player_hp}", 30, self.window.height - 50, arcade.color.WHITE, 20)
-        arcade.draw_text(f"Mana: {self.player_mana}/{self.max_mana}", 30, self.window.height - 80, arcade.color.LIGHT_BLUE, 18)
-        arcade.draw_text(f"{name} HP: {self.enemy_hp}", 30, self.window.height - 110, arcade.color.WHITE, 20)
+        arcade.draw_text(f"Linkillo HP: {self.player_hp}", 30, self.window.height - 50, arcade.color.ALLOY_ORANGE, 20)
+        arcade.draw_text(f"Mana: {self.player_mana}/{self.max_mana}", 30, self.window.height - 80, arcade.color.DARK_BLUE, 18)
+        arcade.draw_text(f"{name} HP: {self.enemy_hp}", 30, self.window.height - 110, arcade.color.ALLOY_ORANGE, 20)
 
         if self.battle_state == "intro" and self.enemy_data.get("intro"):
             if self.intro_index < len(self.enemy_data["intro"]):
                 text = self.enemy_data["intro"][self.intro_index]
                 arcade.draw_text(text, self.window.width / 2, self.window.height - 200,
-                                 arcade.color.YELLOW, 20, anchor_x="center")
+                                 arcade.color.ALLOY_ORANGE, 50, anchor_x="center")
 
         elif self.battle_state == "player_turn":
             arcade.draw_text("Tu turno: [A] Atacar  [M] Magia  [I] Ítem  [F] Huir",
-                             self.window.width / 2, 100, arcade.color.WHITE, 22, anchor_x="center")
+                             self.window.width / 2, 100, arcade.color.ALLOY_ORANGE, 40, anchor_x="center")
 
         elif self.battle_state == "enemy_turn":
             arcade.draw_text("Turno del enemigo...", self.window.width / 2, 100,
-                             arcade.color.RED, 22, anchor_x="center")
+                             arcade.color.ALLOY_ORANGE, 40, anchor_x="center")
 
         elif self.battle_state == "finished":
-            arcade.draw_text("¡Combate finalizado!", self.window.width / 2, 100,
-                             arcade.color.GREEN, 26, anchor_x="center")
+            arcade.draw_text("¡COMBATE FINALIZADO!", self.window.width / 2, 100,
+                             arcade.color.ALLOY_ORANGE, 50, anchor_x="center")
 
+            self.window.show_view(self.window.views["game"])
+
+        # BATTLE LOG
         for i, line in enumerate(self.battle_log[-4:]):
-            arcade.draw_text(line, 30, 150 + i * 25, arcade.color.LIGHT_GRAY, 16)
+            arcade.draw_text(line, 30, 200 + i * 25, arcade.color.ALLOY_ORANGE, 20)
 
     def on_key_press(self, symbol: int, modifiers: int):
         if not self.enemy_data:
@@ -140,7 +150,7 @@ class BattleView(arcade.View):
                     self.battle_log.append("No tienes ítems disponibles.")
 
             elif symbol == arcade.key.F:
-                self.battle_log.append("¡Linkillo huyó del combate!")
+                self.battle_log.append("¡LINKILLO HA HUIDO DEL COMBATE, QUÉ COBARDE!")
                 self.battle_state = "finished"
                 arcade.unschedule(self.enemy_attack)
 
@@ -171,5 +181,5 @@ class BattleView(arcade.View):
 
     def check_defeat(self):
         if self.player_hp <= 0:
-            self.battle_log.append("¡Has sido derrotado!")
+            self.battle_log.append("¡HAS SIDO DERROTADO!")
             self.battle_state = "finished"

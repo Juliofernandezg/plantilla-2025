@@ -18,7 +18,7 @@
     "images": "Enemy/Enemy 06-1.png",
     "type": "Hola funciono",
     "name": "skeleton",
-    "intro": ["¡Voy a por ti!"],
+    "intro": ["A que te enchufo"],
     "hp": 100
   },
   "white_cat": {
