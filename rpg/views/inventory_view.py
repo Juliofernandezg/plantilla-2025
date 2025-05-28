@@ -116,10 +116,8 @@ class InventoryView(arcade.View):
             text = f"     {item_name}"
             arcade.draw_text(text, x_text, y_text, arcade.color.ALLOY_ORANGE, 16)
         # Interfaz Personaje(WIP)
-        arcade.draw_lrtb_rectangle_filled(inv_right + gab_inventories, self.window.width - 50, (self.window.height - 100), 50, WHITE)
-        arcade.draw_lrtb_rectangle_outline(inv_right + gab_inventories, self.window.width - 50, (self.window.height - 100), 50, BLACK, 3)
-        texture = arcade.load_texture(":characters:Boss/prueba.png")
-        arcade.draw_scaled_texture_rectangle(center_x_sprite, center_y_sprite, texture, 3.5)
+        texture = arcade.load_texture(":characters:inventory_picture.png")
+        arcade.draw_scaled_texture_rectangle(center_x_sprite, center_y_sprite, texture, 0.35)
 
     def setup(self):
         pass
