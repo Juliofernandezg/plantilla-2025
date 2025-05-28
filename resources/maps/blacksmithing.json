@@ -49,20 +49,8 @@
         {
          "draworder":"topdown",
          "id":11,
-         "name":"Personajes",
-         "objects":[
-                {
-                 "gid":1066,
-                 "height":32,
-                 "id":41,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":32,
-                 "x":385.372538668638,
-                 "y":161.345510214855
-                }],
+         "name":"characters",
+         "objects":[],
          "opacity":1,
          "type":"objectgroup",
          "visible":true,
@@ -352,7 +340,7 @@
          "source":"..\/tilesets\/[Base]BaseChip_pipo.json"
         }, 
         {
-         "firstgid":1065,
+         "firstgid":1067,
          "source":"Herrero.tsj"
         }],
  "tilewidth":32,
