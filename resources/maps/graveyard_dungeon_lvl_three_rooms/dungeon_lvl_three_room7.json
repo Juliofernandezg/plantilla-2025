@@ -120,7 +120,7 @@
         }, 
         {
          "compression":"zlib",
-         "data":"eJy7zMDAcJNIfAWILzIQDy7SQf0tEtWTAshRf4lE9YMtPG8zEJ8e7gAxAIjpIw8=",
+         "data":"eJy7zMDAcJNIfAWILzIQDy7SQf0tEtWTAshRf4kIdW+ZEOovookRMh+bm3DpJSc8bzMQnx7uADEAZwEl3A==",
          "encoding":"base64",
          "height":12,
          "id":2,
@@ -134,7 +134,21 @@
         }, 
         {
          "compression":"zlib",
-         "data":"eJxjYBgFo4B8AAACQAAB",
+         "data":"eJy7zMDAcJNIfAWILzJAgAsR9EUk9c446DVIfGT1xACQ2lskqicFkKP+EhHq7jAj1MPs2MtMnPnY3HQLh15ywvM2A\/Hp4Q4QAwDZ4SiX",
+         "encoding":"base64",
+         "height":12,
+         "id":6,
+         "name":"decorative_blocking",
+         "opacity":1,
+         "type":"tilelayer",
+         "visible":true,
+         "width":12,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "compression":"zlib",
+         "data":"eJxjYBhYsBaHuDsOGl1+FAwsAAD39gHK",
          "encoding":"base64",
          "height":12,
          "id":5,
@@ -146,7 +160,7 @@
          "x":0,
          "y":0
         }],
- "nextlayerid":6,
+ "nextlayerid":7,
  "nextobjectid":22,
  "orientation":"orthogonal",
  "properties":[

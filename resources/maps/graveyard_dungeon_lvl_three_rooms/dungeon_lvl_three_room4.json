@@ -246,6 +246,20 @@
         }, 
         {
          "compression":"zlib",
+         "data":"eJy7zMDAcJeZgeEmAwRfZUCAu0CsA5UDqbkCpC8C8VtmBpzABCoHUnMRqp5YAFNfDNRbgscOdPXVQLU1RKi\/BVXfDFTbQoR6mB2RQLUxJKiPJlLtJQbywucuEebfRQp\/fPEFA7D4us2ASAvY0gOy3B0gBgCrbijW",
+         "encoding":"base64",
+         "height":12,
+         "id":6,
+         "name":"decorative_blocking",
+         "opacity":1,
+         "type":"tilelayer",
+         "visible":true,
+         "width":12,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "compression":"zlib",
          "data":"eJxjYBgFo4B8AAACQAAB",
          "encoding":"base64",
          "height":12,
@@ -258,7 +272,7 @@
          "x":0,
          "y":0
         }],
- "nextlayerid":6,
+ "nextlayerid":7,
  "nextobjectid":23,
  "orientation":"orthogonal",
  "properties":[

@@ -42,8 +42,8 @@
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":192,
-                 "y":193
+                 "x":192.666666666667,
+                 "y":192
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -57,99 +57,71 @@
          "name":"doors",
          "objects":[
                 {
-                 "gid":1056,
+                 "gid":291,
                  "height":32,
                  "id":13,
-                 "name":"Stairs_back",
+                 "name":"To_room11",
                  "properties":[
                         {
                          "name":"map_name",
                          "type":"string",
-                         "value":"graveyard_dungeon_second_level"
+                         "value":"dungeon_lvl_three_room1"
                         }, 
                         {
                          "name":"start_x",
                          "type":"int",
-                         "value":20
+                         "value":10
                         }, 
                         {
                          "name":"start_y",
                          "type":"int",
-                         "value":1
+                         "value":5
                         }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":28,
-                 "y":88
+                 "x":1.33333333333334,
+                 "y":194.666666666667
                 }, 
                 {
                  "gid":291,
                  "height":32,
                  "id":15,
-                 "name":"To_room44",
+                 "name":"To_room1",
                  "properties":[
                         {
                          "name":"map_name",
                          "type":"string",
-                         "value":"dungeon_lvl_three_room4"
+                         "value":"dungeon_lvl_three_room1"
                         }, 
                         {
                          "name":"start_x",
                          "type":"int",
-                         "value":5
+                         "value":10
                         }, 
                         {
                          "name":"start_y",
                          "type":"int",
-                         "value":1
+                         "value":6
                         }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":154.666666666667,
-                 "y":382.666666666667
+                 "x":0.666666666666664,
+                 "y":228.666666666667
                 }, 
                 {
                  "gid":291,
                  "height":32,
                  "id":16,
-                 "name":"To_room4",
+                 "name":"To_room33",
                  "properties":[
                         {
                          "name":"map_name",
                          "type":"string",
-                         "value":"dungeon_lvl_three_room4"
-                        }, 
-                        {
-                         "name":"start_x",
-                         "type":"int",
-                         "value":6
-                        }, 
-                        {
-                         "name":"start_y",
-                         "type":"int",
-                         "value":1
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":32,
-                 "x":196,
-                 "y":382.666666666667
-                }, 
-                {
-                 "gid":291,
-                 "height":32,
-                 "id":17,
-                 "name":"To_room22",
-                 "properties":[
-                        {
-                         "name":"map_name",
-                         "type":"string",
-                         "value":"dungeon_lvl_three_room2"
+                         "value":"dungeon_lvl_three_room3"
                         }, 
                         {
                          "name":"start_x",
@@ -165,19 +137,19 @@
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":350.000166666667,
-                 "y":196
+                 "x":352.3333315,
+                 "y":193.666666666667
                 }, 
                 {
                  "gid":291,
                  "height":32,
-                 "id":18,
-                 "name":"To_room2",
+                 "id":17,
+                 "name":"To_room3",
                  "properties":[
                         {
                          "name":"map_name",
                          "type":"string",
-                         "value":"dungeon_lvl_three_room2"
+                         "value":"dungeon_lvl_three_room3"
                         }, 
                         {
                          "name":"start_x",
@@ -193,8 +165,8 @@
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":349.999833333333,
-                 "y":224
+                 "x":351.6666685,
+                 "y":227.666666666667
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -204,7 +176,7 @@
         }, 
         {
          "compression":"zlib",
-         "data":"eJy7zMDAcJNIfAWILzIQDy4OMvW3SFQPs4NW6i+RqJ4e4XmbATXOryLJ30WTuwPEAKLFIV0=",
+         "data":"eJy7zMDAcJNIfAWILzIQDy7SQf0tEtSTopZccIlEtYMtPG8zEJ8e7gAxAN\/rIXc=",
          "encoding":"base64",
          "height":12,
          "id":2,
@@ -218,7 +190,21 @@
         }, 
         {
          "compression":"zlib",
-         "data":"eJxjYCAdRDCSpj6BRPWjYOgAAGzVALs=",
+         "data":"eJydkbsNgDAMRE\/ynGwIHQwSoOETpaTKDlxkrJQmOenJJ+tV9gYgCnBASewjmUS77YuzcwaS2S0P+0wW0W4pTvj8v+nxzwa\/xe3N2uj23CeKZ6pjfnb8Qeq\/LtSfe9zkBQ\/4Kmc=",
+         "encoding":"base64",
+         "height":12,
+         "id":6,
+         "name":"decorative_blocking",
+         "opacity":1,
+         "type":"tilelayer",
+         "visible":true,
+         "width":12,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "compression":"zlib",
+         "data":"eJxjYBgFo4B8AAACQAAB",
          "encoding":"base64",
          "height":12,
          "id":5,
@@ -230,7 +216,7 @@
          "x":0,
          "y":0
         }],
- "nextlayerid":6,
+ "nextlayerid":7,
  "nextobjectid":22,
  "orientation":"orthogonal",
  "properties":[

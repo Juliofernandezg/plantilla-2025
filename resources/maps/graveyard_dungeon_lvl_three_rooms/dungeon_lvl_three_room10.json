@@ -24,14 +24,14 @@
          "objects":[
                 {
                  "height":0,
-                 "id":22,
+                 "id":23,
                  "name":"",
                  "point":true,
                  "properties":[
                         {
                          "name":"color",
                          "type":"color",
-                         "value":"#ffff0000"
+                         "value":"#ffcfbc77"
                         }, 
                         {
                          "name":"radius",
@@ -42,8 +42,8 @@
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":191.667902149741,
-                 "y":192.142327650111
+                 "x":191.333333333333,
+                 "y":191.333333333333
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -59,7 +59,7 @@
                 {
                  "gid":291,
                  "height":32,
-                 "id":16,
+                 "id":13,
                  "name":"To_room99",
                  "properties":[
                         {
@@ -70,7 +70,7 @@
                         {
                          "name":"start_x",
                          "type":"int",
-                         "value":1
+                         "value":10
                         }, 
                         {
                          "name":"start_y",
@@ -81,13 +81,13 @@
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":352.3333315,
-                 "y":193.666666666667
+                 "x":1.33333333333334,
+                 "y":194.666666666667
                 }, 
                 {
                  "gid":291,
                  "height":32,
-                 "id":17,
+                 "id":15,
                  "name":"To_room9",
                  "properties":[
                         {
@@ -98,7 +98,7 @@
                         {
                          "name":"start_x",
                          "type":"int",
-                         "value":1
+                         "value":10
                         }, 
                         {
                          "name":"start_y",
@@ -109,8 +109,64 @@
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":351.6666685,
-                 "y":227.666666666667
+                 "x":0.666666666666664,
+                 "y":228.666666666667
+                }, 
+                {
+                 "gid":291,
+                 "height":32,
+                 "id":18,
+                 "name":"To_room1111",
+                 "properties":[
+                        {
+                         "name":"map_name",
+                         "type":"string",
+                         "value":"dungeon_lvl_three_room11"
+                        }, 
+                        {
+                         "name":"start_x",
+                         "type":"int",
+                         "value":5
+                        }, 
+                        {
+                         "name":"start_y",
+                         "type":"int",
+                         "value":1
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":160,
+                 "y":381.333333333333
+                }, 
+                {
+                 "gid":291,
+                 "height":32,
+                 "id":19,
+                 "name":"To_room11",
+                 "properties":[
+                        {
+                         "name":"map_name",
+                         "type":"string",
+                         "value":"dungeon_lvl_three_room11"
+                        }, 
+                        {
+                         "name":"start_x",
+                         "type":"int",
+                         "value":6
+                        }, 
+                        {
+                         "name":"start_y",
+                         "type":"int",
+                         "value":1
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":200,
+                 "y":382
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -120,11 +176,25 @@
         }, 
         {
          "compression":"zlib",
-         "data":"eJy7zMDAcJNIfAWILzIQDy4OMvW3SFQPs4NW6i+RqJ4e4Xmbgfj0cAeIAc8JIw8=",
+         "data":"eJy7zMDAcJNIfAWILzIQDy7SQf0tEtWTAshRf4lE9YMtPG8zoMb5VST5u2hyd4AYAFylIV0=",
          "encoding":"base64",
          "height":12,
          "id":2,
          "name":"walls_blocking",
+         "opacity":1,
+         "type":"tilelayer",
+         "visible":true,
+         "width":12,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "compression":"zlib",
+         "data":"eJy7zMDAcJeZgeEmA34MUnMFSF8E4rdANjKIBfJzmCF0LhBnM0PUXISqj0JTj6wvDao+Fkl9JA71MJAEtQ+k9hZ+pWAQjaSeWBBNonoQAKm\/RKJ6UuyAqQfFRRKBMLqLFJ5vof7PwaMHFl+3GVDj\/SqymWhyd4AYAOVULoo=",
+         "encoding":"base64",
+         "height":12,
+         "id":6,
+         "name":"decorative_blocking",
          "opacity":1,
          "type":"tilelayer",
          "visible":true,
@@ -146,8 +216,8 @@
          "x":0,
          "y":0
         }],
- "nextlayerid":6,
- "nextobjectid":23,
+ "nextlayerid":7,
+ "nextobjectid":24,
  "orientation":"orthogonal",
  "properties":[
         {

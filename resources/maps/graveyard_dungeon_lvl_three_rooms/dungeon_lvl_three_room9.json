@@ -60,12 +60,12 @@
                  "gid":291,
                  "height":32,
                  "id":13,
-                 "name":"To_room55",
+                 "name":"To_room88",
                  "properties":[
                         {
                          "name":"map_name",
                          "type":"string",
-                         "value":"dungeon_lvl_three_room5"
+                         "value":"dungeon_lvl_three_room8"
                         }, 
                         {
                          "name":"start_x",
@@ -88,12 +88,12 @@
                  "gid":291,
                  "height":32,
                  "id":15,
-                 "name":"To_room5",
+                 "name":"To_room8",
                  "properties":[
                         {
                          "name":"map_name",
                          "type":"string",
-                         "value":"dungeon_lvl_three_room5"
+                         "value":"dungeon_lvl_three_room8"
                         }, 
                         {
                          "name":"start_x",
@@ -116,12 +116,12 @@
                  "gid":291,
                  "height":32,
                  "id":16,
-                 "name":"To_room77",
+                 "name":"To_room10",
                  "properties":[
                         {
                          "name":"map_name",
                          "type":"string",
-                         "value":"dungeon_lvl_three_room7"
+                         "value":"dungeon_lvl_three_room10"
                         }, 
                         {
                          "name":"start_x",
@@ -144,12 +144,12 @@
                  "gid":291,
                  "height":32,
                  "id":17,
-                 "name":"To_room7",
+                 "name":"To_room1010",
                  "properties":[
                         {
                          "name":"map_name",
                          "type":"string",
-                         "value":"dungeon_lvl_three_room7"
+                         "value":"dungeon_lvl_three_room10"
                         }, 
                         {
                          "name":"start_x",
@@ -172,12 +172,12 @@
                  "gid":291,
                  "height":32,
                  "id":22,
-                 "name":"To_room33",
+                 "name":"To_room44",
                  "properties":[
                         {
                          "name":"map_name",
                          "type":"string",
-                         "value":"dungeon_lvl_three_room3"
+                         "value":"dungeon_lvl_three_room4"
                         }, 
                         {
                          "name":"start_x",
@@ -200,12 +200,12 @@
                  "gid":291,
                  "height":32,
                  "id":24,
-                 "name":"To_room3",
+                 "name":"To_room4",
                  "properties":[
                         {
                          "name":"map_name",
                          "type":"string",
-                         "value":"dungeon_lvl_three_room3"
+                         "value":"dungeon_lvl_three_room4"
                         }, 
                         {
                          "name":"start_x",
@@ -246,6 +246,20 @@
         }, 
         {
          "compression":"zlib",
+         "data":"eJy7zMDAcJeZgeEmAwRfZUCAu1Cxb8wQNVeA7ItA\/BbIzgHiXGYGrOAfM0TNRah6YgE56m+RoJ4UteSCSySqJSd87kLDnY+FgUGGBbvau0jh\/xaqXgyoVgWHelh83WZApAVC+A4QAwCK7SfH",
+         "encoding":"base64",
+         "height":12,
+         "id":6,
+         "name":"decorative_blocking",
+         "opacity":1,
+         "type":"tilelayer",
+         "visible":true,
+         "width":12,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "compression":"zlib",
          "data":"eJxjYBgFo4B8AAACQAAB",
          "encoding":"base64",
          "height":12,
@@ -258,7 +272,7 @@
          "x":0,
          "y":0
         }],
- "nextlayerid":6,
+ "nextlayerid":7,
  "nextobjectid":25,
  "orientation":"orthogonal",
  "properties":[
