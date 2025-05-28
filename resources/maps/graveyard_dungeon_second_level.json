@@ -5,7 +5,7 @@
  "layers":[
         {
          "compression":"zlib",
-         "data":"eJzNUkEKwCAM6y5+xAfu\/7exg1CczjTNZEJQtG1Sm3qY1Q7FnndMzF8Q1XrHr3Jm7yhXNj\/T647ZoTpaHKNplJP9f1XvUR0qPYzXoz2xHF97M\/Lvah\/4OmbY3nOzWoqru1ojrtkZRYRXiRPA25xYPzO8O\/v1fSn8rZ4v6vtWd7UrOdF3FBcMflE3",
+         "data":"eJytVVsKgDAMqwi7iAf0OF5X9lEodVuTOKEI2iVNX7sOsytZs+83xuc5a6vwVRtx9FgZ3u5f5SD\/d\/zItdI7w0dyv8p15t\/BodQZ7SH3Y2JaaUVx1BwgfYz0T44D8Ufmh9WF8qq1YjVGH3ZXMHmf6Xc+dkdFHDPs7Wdi7yr7sQXc6sln8qwqc8HwjnKr3gc3YBl\/pJvVjPL+7SmVN+rasevZ+lZ1zTHNYnTc6s3MCNrnu+7IF4rrbkE=",
          "encoding":"base64",
          "height":20,
          "id":1,
@@ -408,7 +408,7 @@
         }, 
         {
          "compression":"zlib",
-         "data":"eJy7zMDAcJMG+DoSGwZg\/CtAfBGIzzIzUB1cJCCHT37UXvrYe5mBuDR0FUnPXajYfQrspSQsbjNA0i06APnlDg3txaX\/Ih45dDXpZOazewyYcQAL\/8HoX1AcYSt\/iC2n7uAwE1Zeket2ctWRkn9vUVEdKfZyMjIwcBGBuRmpay81wVCwVxIYflJEYGkqh\/MlKqqD2fuJQHkkz0L9fIRcNuDD16ioDlSeAAD3YIGM",
+         "data":"eJy7zMDAcJMG+DoSGwZg\/CtAfJGBNgCfuRdH7R0U9l5mIC4NXUXScxcqdp8CeykJi9sMkHSLDkB+uUNDe3Hpv4hHDl1NOjN59t5jwIwDWPgPRv+C4ghb+UNsOXUHh5mklFfUVEdK\/r1FRXWk2MvJyMDARQTmZqSuvdQEQ8FeSWD4SRGBpakczpeoqI4Ue6mdj5DLBnz4GhXVgcoTAL\/yf6Q=",
          "encoding":"base64",
          "height":20,
          "id":2,
@@ -422,7 +422,7 @@
         }, 
         {
          "compression":"zlib",
-         "data":"eJxjYKAduMtMnBi1wVssdmATGwUjD8QOUDrIYR4Yu3MGyL+ZQHuzB0Geg5U3uGhaAVh5g4seBaNgKIHRfEQeAADgwBSZ",
+         "data":"eJxjYKAduMtMnBi1wVssdmATwwdcCcg7kWYc1fWPAvJALB3SHzaQwzwwducMkH8zgfZmD5DdyABW3uCiaQVg5Q0uehSMgqEEaJmP8NW1Qz0fAQB7\/RWn",
          "encoding":"base64",
          "height":20,
          "id":8,
@@ -436,7 +436,7 @@
         }, 
         {
          "compression":"zlib",
-         "data":"eJxjYKA9CGFkYAhjpINFaCAGaGccmfa6ovHXoPGdyDOWavpxAXR3YgPGNLKb3gA9jtABPxAL0MMhaEAciCWIVOtIZbupbR4MUJJmltJILTHgLjN+mlbgLTN+GgSoFVfE5Hl8gBJ3cALLVy4iMDeZ5TAuvwkCzRMiAgtTud4ZKHslgeZJEYGlGVHDjFplPS3zEb5ynJh8NJgBANo4GxE=",
+         "data":"eJxjYKA9CGFkYAhjpINFaCAGaGccmfa6ovHXoPGdyDOWavpxAXR3YgPGNLKb3gA9joYicBzk5sEAJWlmKY3UEgPuMuOnaQXeMuOnQYBacUVMnscHKHEHJ7B85SICc5NZDuPymyDQPCEisDCV652BslcSaJ4UEViaETXMqFXW0zIf4SvHiclHgxkAAPSKGsM=",
          "encoding":"base64",
          "height":20,
          "id":4,
@@ -767,7 +767,7 @@
          "x":0,
          "y":0
         }],
- "nextlayerid":10,
+ "nextlayerid":12,
  "nextobjectid":42,
  "orientation":"orthogonal",
  "properties":[
@@ -785,7 +785,7 @@
          "source":"..\/tilesets\/[Base]BaseChip_pipo.json"
         }, 
         {
-         "firstgid":1065,
+         "firstgid":1067,
          "source":"..\/tilesets\/[A]Grass_pipo.json"
         }],
  "tilewidth":32,

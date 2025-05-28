@@ -308,7 +308,7 @@
         }, 
         {
          "compression":"zlib",
-         "data":"eJxjYCAP6DNiismzUKb\/LjOZjoGCt0D9TgTUkOJGWgJq+BUduFJmJM0AsWG+g8IwGUhASrrCFU\/IacKdDDdgSxM6ZJiDDJDdimwWtvR7G4\/9IBo5b2JzKy0Apf6nVD8ugC+98AOxABKflHztBsTiQCxBlqsYGFyQMD6Anj5JLc\/Q1RObHmBhQa\/0M9AAWzpJp6LfAbN3Euk=",
+         "data":"eJxjYCAP6DNiismzUKb\/LjMq35E0JzG8ZSashhQ3kgOIdTO6X0kFxPh1sABah\/lgANTwIy3ShA5lRuI0C5tbb5PgfnqlX2r6n5oAX3rhB2IBMs11A2JxIJYgU78LEsYFsJVxpKZddPWkpoehVP5RArClk3Qq+h0AloUQAg==",
          "encoding":"base64",
          "height":32,
          "id":5,
@@ -672,7 +672,7 @@
          "source":"..\/tilesets\/[Base]BaseChip_pipo.json"
         }, 
         {
-         "firstgid":1065,
+         "firstgid":1067,
          "source":"Mazmorra3.tsx"
         }],
  "tilewidth":32,
