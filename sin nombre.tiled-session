@@ -2,14 +2,14 @@
     "activeFile": "resources/maps/dungeon_lvl_three_maze.json",
     "expandedProjectPaths": [
         "resources/data",
-        "resources/maps",
-        "resources",
-        ".",
-        ".venv1/Lib/site-packages",
         ".venv1/Lib/site-packages/setuptools/command",
-        ".venv/Lib",
         ".venv1/Lib",
-        ".venv1/Lib/site-packages/setuptools"
+        ".",
+        ".venv/Lib",
+        "resources",
+        ".venv1/Lib/site-packages/setuptools",
+        ".venv1/Lib/site-packages",
+        "resources/maps"
     ],
     "fileStates": {
         "resources/maps/Mazmorra3.tsx": {
@@ -25,11 +25,11 @@
             }
         },
         "resources/maps/dungeon_lvl_three_maze.json": {
-            "scale": 0.75,
+            "scale": 0.5,
             "selectedLayer": 2,
             "viewCenter": {
-                "x": 400.6666666666667,
-                "y": 443.3333333333333
+                "x": 1737,
+                "y": 2391
             }
         },
         "resources/maps/farmhouse.json": {
@@ -45,22 +45,22 @@
         },
         "resources/maps/graveyard_dungeon.json": {
             "expandedObjectLayers": [
-                8,
+                6,
                 10,
-                6
+                8
             ],
             "scale": 1.1827,
             "selectedLayer": 4,
             "viewCenter": {
-                "x": 293.81922719201816,
-                "y": 826.9214509173923
+                "x": 384.2901834784814,
+                "y": 444.3223133508074
             }
         },
         "resources/maps/graveyard_dungeon_second_level.json": {
             "scale": 0.3080078125,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 896.0811667723526,
+                "x": 894.4578313253013,
                 "y": 321.42041851617
             }
         },
@@ -68,7 +68,7 @@
             "scale": 1,
             "selectedLayer": 8,
             "viewCenter": {
-                "x": 1280,
+                "x": 1214,
                 "y": 1440
             }
         },
