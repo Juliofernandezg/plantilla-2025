@@ -52,15 +52,16 @@
          "name":"Personajes",
          "objects":[
                 {
-                 "height":0,
-                 "id":39,
-                 "name":"Herrero",
+                 "gid":1066,
+                 "height":32,
+                 "id":41,
+                 "name":"",
                  "rotation":0,
-                 "type":"Personaje",
+                 "type":"",
                  "visible":true,
-                 "width":0,
-                 "x":409.886501610093,
-                 "y":147.778071055271
+                 "width":32,
+                 "x":385.372538668638,
+                 "y":161.345510214855
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -340,7 +341,7 @@
          "y":0
         }],
  "nextlayerid":12,
- "nextobjectid":40,
+ "nextobjectid":42,
  "orientation":"orthogonal",
  "renderorder":"left-up",
  "tiledversion":"1.11.2",
@@ -349,6 +350,10 @@
         {
          "firstgid":1,
          "source":"..\/tilesets\/[Base]BaseChip_pipo.json"
+        }, 
+        {
+         "firstgid":1065,
+         "source":"Herrero.tsj"
         }],
  "tilewidth":32,
  "type":"map",
