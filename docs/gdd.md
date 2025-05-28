@@ -1,6 +1,6 @@
 # Documento de diseño
 
-## Nombre del videojuego
+## Nombre del videojuego: La Maldición del Peluche Infernal
 
 
 
