@@ -426,6 +426,34 @@
                  "width":32,
                  "x":576,
                  "y":1024
+                }, 
+                {
+                 "gid":67,
+                 "height":32,
+                 "id":17,
+                 "name":"dungeon_exit",
+                 "properties":[
+                        {
+                         "name":"map_name",
+                         "type":"string",
+                         "value":"dungeon_lvl_three_room12"
+                        }, 
+                        {
+                         "name":"start_x",
+                         "type":"int",
+                         "value":10
+                        }, 
+                        {
+                         "name":"start_y",
+                         "type":"int",
+                         "value":2
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":1344,
+                 "y":384
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -473,7 +501,7 @@
          "y":0
         }],
  "nextlayerid":25,
- "nextobjectid":14,
+ "nextobjectid":18,
  "orientation":"orthogonal",
  "renderorder":"left-up",
  "tiledversion":"1.11.2",
