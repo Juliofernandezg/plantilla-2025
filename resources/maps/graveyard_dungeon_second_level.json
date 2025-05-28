@@ -731,7 +731,7 @@
                         {
                          "name":"map_name",
                          "type":"string",
-                         "value":"dungeon_lvl_three_maze"
+                         "value":"dungeon_lvl_three_room1"
                         }, 
                         {
                          "name":"start_x",
