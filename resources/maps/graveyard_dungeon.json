@@ -52,7 +52,7 @@
                         {
                          "name":"type",
                          "type":"string",
-                         "value":"skeleton"
+                         "value":"ghost"
                         }],
                  "rotation":0,
                  "type":"",
@@ -91,7 +91,7 @@
                         {
                          "name":"type",
                          "type":"string",
-                         "value":"red_wizard"
+                         "value":"ghost"
                         }],
                  "rotation":0,
                  "type":"",
@@ -99,53 +99,6 @@
                  "width":0,
                  "x":337.791779523528,
                  "y":542.55497868144
-                }, 
-                {
-                 "height":0,
-                 "id":32,
-                 "name":"",
-                 "polygon":[
-                        {
-                         "x":85.9986056125889,
-                         "y":17.699133465586
-                        }, 
-                        {
-                         "x":50.9437795919562,
-                         "y":-43.635863625494
-                        }, 
-                        {
-                         "x":-17.3725936376169,
-                         "y":-85.7718006861078
-                        }, 
-                        {
-                         "x":-124.213694387411,
-                         "y":-33.2155737939585
-                        }, 
-                        {
-                         "x":-42.1388572156348,
-                         "y":-7.32795122978466
-                        }, 
-                        {
-                         "x":-99.2373359970557,
-                         "y":58.1577326472256
-                        }],
-                 "properties":[
-                        {
-                         "name":"radius",
-                         "type":"int",
-                         "value":60
-                        }, 
-                        {
-                         "name":"type",
-                         "type":"string",
-                         "value":"red_wizard"
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":0,
-                 "x":382.001394387411,
-                 "y":782.131800686108
                 }, 
                 {
                  "height":0,
@@ -185,7 +138,7 @@
                         {
                          "name":"type",
                          "type":"string",
-                         "value":"skeleton"
+                         "value":"ghost"
                         }],
                  "rotation":0,
                  "type":"",
@@ -224,7 +177,7 @@
                         {
                          "name":"type",
                          "type":"string",
-                         "value":"skeleton"
+                         "value":"ghost"
                         }],
                  "rotation":0,
                  "type":"",
@@ -267,7 +220,7 @@
                         {
                          "name":"type",
                          "type":"string",
-                         "value":"red_wizard"
+                         "value":"ghost"
                         }],
                  "rotation":0,
                  "type":"",
@@ -330,8 +283,8 @@
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":213,
-                 "y":117
+                 "x":325,
+                 "y":210
                 }],
          "opacity":1,
          "type":"objectgroup",

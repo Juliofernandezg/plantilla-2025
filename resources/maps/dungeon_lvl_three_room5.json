@@ -24,14 +24,14 @@
          "objects":[
                 {
                  "height":0,
-                 "id":21,
+                 "id":22,
                  "name":"",
                  "point":true,
                  "properties":[
                         {
                          "name":"color",
                          "type":"color",
-                         "value":"#ffffffc6"
+                         "value":"#ffff0000"
                         }, 
                         {
                          "name":"radius",
@@ -42,49 +42,12 @@
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":190.335063009637,
-                 "y":191.534469977761
-                }, 
-                {
-                 "height":0,
-                 "id":23,
-                 "name":"",
-                 "point":true,
-                 "properties":[
-                        {
-                         "name":"color",
-                         "type":"color",
-                         "value":"#fffffccf"
-                        }, 
-                        {
-                         "name":"radius",
-                         "type":"int",
-                         "value":60
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":0,
-                 "x":335.5,
-                 "y":35.5
+                 "x":192,
+                 "y":190.666666666667
                 }],
          "opacity":1,
          "type":"objectgroup",
          "visible":true,
-         "x":0,
-         "y":0
-        }, 
-        {
-         "compression":"zlib",
-         "data":"eJy7zMDAcJMIDAJXgPgiA\/HgIh3U3yJRPSmAHPWXSFQ\/2MLzNgNx6QGE7wAxAMJzIjY=",
-         "encoding":"base64",
-         "height":12,
-         "id":2,
-         "name":"walls_blocking",
-         "opacity":1,
-         "type":"tilelayer",
-         "visible":true,
-         "width":12,
          "x":0,
          "y":0
         }, 
@@ -97,12 +60,12 @@
                  "gid":291,
                  "height":32,
                  "id":13,
-                 "name":"To_room1111",
+                 "name":"To_room44",
                  "properties":[
                         {
                          "name":"map_name",
                          "type":"string",
-                         "value":"dungeon_lvl_three_room11"
+                         "value":"dungeon_lvl_three_room4"
                         }, 
                         {
                          "name":"start_x",
@@ -125,12 +88,12 @@
                  "gid":291,
                  "height":32,
                  "id":15,
-                 "name":"To_room11",
+                 "name":"To_room4",
                  "properties":[
                         {
                          "name":"map_name",
                          "type":"string",
-                         "value":"dungeon_lvl_three_room11"
+                         "value":"dungeon_lvl_three_room4"
                         }, 
                         {
                          "name":"start_x",
@@ -150,32 +113,60 @@
                  "y":228.666666666667
                 }, 
                 {
-                 "gid":295,
+                 "gid":291,
                  "height":32,
-                 "id":22,
-                 "name":"exit",
+                 "id":16,
+                 "name":"To_room66",
                  "properties":[
                         {
                          "name":"map_name",
                          "type":"string",
-                         "value":"main_map"
+                         "value":"dungeon_lvl_three_room6"
                         }, 
                         {
                          "name":"start_x",
                          "type":"int",
-                         "value":42
+                         "value":1
                         }, 
                         {
                          "name":"start_y",
                          "type":"int",
-                         "value":10
+                         "value":5
                         }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":320,
-                 "y":32
+                 "x":352.3333315,
+                 "y":193.666666666667
+                }, 
+                {
+                 "gid":291,
+                 "height":32,
+                 "id":17,
+                 "name":"To_room6",
+                 "properties":[
+                        {
+                         "name":"map_name",
+                         "type":"string",
+                         "value":"dungeon_lvl_three_room6"
+                        }, 
+                        {
+                         "name":"start_x",
+                         "type":"int",
+                         "value":1
+                        }, 
+                        {
+                         "name":"start_y",
+                         "type":"int",
+                         "value":6
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":351.6666685,
+                 "y":227.666666666667
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -185,7 +176,35 @@
         }, 
         {
          "compression":"zlib",
-         "data":"eJxjYCAOqDMSqRAK9ElUPwqGJgAAsX4AWQ==",
+         "data":"eJy7zMDAcJNIfAWILzIQDy7SQf0tEtSTopZccIlEtYMtPG8zEJ8e7gAxAN\/rIXc=",
+         "encoding":"base64",
+         "height":12,
+         "id":2,
+         "name":"walls_blocking",
+         "opacity":1,
+         "type":"tilelayer",
+         "visible":true,
+         "width":12,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "compression":"zlib",
+         "data":"eJy7zMDA0MvMwHCTAT8GqbkCpC8C8VQgmxAAqbkIVU8sIEf9LRLUk6KWXHCJRLXkhE8vEeHfixT+pMTXbQbCaQGG7wAxAN39JGU=",
+         "encoding":"base64",
+         "height":12,
+         "id":6,
+         "name":"decorative_blocking",
+         "opacity":1,
+         "type":"tilelayer",
+         "visible":true,
+         "width":12,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "compression":"zlib",
+         "data":"eJxjYKAcfGImT588C3XUUBNQ2z5VCswj5BZ6hw02AADVAwHO",
          "encoding":"base64",
          "height":12,
          "id":5,
@@ -197,8 +216,8 @@
          "x":0,
          "y":0
         }],
- "nextlayerid":6,
- "nextobjectid":24,
+ "nextlayerid":7,
+ "nextobjectid":23,
  "orientation":"orthogonal",
  "properties":[
         {

@@ -24,7 +24,7 @@
          "objects":[
                 {
                  "height":0,
-                 "id":23,
+                 "id":21,
                  "name":"",
                  "point":true,
                  "properties":[
@@ -42,8 +42,8 @@
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":191.667902149741,
-                 "y":193.565604151223
+                 "x":192,
+                 "y":195.333333333333
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -60,101 +60,45 @@
                  "gid":291,
                  "height":32,
                  "id":13,
-                 "name":"To_room1010",
+                 "name":"To_room22",
                  "properties":[
                         {
                          "name":"map_name",
                          "type":"string",
-                         "value":"dungeon_lvl_three_room10"
+                         "value":"dungeon_lvl_three_room2"
                         }, 
                         {
                          "name":"start_x",
                          "type":"int",
-                         "value":5
+                         "value":10
                         }, 
                         {
                          "name":"start_y",
                          "type":"int",
-                         "value":10
+                         "value":5
                         }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":151.726216950828,
-                 "y":32.4131455399065
+                 "x":1.33333333333334,
+                 "y":194.666666666667
                 }, 
                 {
                  "gid":291,
                  "height":32,
                  "id":15,
-                 "name":"To_room10",
+                 "name":"To_room2",
                  "properties":[
                         {
                          "name":"map_name",
                          "type":"string",
-                         "value":"dungeon_lvl_three_room10"
+                         "value":"dungeon_lvl_three_room2"
                         }, 
                         {
                          "name":"start_x",
-                         "type":"int",
-                         "value":6
-                        }, 
-                        {
-                         "name":"start_y",
                          "type":"int",
                          "value":10
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":32,
-                 "x":191.860143316037,
-                 "y":33.2033605139613
-                }, 
-                {
-                 "gid":291,
-                 "height":32,
-                 "id":16,
-                 "name":"To_room1212",
-                 "properties":[
-                        {
-                         "name":"map_name",
-                         "type":"string",
-                         "value":"dungeon_lvl_three_room12"
-                        }, 
-                        {
-                         "name":"start_x",
-                         "type":"int",
-                         "value":1
-                        }, 
-                        {
-                         "name":"start_y",
-                         "type":"int",
-                         "value":5
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":32,
-                 "x":352.3333315,
-                 "y":193.666666666667
-                }, 
-                {
-                 "gid":291,
-                 "height":32,
-                 "id":17,
-                 "name":"To_room12",
-                 "properties":[
-                        {
-                         "name":"map_name",
-                         "type":"string",
-                         "value":"dungeon_lvl_three_room12"
-                        }, 
-                        {
-                         "name":"start_x",
-                         "type":"int",
-                         "value":1
                         }, 
                         {
                          "name":"start_y",
@@ -165,8 +109,64 @@
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":351.6666685,
-                 "y":227.666666666667
+                 "x":0.666666666666664,
+                 "y":228.666666666667
+                }, 
+                {
+                 "gid":291,
+                 "height":32,
+                 "id":18,
+                 "name":"To_room66",
+                 "properties":[
+                        {
+                         "name":"map_name",
+                         "type":"string",
+                         "value":"dungeon_lvl_three_room6"
+                        }, 
+                        {
+                         "name":"start_x",
+                         "type":"int",
+                         "value":5
+                        }, 
+                        {
+                         "name":"start_y",
+                         "type":"int",
+                         "value":1
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":160,
+                 "y":381.333333333333
+                }, 
+                {
+                 "gid":291,
+                 "height":32,
+                 "id":19,
+                 "name":"To_room6",
+                 "properties":[
+                        {
+                         "name":"map_name",
+                         "type":"string",
+                         "value":"dungeon_lvl_three_room6"
+                        }, 
+                        {
+                         "name":"start_x",
+                         "type":"int",
+                         "value":6
+                        }, 
+                        {
+                         "name":"start_y",
+                         "type":"int",
+                         "value":1
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":200,
+                 "y":382
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -176,7 +176,7 @@
         }, 
         {
          "compression":"zlib",
-         "data":"eJy7zMDAcBMJX2VAgLtocleA+CID8eDiIFN\/i0T1MDtopf4SierpEZ63GVDjHB++A8QAI3ghXQ==",
+         "data":"eJy7zMDAcJNIfAWILzIQDy7SQf0tEtWTAshRf4lE9YMtPG8zoMb5VST5u2hyd4AYAFylIV0=",
          "encoding":"base64",
          "height":12,
          "id":2,
@@ -190,7 +190,21 @@
         }, 
         {
          "compression":"zlib",
-         "data":"eJxjYBgFo4B8AAACQAAB",
+         "data":"eJy7zMDAMJeZgeEmAwJ\/B\/J\/oImB1FwB0heBeCmQTQiA1FyEqicWkKP+FonqSQHkqL9EonpywmcuEeE\/Fyn8SYmv2wyo8X4VSc1dNLk7QAwAiLwlDg==",
+         "encoding":"base64",
+         "height":12,
+         "id":6,
+         "name":"decorative_blocking",
+         "opacity":1,
+         "type":"tilelayer",
+         "visible":true,
+         "width":12,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "compression":"zlib",
+         "data":"eJxjYKAPkGehnn5KzcJnBjXMJgQ+M+OWo2Y40QMAAPJ0Aew=",
          "encoding":"base64",
          "height":12,
          "id":5,
@@ -202,8 +216,8 @@
          "x":0,
          "y":0
         }],
- "nextlayerid":6,
- "nextobjectid":24,
+ "nextlayerid":7,
+ "nextobjectid":22,
  "orientation":"orthogonal",
  "properties":[
         {
