@@ -222,7 +222,7 @@ class GameView(arcade.View):
         # Create a small white light
         x = 100
         y = 200
-        radius = 150
+        radius = 450
         mode = "soft"
         color = arcade.csscolor.WHITE
         self.player_light = Light(x, y, radius, color, mode)

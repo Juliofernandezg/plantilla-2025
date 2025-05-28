@@ -30,8 +30,8 @@ class MainSettingsView(arcade.View):
                          arcade.color.ALLOY_ORANGE, 44, anchor_x="center")
 
         # Dibujar barras
-        self.draw_bar(self.volume_bar_pos, self.volume, "Volume")
-        self.draw_bar(self.brightness_bar_pos, self.brightness, "Brightness")
+        self.draw_bar(self.volume_bar_pos, self.volume, "Volumen")
+        self.draw_bar(self.brightness_bar_pos, self.brightness, "Brillo")
 
         # Simular brillo con overlay
         brightness_overlay = 255 - int((self.brightness / 100) * 255)

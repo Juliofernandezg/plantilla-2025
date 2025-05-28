@@ -104,6 +104,7 @@ class CharacterSprite(arcade.Sprite):
         self.max_health += 20
         self.health = self.max_health
         self.attack += 5
+        self.max_mana += 10
         self.mana += 10
         self.max_exp += 50
 
