@@ -20,6 +20,7 @@
         {
          "draworder":"topdown",
          "id":8,
+         "locked":true,
          "name":"characters",
          "objects":[
                 {
@@ -150,7 +151,7 @@
                 {
                  "height":0,
                  "id":39,
-                 "name":"",
+                 "name":"skeleton",
                  "polygon":[
                         {
                          "x":61.6666666666667,

@@ -5,7 +5,6 @@ Main game view
 import json
 from functools import partial
 from typing import Callable
-
 import arcade
 import arcade.gui
 import rpg.constants as constants
@@ -13,6 +12,7 @@ from arcade.experimental.lights import Light
 from pyglet.math import Vec2
 from rpg.message_box import MessageBox
 from rpg.sprites.player_sprite import PlayerSprite
+
 
 
 class DebugMenu(arcade.gui.UIBorder, arcade.gui.UIWindowLikeMixin):
@@ -643,6 +643,45 @@ class GameView(arcade.View):
             # No doors, scroll normally
             self.scroll_to_player()
 
+    def interact_with_npc(self):
+        """Interacción con personajes NPC del mapa (enemigos, etc.)"""
+        hit_list = arcade.check_for_collision_with_list(self.player_sprite, self.my_map.scene["characters"])
+
+        for character in hit_list:
+            character_properties = character.properties
+            if character_properties.get("type") == "skeleton":
+                character_id = character_properties.get("name") or "skeleton"
+
+                with open("../resources/data/characters_dictionary.json", "r") as f:
+                    characters_dict = json.load(f)
+
+                enemy_info = characters_dict.get(character_id)
+
+                if enemy_info:
+                    from rpg.views.battle_view import BattleView
+                    battle_view = BattleView()
+
+                    # Establecer información del enemigo
+                    battle_view.set_enemy(character_id, {
+                        "sprite": f":characters:{enemy_info['images']}",
+                        "name": enemy_info.get("name", character_id),
+                        "intro": enemy_info.get("intro", []),
+                        "hp": enemy_info.get("hp", 100)
+                    })
+
+                    # Guardar posición actual y mapa
+                    battle_view.return_position = {
+                        "x": self.player_sprite.center_x,
+                        "y": self.player_sprite.center_y,
+                        "map": self.cur_map_name
+                    }
+
+                    # Pasar lista de mapas para poder volver correctamente
+                    battle_view.map_list = self.map_list
+
+                    self.window.show_view(battle_view)
+                else:
+                    print(f"[ERROR] Personaje '{character_id}' no encontrado en el diccionario.")
 
     def on_key_press(self, key, modifiers):
         """Called whenever a key is pressed."""
@@ -665,6 +704,7 @@ class GameView(arcade.View):
             self.window.show_view(self.window.views["main_menu"])
         elif key in constants.SEARCH:
             self.search()
+            self.interact_with_npc()
         # HotBar
         elif key == arcade.key.KEY_1:
             self.selected_item = 1
@@ -687,6 +727,8 @@ class GameView(arcade.View):
             else:
                 self.disable_debug_menu()
 
+
+
     def close_message_box(self):
         self.message_box = None
 
@@ -702,6 +744,30 @@ class GameView(arcade.View):
             GameView.player_sprite, searchable_sprites
         )
         print(f"Found {len(sprites_in_range)} searchable sprite(s) in range.")
+
+        if "characters" not in map_layers:
+            print(f"No characters sprites on {self.cur_map_name} map layer.")
+            return
+
+        characters_sprites = map_layers["characters"]
+        characters_sprites_in_range = arcade.check_for_collision_with_list(
+            GameView.player_sprite, characters_sprites
+        )
+        print(f"Found {len(characters_sprites_in_range)} searchable sprite(s) in range.")
+
+        for sprite in characters_sprites_in_range:
+            if "item" in sprite.properties:
+                self.message_box = MessageBox(
+                    self, f"Found: {sprite.properties['type']}"
+                )
+                sprite.remove_from_sprite_lists()
+                lookup_item = self.enemy_dictionary[sprite.properties["type"]]
+                GameView.player_sprite.hotbar.append(lookup_item)
+            elif "type" in sprite.properties:
+                self.window.show_view(self.window.views["battle"])
+                self.message_box = MessageBox(
+                    self, f"Found: {sprite.properties['type']}"
+                )
         for sprite in sprites_in_range:
             if "item" in sprite.properties:
                 self.message_box = MessageBox(

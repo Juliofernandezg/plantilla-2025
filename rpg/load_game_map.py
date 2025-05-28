@@ -36,7 +36,6 @@ def load_map(map_name):
     game_map.light_layer = LightLayer(100, 100)
 
     # List of blocking sprites
-
     layer_options = {
         "trees_blocking": {
             "use_spatial_hash": True,
@@ -61,12 +60,11 @@ def load_map(map_name):
     game_map.scene = arcade.Scene.from_tilemap(my_map)
 
     if "characters" in my_map.object_lists:
-        f = open("../resources/data/characters_dictionary.json")
-        character_dictionary = json.load(f)
+        with open("../resources/data/characters_dictionary.json", encoding="utf-8") as f:
+            character_dictionary = json.load(f)
         character_object_list = my_map.object_lists["characters"]
 
         for character_object in character_object_list:
-
             if "type" not in character_object.properties:
                 print(
                     f"No 'type' field for character in map {map_name}. {character_object.properties}"
