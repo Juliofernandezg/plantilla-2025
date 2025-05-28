@@ -1,4 +1,10 @@
 {
+  "ghost": {
+    "images": "Enemy/Enemy 09-1.png"
+  },
+  "ghost2": {
+    "images": "Enemy/Enemy 10-1.png"
+  },
   "demon2": {
     "images": "Enemy/Enemy 14-1.png"
   },

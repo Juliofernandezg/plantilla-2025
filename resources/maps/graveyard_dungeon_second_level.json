@@ -60,7 +60,7 @@
                         {
                          "name":"type",
                          "type":"string",
-                         "value":"demon"
+                         "value":"ghost2"
                         }],
                  "rotation":0,
                  "type":"",
@@ -111,7 +111,7 @@
                         {
                          "name":"type",
                          "type":"string",
-                         "value":"demon"
+                         "value":"ghost2"
                         }],
                  "rotation":0,
                  "type":"",
@@ -162,7 +162,7 @@
                         {
                          "name":"type",
                          "type":"string",
-                         "value":"demon2"
+                         "value":"ghost"
                         }],
                  "rotation":0,
                  "type":"",
@@ -213,7 +213,7 @@
                         {
                          "name":"type",
                          "type":"string",
-                         "value":"demon2"
+                         "value":"ghost"
                         }],
                  "rotation":0,
                  "type":"",
@@ -252,7 +252,7 @@
                         {
                          "name":"type",
                          "type":"string",
-                         "value":"demon2"
+                         "value":"ghost2"
                         }],
                  "rotation":0,
                  "type":"",
@@ -291,7 +291,7 @@
                         {
                          "name":"type",
                          "type":"string",
-                         "value":"demon"
+                         "value":"ghost"
                         }],
                  "rotation":0,
                  "type":"",
@@ -338,7 +338,7 @@
                         {
                          "name":"type",
                          "type":"string",
-                         "value":"demon"
+                         "value":"ghost2"
                         }],
                  "rotation":0,
                  "type":"",
@@ -389,7 +389,7 @@
                         {
                          "name":"type",
                          "type":"string",
-                         "value":"demon2"
+                         "value":"ghost2"
                         }],
                  "rotation":0,
                  "type":"",
