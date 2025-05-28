@@ -15,8 +15,6 @@ class MainSettingsView(arcade.View):
         self.brightness_bar_pos = (100, 300)
 
     def setup(self):
-        # Método reintegrado para compatibilidad con otras vistas
-        # Puedes usarlo para reiniciar valores si es necesario
         self.volume = 50
         self.brightness = 50
 
@@ -29,14 +27,10 @@ class MainSettingsView(arcade.View):
         arcade.draw_text("Settings", self.window.width / 2, self.window.height - 50,
                          arcade.color.ALLOY_ORANGE, 44, anchor_x="center")
 
-        # Dibujar barras
         self.draw_bar(self.volume_bar_pos, self.volume, "Volumen")
         self.draw_bar(self.brightness_bar_pos, self.brightness, "Brillo")
 
-        # Simular brillo con overlay
-        brightness_overlay = 255 - int((self.brightness / 100) * 255)
-        arcade.draw_lrtb_rectangle_filled(0, self.window.width, self.window.height, 0,
-                                          (brightness_overlay, brightness_overlay, brightness_overlay, 80))
+        self.draw_brightness_overlay()
 
     def draw_bar(self, position, value, label):
         x, y = position
@@ -50,7 +44,7 @@ class MainSettingsView(arcade.View):
     def on_mouse_press(self, x, y, button, modifiers):
         if self.is_inside_bar(x, y, self.volume_bar_pos):
             self.volume = self.calculate_value_from_click(x, self.volume_bar_pos)
-            arcade.set_sound_volume(self.volume / 100)
+            self.set_volume()
         elif self.is_inside_bar(x, y, self.brightness_bar_pos):
             self.brightness = self.calculate_value_from_click(x, self.brightness_bar_pos)
 
@@ -66,3 +60,15 @@ class MainSettingsView(arcade.View):
     def on_key_press(self, symbol: int, modifiers: int):
         if symbol == arcade.key.ESCAPE:
             self.window.show_view(self.window.views["game_title"])
+
+    # Función reutilizable para ajustar el volumen
+    def set_volume(self):
+        arcade.set_sound_volume(self.volume / 100)
+
+    # Función reutilizable para dibujar la superposición de brillo
+    def draw_brightness_overlay(self):
+        brightness_overlay = 255 - int((self.brightness / 100) * 255)
+        arcade.draw_lrtb_rectangle_filled(
+            0, self.window.width, self.window.height, 0,
+            (brightness_overlay, brightness_overlay, brightness_overlay, 80)
+        )
