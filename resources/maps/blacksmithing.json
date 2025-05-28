@@ -338,10 +338,6 @@
         {
          "firstgid":1,
          "source":"..\/tilesets\/[Base]BaseChip_pipo.json"
-        }, 
-        {
-         "firstgid":1067,
-         "source":"Herrero.tsj"
         }],
  "tilewidth":32,
  "type":"map",
