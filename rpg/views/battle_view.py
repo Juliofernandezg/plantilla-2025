@@ -3,6 +3,7 @@ import random
 import rpg.constants as constants
 from rpg.views.game_view import GameView
 from rpg.sprites import player_sprite
+from rpg.views.game_over_view import GameOver
 
 
 class BattleView(arcade.View):
@@ -176,7 +177,7 @@ class BattleView(arcade.View):
         """Función para volver al juego después de huir o terminar batalla"""
         arcade.unschedule(self.return_to_game)
         if self.player_hp <= 0:
-            self.window.show_view(self.window.views["main_map"])
+            self.window.show_view(self.window.views["game_over"])
         else:
             self.window.show_view(self.window.views["game"])
 
@@ -250,9 +251,6 @@ class BattleView(arcade.View):
                         arcade.schedule(self.enemy_attack, 1.0)
 
 
-        elif symbol == arcade.key.ESCAPE:
-            self.window.show_view(self.window.views["main_menu"])
-
     def apply_damage(self, amount):
         self.player_hp = max(0, self.player_hp - amount)
         self.player_sprite.current_health = self.player_hp
@@ -287,3 +285,6 @@ class BattleView(arcade.View):
             self.battle_log.append("Linkillo no se siente bien...")
             self.battle_state = "finished"
 
+    def on_update(self, delta_time: float):
+        self.window.views["game_over"] = GameOver()
+        self.window.views["game_over"].setup()

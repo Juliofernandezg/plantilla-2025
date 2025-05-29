@@ -2,6 +2,7 @@
 Loading screen
 """
 import arcade
+
 from rpg.draw_bar import draw_bar
 from rpg.load_game_map import load_maps
 from rpg.views.battle_view import BattleView
@@ -64,5 +65,6 @@ class LoadingView(arcade.View):
                 self.window.views["controls"].setup()
                 self.window.views["battle"] = BattleView(self.window.views["game"])
                 self.window.views["battle"].setup()
+
 
                 self.window.show_view(self.window.views["game"])
