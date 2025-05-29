@@ -446,7 +446,25 @@
          "draworder":"topdown",
          "id":11,
          "name":"characters",
-         "objects":[],
+         "objects":[
+                {
+                 "gid":878,
+                 "height":32,
+                 "id":21,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"item",
+                         "type":"string",
+                         "value":"Apple"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":285.476583023825,
+                 "y":99.0249116767823
+                }],
          "opacity":1,
          "type":"objectgroup",
          "visible":true,
@@ -454,7 +472,7 @@
          "y":0
         }],
  "nextlayerid":17,
- "nextobjectid":21,
+ "nextobjectid":22,
  "orientation":"orthogonal",
  "properties":[
         {
