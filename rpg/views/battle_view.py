@@ -2,6 +2,7 @@ import arcade
 import random
 import rpg.constants as constants
 from rpg.views.game_view import GameView
+from rpg.sprites import player_sprite
 
 
 class BattleView(arcade.View):
@@ -18,7 +19,10 @@ class BattleView(arcade.View):
         self.battle_state = "intro"  # intro, player_turn, enemy_turn, finished
         self.battle_log = []
 
-        GameView.gain_exp(5)
+        GameView.gain_exp(0)
+        GameView.apply_damage(0)
+        GameView.use_mana(0)
+        GameView.apply_heal(0)
 
         self.player_hp = 100
         self.enemy_hp = 100
@@ -125,7 +129,10 @@ class BattleView(arcade.View):
 
         elif self.battle_state == "finished":
             if self.enemy_hp <= 0:
-                GameView.gain_exp(self, 5)
+
+                # Gana experiencia
+                GameView.gain_exp(self, 1)
+
                 arcade.draw_text("¡COMBATE FINALIZADO!", self.window.width / 2, 80,
                                  arcade.color.ALLOY_ORANGE, 40, anchor_x="center")
                 arcade.draw_text("Has ganado 5 EXP", (self.window.width / 2), 30,
@@ -188,8 +195,10 @@ class BattleView(arcade.View):
             elif symbol == arcade.key.M:
                 if self.player_mana >= 10:
                     damage = random.randint(20, 30)
+                    mana = 10
                     self.enemy_hp -= damage
-                    self.player_mana -= 10
+                    self.player_mana -= mana
+                    GameView.use_mana(self, mana)
                     self.battle_log.append(f"Linkillo usó magia: {damage} de daño (10 MP).")
                     self.check_victory()
                     if self.battle_state != "finished":
@@ -204,6 +213,7 @@ class BattleView(arcade.View):
                     heal = random.randint(20, 30)
                     self.player_hp += heal
                     self.player_hp = min(self.player_hp, 100)
+                    GameView.apply_heal(self, heal)
                     item = player_sprite.hotbar.pop(0)
                     self.battle_log.append(f"Usaste {item['short_name']}, recuperaste {heal} HP.")
                 else:
@@ -234,6 +244,7 @@ class BattleView(arcade.View):
         damage = random.randint(8, 18)
         self.player_hp -= damage
         self.battle_log.append(f"{self.enemy_data.get('name', '???')} atacó y causó {damage} de daño.")
+        GameView.apply_damage(self, damage)
         self.check_defeat()
 
         if self.battle_state != "finished":

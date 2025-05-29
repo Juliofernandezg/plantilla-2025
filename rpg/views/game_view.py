@@ -14,7 +14,6 @@ from rpg.message_box import MessageBox
 from rpg.sprites.player_sprite import PlayerSprite
 
 
-
 class DebugMenu(arcade.gui.UIBorder, arcade.gui.UIWindowLikeMixin):
     def __init__(
             self,
@@ -170,6 +169,7 @@ class DebugMenu(arcade.gui.UIBorder, arcade.gui.UIWindowLikeMixin):
         self.exp_button = arcade.gui.UIFlatButton(text="gain exp", style=self.off_style)
         self.exp_button.on_click = apply_exp  # type: ignore
 
+
 class GameView(arcade.View):
     """
     Main application class.
@@ -315,11 +315,11 @@ class GameView(arcade.View):
             height=200,
             noclip_callback=self.noclip,
             hyper_callback=self.hyper,
-            damage_callback=self.apply_damage,  # Añadir callback para daño
-            heal_callback=self.apply_heal,      # Añadir callback para curar
-            heal_mana_callback=self.apply_heal_mana,# Añadir callback para curar mana
-            mana_callback=self.use_mana,        # Añadir callback para usar mana
-            exp_callback=self.gain_exp          # Añadir callback para ganar experiencia
+            damage_callback=self.apply_damage,
+            heal_callback=self.apply_heal,
+            heal_mana_callback=self.apply_heal_mana,
+            mana_callback=self.use_mana,
+            exp_callback=self.gain_exp
         )
 
         self.original_movement_speed = constants.MOVEMENT_SPEED
@@ -348,7 +348,6 @@ class GameView(arcade.View):
 
     def noclip(self, *args, status: bool):
         self.noclip_status = status
-
         self.setup_physics()
 
     def hyper(self, *args, status: bool):
@@ -372,22 +371,27 @@ class GameView(arcade.View):
         arcade.draw_rectangle_filled(
             x, y, self.window.width, hotbar_height, arcade.color.ALMOND
         )
+
+        # Asegurarse de que el jugador tenga el atributo hotbar
+        if not hasattr(GameView.player_sprite, 'hotbar'):
+            GameView.player_sprite.hotbar = []
+
         for i in range(capacity):
             y = vertical_hotbar_location
             x = i * field_width + 5
             if i == self.selected_item - 1:
                 arcade.draw_lrtb_rectangle_outline(
-                    x , x + field_width - 15, y + 25 , y - 25 , arcade.color.BLACK, 2
+                    x, x + field_width - 15, y + 25, y - 25, arcade.color.BLACK, 2
                 )
 
-            if len(GameView.player_sprite.hotbar) > i:
-                item_name = GameView.player_sprite.hotbar[i]["short_name"]
-            else:
-                item_name = ""
+            # Manejar el caso cuando hotbar no tiene suficientes items
+            item_name = ""
+            if i < len(GameView.player_sprite.hotbar):
+                item = GameView.player_sprite.hotbar[i]
+                item_name = item.get("short_name", "")
 
             hotkey_sprite = self.hotbar_sprite_list[i]
             hotkey_sprite.draw_scaled((x + 8) + sprite_height / 2, (y + 1) + sprite_height / 2, 1.8)
-            # Add whitespace so the item text doesn't hide behind the number pad sprite
             text = f"     {item_name}"
             arcade.draw_text(text, x, y, arcade.color.ALLOY_ORANGE, 16)
 
@@ -434,7 +438,6 @@ class GameView(arcade.View):
             # of what we drew into the light layer above.
             if cur_map.properties and "ambient_color" in cur_map.properties:
                 ambient_color = cur_map.properties["ambient_color"]
-                # ambient_color = (ambient_color.green, ambient_color.blue, ambient_color.alpha, ambient_color.red)
             else:
                 ambient_color = arcade.color.WHITE
             cur_map.light_layer.draw(ambient_color=ambient_color)
@@ -452,14 +455,104 @@ class GameView(arcade.View):
         # draw GUI
         self.ui_manager.draw()
 
-        # Draw the health bar
-        GameView.player_sprite.draw_health_bar()
+        # Dibujar barras de estado en la GUI (sin scrolling)
+        self.draw_status_bars()
 
-        # Draw the mana bar
-        GameView.player_sprite.draw_mana_bar()
+    def draw_status_bars(self):
+        """Dibuja las barras de estado en la parte superior de la pantalla"""
+        if not GameView.player_sprite:
+            return
 
-        # Draw the exp bar
-        GameView.player_sprite.draw_exp_bar()
+        bar_width = 200
+        bar_height = 20
+        start_x = 110  # Posición X inicial
+        start_y = self.window.height - 30  # Posición Y (parte superior)
+
+        # Asegurarnos de que los atributos existen
+        if not hasattr(GameView.player_sprite, 'current_health'):
+            GameView.player_sprite.current_health = 100
+            GameView.player_sprite.max_health = 100
+        if not hasattr(GameView.player_sprite, 'current_mana'):
+            GameView.player_sprite.current_mana = 50
+            GameView.player_sprite.max_mana = 50
+        if not hasattr(GameView.player_sprite, 'experience'):
+            GameView.player_sprite.experience = 0
+            GameView.player_sprite.max_experience = 100
+            GameView.player_sprite.level = 1
+
+        # Barra de vida
+        health_ratio = min(1.0, max(0.0, GameView.player_sprite.current_health / GameView.player_sprite.max_health))
+        health_width = health_ratio * bar_width
+
+        arcade.draw_rectangle_filled(
+            center_x=start_x,
+            center_y=start_y,
+            width=bar_width,
+            height=bar_height,
+            color=arcade.color.BLACK
+        )
+        arcade.draw_rectangle_filled(
+            center_x=start_x - (bar_width - health_width) / 2,
+            center_y=start_y,
+            width=health_width,
+            height=bar_height - 2,
+            color=arcade.color.RED
+        )
+        arcade.draw_text(
+            f"HP: {GameView.player_sprite.current_health}/{GameView.player_sprite.max_health}",
+            start_x - bar_width / 2 + 5,
+            start_y - 6,
+            arcade.color.WHITE,
+            12
+        )
+
+        # Barra de maná
+        mana_width = (GameView.player_sprite.current_mana / GameView.player_sprite.max_mana) * bar_width
+        arcade.draw_rectangle_filled(
+            center_x=start_x,
+            center_y=start_y - 30,
+            width=bar_width,
+            height=bar_height,
+            color=arcade.color.BLACK
+        )
+        arcade.draw_rectangle_filled(
+            center_x=start_x - (bar_width - mana_width)/2,
+            center_y=start_y - 30,
+            width=mana_width,
+            height=bar_height-2,
+            color=arcade.color.BLUE
+        )
+        arcade.draw_text(
+            f"MP: {GameView.player_sprite.current_mana}/{GameView.player_sprite.max_mana}",
+            start_x - bar_width/2 + 5,
+            start_y - 36,
+            arcade.color.WHITE,
+            12
+        )
+
+        # Barra de experiencia
+        exp_width = (GameView.player_sprite.experience / GameView.player_sprite.max_experience) * bar_width
+        arcade.draw_rectangle_filled(
+            center_x=start_x,
+            center_y=start_y - 60,
+            width=bar_width,
+            height=bar_height,
+            color=arcade.color.BLACK
+        )
+        arcade.draw_rectangle_filled(
+            center_x=start_x - (bar_width - exp_width)/2,
+            center_y=start_y - 60,
+            width=exp_width,
+            height=bar_height-2,
+            color=arcade.color.GREEN
+        )
+        arcade.draw_text(
+            f"XP: {GameView.player_sprite.experience}/{GameView.player_sprite.max_experience} (Lvl {GameView.player_sprite.level})",
+            start_x - bar_width/2 + 5,
+            start_y - 66,
+            arcade.color.WHITE,
+            12
+        )
 
     def scroll_to_player(self, speed=constants.CAMERA_SPEED):
         """Manage Scrolling"""
@@ -480,6 +573,8 @@ class GameView(arcade.View):
         """
         All the logic to move, and the game logic goes here.
         """
+        if hasattr(self, 'player_sprite'):
+            self.player_sprite.update_mana_regen(delta_time)  # Regeneración de mana
 
         # Calculate speed based on the keys pressed
         GameView.player_sprite.change_x = 0
@@ -724,8 +819,6 @@ class GameView(arcade.View):
                 self.enable_debug_menu()
             else:
                 self.disable_debug_menu()
-
-
 
     def close_message_box(self):
         self.message_box = None
