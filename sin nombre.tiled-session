@@ -12,16 +12,28 @@
         "resources/maps"
     ],
     "fileStates": {
+        "": {
+            "scaleInDock": 1
+        },
+        "resources/maps/Enemy 05-1.tsx": {
+            "scaleInDock": 1
+        },
+        "resources/maps/Enemy 06-1.tsx": {
+            "scaleInDock": 1
+        },
         "resources/maps/Mazmorra3.tsx": {
             "scaleInDock": 1,
             "scaleInEditor": 1
         },
         "resources/maps/blacksmithing.json": {
-            "scale": 0.9582465277777777,
-            "selectedLayer": 0,
+            "expandedObjectLayers": [
+                9
+            ],
+            "scale": 1.5,
+            "selectedLayer": 6,
             "viewCenter": {
-                "x": 288.02608931968473,
-                "y": 192.01739287978984
+                "x": 456.33333333333326,
+                "y": 198.66666666666666
             }
         },
         "resources/maps/dungeon_lvl_three_maze.json": {
@@ -32,44 +44,54 @@
                 "y": 2391
             }
         },
+        "resources/maps/dungeon_lvl_three_room9.json": {
+            "scale": 1.5783854166666664,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 192.28510146840458,
+                "y": 191.96832205906617
+            }
+        },
         "resources/maps/farmhouse.json": {
             "expandedObjectLayers": [
                 8
             ],
             "scale": 1.0780273437499999,
-            "selectedLayer": 7,
+            "selectedLayer": 4,
             "viewCenter": {
-                "x": 256.02319050638647,
-                "y": 240.2536461636018
+                "x": 367.8014312890661,
+                "y": 496.2768366699883
             }
         },
         "resources/maps/graveyard_dungeon.json": {
             "expandedObjectLayers": [
-                6,
-                10,
-                8
+                8,
+                6
             ],
-            "scale": 1.1827,
-            "selectedLayer": 4,
+            "scale": 1.5,
+            "selectedLayer": 6,
             "viewCenter": {
-                "x": 384.2901834784814,
-                "y": 444.3223133508074
+                "x": 432.33333333333326,
+                "y": 1006.6666666666666
             }
         },
+        "resources/maps/graveyard_dungeon.json#[Base]BaseChip_pipo": {
+            "scaleInDock": 1
+        },
         "resources/maps/graveyard_dungeon_second_level.json": {
-            "scale": 0.3080078125,
-            "selectedLayer": 0,
+            "scale": 1.5,
+            "selectedLayer": 7,
             "viewCenter": {
-                "x": 894.4578313253013,
-                "y": 321.42041851617
+                "x": 610.3333333333333,
+                "y": 139.33333333333331
             }
         },
         "resources/maps/main_map.json": {
-            "scale": 1,
+            "scale": 0.5,
             "selectedLayer": 8,
             "viewCenter": {
-                "x": 1214,
-                "y": 1440
+                "x": 1045,
+                "y": 1078
             }
         },
         "resources/tilesets/[A]Grass_pipo.json": {
@@ -82,6 +104,7 @@
             "scaleInDock": 1
         }
     },
+    "last.imagePath": "C:/Users/diego/PycharmProjects/plantilla-2025/resources/characters/Enemy",
     "openFiles": [
         "resources/maps/dungeon_lvl_three_maze.json",
         "resources/maps/main_map.json",
@@ -100,5 +123,6 @@
         "resources/maps/farmhouse.json",
         "resources/maps/main_map.json",
         "resources/maps/dungeon_lvl_three_maze.json"
-    ]
+    ],
+    "tileset.lastUsedFormat": "tsx"
 }
