@@ -7,6 +7,8 @@ from rpg.views.game_view import GameView
 class BattleView(arcade.View):
     def __init__(self, GameView):
         super().__init__()
+        self.GameView = GameView
+
         self.return_position = None
 
         self.enemy_name = None
@@ -243,7 +245,6 @@ class BattleView(arcade.View):
         if self.enemy_hp <= 0:
             self.battle_log.append(f"¡Has derrotado a {self.enemy_data.get('name', 'enemigo')}!")
             self.battle_state = "finished"
-            self.window.show_view(self.window.views["game"])
 
             if hasattr(self.window.views["game"], "register_defeated_enemy"):
                 self.window.views["game"].register_defeated_enemy(self.enemy_name)
@@ -253,7 +254,6 @@ class BattleView(arcade.View):
         if self.player_hp <= 0:
             self.battle_log.append("Linkillo no se siente bien...")
             self.battle_state = "finished"
-            self.window.show_view(self.window.views["main_menu"])
 
     def end_battle(self, victory: bool):
         """Termina el combate y vuelve al mapa anterior"""
