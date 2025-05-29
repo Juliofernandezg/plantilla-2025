@@ -167,7 +167,7 @@
                  "y":908.666666666667
                 }, 
                 {
-                 "gid":1082,
+                 "gid":1086,
                  "height":32,
                  "id":88,
                  "name":"",
@@ -181,8 +181,8 @@
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":354.666666666667,
-                 "y":988
+                 "x":366.666666666667,
+                 "y":992
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -626,7 +626,7 @@
          "source":"Enemy 06-1.tsx"
         }, 
         {
-         "firstgid":1077,
+         "firstgid":1083,
          "source":"Enemy 05-1.tsx"
         }],
  "tilewidth":32,
