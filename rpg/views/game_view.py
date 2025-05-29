@@ -862,7 +862,7 @@ class GameView(arcade.View):
         for sprite in sprites_in_range:
             if "item" in sprite.properties:
                 self.message_box = MessageBox(
-                    self, f"Found: {sprite.properties['item']}"
+                    self, f"Menuda basura, para que necesito: {sprite.properties['item']}"
                 )
                 sprite.remove_from_sprite_lists()
                 lookup_item = self.item_dictionary[sprite.properties["item"]]
