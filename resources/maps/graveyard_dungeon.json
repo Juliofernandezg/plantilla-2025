@@ -167,7 +167,7 @@
                  "y":908.666666666667
                 }, 
                 {
-                 "gid":1086,
+                 "gid":1090,
                  "height":32,
                  "id":88,
                  "name":"",
@@ -626,7 +626,7 @@
          "source":"Enemy 06-1.tsx"
         }, 
         {
-         "firstgid":1083,
+         "firstgid":1087,
          "source":"Enemy 05-1.tsx"
         }],
  "tilewidth":32,
