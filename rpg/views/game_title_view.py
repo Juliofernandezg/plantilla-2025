@@ -1,10 +1,11 @@
 """
 First game menu
 """
+from rpg.views.loading_view import LoadingView
+
 import arcade
 import arcade.gui
 
-from rpg.views.loading_view import LoadingView
 from rpg.views.main_settings_view import MainSettingsView
 from rpg.views.main_controls_view import MainControlsView
 

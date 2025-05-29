@@ -3,12 +3,15 @@ import random
 import rpg.constants as constants
 from rpg.views.game_view import GameView
 from rpg.sprites import player_sprite
+from rpg.views.game_over_view import GameOver
 
 
 class BattleView(arcade.View):
     def __init__(self, GameView):
         super().__init__()
         self.GameView = GameView
+
+        self.player_sprite = GameView.player_sprite
 
         self.return_position = None
 
@@ -24,10 +27,12 @@ class BattleView(arcade.View):
         GameView.use_mana(0)
         GameView.apply_heal(0)
 
-        self.player_hp = 100
         self.enemy_hp = 100
-        self.player_mana = 50
-        self.max_mana = 50
+
+        # Compatibilidad
+        self.player_hp = self.player_sprite.current_health
+        self.player_mana = self.player_sprite.current_mana
+        self.max_mana = self.player_sprite.max_mana
 
         arcade.set_background_color(arcade.color.ALMOND)
 
@@ -71,13 +76,19 @@ class BattleView(arcade.View):
         texture = arcade.load_texture(":characters:linkillo_picture.png")
         arcade.draw_scaled_texture_rectangle(center_x_sprite, center_y_sprite, texture, 0.3)
 
-        # STATS
-        arcade.draw_text(f"linkillo HP: {self.player_hp}", (self.window.width / 2) + 320,
-                         (self.window.height / 2) - 200,
-                         arcade.color.ALLOY_ORANGE, 20)
-        arcade.draw_text(f"Mana: {self.player_mana}/{self.max_mana}", (self.window.width / 2) + 320,
-                         (self.window.height / 2) - 220,
-                         arcade.color.DARK_BLUE, 18)
+        # STATS - Usando los valores actuales de PlayerSprite
+        arcade.draw_text(
+            f"linkillo HP: {self.player_sprite.current_health}/{self.player_sprite.max_health}",
+            (self.window.width / 2) + 320,
+            (self.window.height / 2) - 200,
+            arcade.color.ALLOY_ORANGE, 20
+        )
+        arcade.draw_text(
+            f"Mana: {self.player_sprite.current_mana}/{self.player_sprite.max_mana}",
+            (self.window.width / 2) + 320,
+            (self.window.height / 2) - 220,
+            arcade.color.DARK_BLUE, 18
+        )
 
     def draw_enemy(self, name):
         # PICTURE
@@ -135,7 +146,7 @@ class BattleView(arcade.View):
 
                 arcade.draw_text("¡COMBATE FINALIZADO!", self.window.width / 2, 80,
                                  arcade.color.ALLOY_ORANGE, 40, anchor_x="center")
-                arcade.draw_text("Has ganado 5 EXP", (self.window.width / 2), 30,
+                arcade.draw_text("Disfruta de esa XP galán", (self.window.width / 2), 30,
                                  arcade.color.ALLOY_ORANGE, 30, anchor_x="center")
 
                 # Añade un pequeño retraso antes de volver al juego
@@ -166,10 +177,16 @@ class BattleView(arcade.View):
         """Función para volver al juego después de huir o terminar batalla"""
         arcade.unschedule(self.return_to_game)
         if self.player_hp <= 0:
-            self.window.show_view(self.window.views["main_map"])
+            self.window.show_view(self.window.views["game_over"])
         else:
             self.window.show_view(self.window.views["game"])
 
+    def use_mana(self, amount):
+        if self.player_mana >= amount:
+            self.player_mana -= amount
+            self.player_sprite.current_mana = self.player_mana
+            return True
+        return False
 
 
     def on_key_press(self, symbol: int, modifiers: int):
@@ -183,7 +200,7 @@ class BattleView(arcade.View):
             return
 
         if self.battle_state == "player_turn":
-            if symbol == arcade.key.A:
+            if symbol == arcade.key.A:   # Atacar
                 damage = random.randint(10, 20)
                 self.enemy_hp -= damage
                 self.battle_log.append(f"Linkillo atacó e hizo {damage} de daño.")
@@ -192,13 +209,13 @@ class BattleView(arcade.View):
                     self.battle_state = "enemy_turn"
                     arcade.schedule(self.enemy_attack, 1.0)
 
-            elif symbol == arcade.key.M:
+            elif symbol == arcade.key.M:   # Magia
                 if self.player_mana >= 10:
                     damage = random.randint(20, 30)
-                    mana = 10
                     self.enemy_hp -= damage
-                    self.player_mana -= mana
-                    GameView.use_mana(self, mana)
+
+                    mana = 10
+                    self.use_mana(mana)
                     self.battle_log.append(f"Linkillo usó magia: {damage} de daño (10 MP).")
                     self.check_victory()
                     if self.battle_state != "finished":
@@ -207,7 +224,7 @@ class BattleView(arcade.View):
                 else:
                     self.battle_log.append("¡No tienes suficiente maná!")
 
-            elif symbol == arcade.key.I:
+            elif symbol == arcade.key.I:   # Item
                 player_sprite = self.window.views["game"].player_sprite
                 if player_sprite.hotbar:
                     heal = random.randint(20, 30)
@@ -234,17 +251,19 @@ class BattleView(arcade.View):
                         arcade.schedule(self.enemy_attack, 1.0)
 
 
-        elif symbol == arcade.key.ESCAPE:
-            self.window.show_view(self.window.views["main_menu"])
+    def apply_damage(self, amount):
+        self.player_hp = max(0, self.player_hp - amount)
+        self.player_sprite.current_health = self.player_hp
 
     def enemy_attack(self, delta_time):
         if self.battle_state != "enemy_turn":
             return
 
         damage = random.randint(8, 18)
-        self.player_hp -= damage
-        self.battle_log.append(f"{self.enemy_data.get('name', '???')} atacó y causó {damage} de daño.")
-        GameView.apply_damage(self, damage)
+
+        self.apply_damage(damage)
+
+        self.battle_log.append(f"{self.enemy_data.get('name', '???')} atacó (-{damage} HP)")
         self.check_defeat()
 
         if self.battle_state != "finished":
@@ -266,20 +285,6 @@ class BattleView(arcade.View):
             self.battle_log.append("Linkillo no se siente bien...")
             self.battle_state = "finished"
 
-    def end_battle(self, victory: bool):
-        """Termina el combate y vuelve al mapa anterior"""
-        if victory:
-            self.previous_view.switch_map(
-                self.return_map,
-                self.previous_view.player_sprite.center_x // 32,
-                (self.previous_view.my_map.map_size[1] * 32 - self.previous_view.player_sprite.center_y) // 32
-            )
-        else:
-            # Volver al punto de spawn
-            self.previous_view.switch_map(
-                constants.STARTING_MAP,
-                constants.STARTING_X,
-                constants.STARTING_Y
-            )
-        self.window.show_view(self.previous_view)
-
+    def on_update(self, delta_time: float):
+        self.window.views["game_over"] = GameOver()
+        self.window.views["game_over"].setup()
