@@ -659,7 +659,7 @@ class GameView(arcade.View):
 
                 if enemy_info:
                     from rpg.views.battle_view import BattleView
-                    battle_view = BattleView()
+                    battle_view = BattleView(self.window.views["game"])
 
                     # Establecer información del enemigo
                     battle_view.set_enemy(character_id, {

@@ -116,7 +116,7 @@ class InventoryView(arcade.View):
             text = f"     {item_name}"
             arcade.draw_text(text, x_text, y_text, arcade.color.ALLOY_ORANGE, 16)
         # Interfaz Personaje(WIP)
-        texture = arcade.load_texture(":characters:inventory_picture.png")
+        texture = arcade.load_texture(":characters:linkillo_picture.png")
         arcade.draw_scaled_texture_rectangle(center_x_sprite, center_y_sprite, texture, 0.35)
 
     def setup(self):
