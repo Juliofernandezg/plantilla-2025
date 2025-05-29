@@ -645,6 +645,7 @@ class GameView(arcade.View):
 
     def interact_with_npc(self):
         """Interacción con personajes NPC del mapa (enemigos, etc.)"""
+
         hit_list = arcade.check_for_collision_with_list(self.player_sprite, self.my_map.scene["characters"])
 
         for character in hit_list:
@@ -661,23 +662,20 @@ class GameView(arcade.View):
                     from rpg.views.battle_view import BattleView
                     battle_view = BattleView(self.window.views["game"])
 
-                    # Establecer información del enemigo
+                    # Guardamos la posición y el mapa actual para volver después
+                    battle_view.previous_view = self
+                    battle_view.return_map = self.cur_map_name
+                    battle_view.return_position = (
+                        GameView.player_sprite.center_x,
+                        GameView.player_sprite.center_y
+                    )
+
                     battle_view.set_enemy(character_id, {
                         "sprite": f":characters:{enemy_info['images']}",
                         "name": enemy_info.get("name", character_id),
                         "intro": enemy_info.get("intro", []),
                         "hp": enemy_info.get("hp", 100)
                     })
-
-                    # Guardar posición actual y mapa
-                    battle_view.return_position = {
-                        "x": self.player_sprite.center_x,
-                        "y": self.player_sprite.center_y,
-                        "map": self.cur_map_name
-                    }
-
-                    # Pasar lista de mapas para poder volver correctamente
-                    battle_view.map_list = self.map_list
 
                     self.window.show_view(battle_view)
                 else:
@@ -758,7 +756,7 @@ class GameView(arcade.View):
         for sprite in characters_sprites_in_range:
             if "item" in sprite.properties:
                 self.message_box = MessageBox(
-                    self, f"Found: {sprite.properties['type']}"
+                    self, f"Derrotado: {sprite.properties['type']}"
                 )
                 sprite.remove_from_sprite_lists()
                 lookup_item = self.enemy_dictionary[sprite.properties["type"]]
@@ -766,7 +764,7 @@ class GameView(arcade.View):
             elif "type" in sprite.properties:
                 self.window.show_view(self.window.views["battle"])
                 self.message_box = MessageBox(
-                    self, f"Found: {sprite.properties['type']}"
+                    self, f"Derrotado: {sprite.properties['type']}"
                 )
         for sprite in sprites_in_range:
             if "item" in sprite.properties:

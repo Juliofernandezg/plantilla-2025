@@ -203,7 +203,7 @@ class BattleView(arcade.View):
                     self.player_hp += heal
                     self.player_hp = min(self.player_hp, 100)
                     item = player_sprite.hotbar.pop(0)
-                    self.battle_log.append(f"Usaste: {item['short_name']}, ({heal} HP).")
+                    self.battle_log.append(f"Usaste {item['short_name']}, recuperaste {heal} HP.")
                 else:
                     self.battle_log.append("No tienes ítems disponibles.")
 
@@ -243,6 +243,8 @@ class BattleView(arcade.View):
         if self.enemy_hp <= 0:
             self.battle_log.append(f"¡Has derrotado a {self.enemy_data.get('name', 'enemigo')}!")
             self.battle_state = "finished"
+            self.window.show_view(self.window.views["game"])
+
             if hasattr(self.window.views["game"], "register_defeated_enemy"):
                 self.window.views["game"].register_defeated_enemy(self.enemy_name)
                 self.window.views["game"].remove_enemy_sprite(self.enemy_name)
@@ -251,3 +253,22 @@ class BattleView(arcade.View):
         if self.player_hp <= 0:
             self.battle_log.append("Linkillo no se siente bien...")
             self.battle_state = "finished"
+            self.window.show_view(self.window.views["main_menu"])
+
+    def end_battle(self, victory: bool):
+        """Termina el combate y vuelve al mapa anterior"""
+        if victory:
+            self.previous_view.switch_map(
+                self.return_map,
+                self.previous_view.player_sprite.center_x // 32,
+                (self.previous_view.my_map.map_size[1] * 32 - self.previous_view.player_sprite.center_y) // 32
+            )
+        else:
+            # Volver al punto de spawn
+            self.previous_view.switch_map(
+                constants.STARTING_MAP,
+                constants.STARTING_X,
+                constants.STARTING_Y
+            )
+        self.window.show_view(self.previous_view)
+

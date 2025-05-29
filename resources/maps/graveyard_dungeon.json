@@ -270,7 +270,7 @@
                  "y":124
                 }, 
                 {
-                 "gid":863,
+                 "gid":1066,
                  "height":32,
                  "id":65,
                  "name":"",
@@ -673,8 +673,12 @@
          "source":"..\/tilesets\/[Base]BaseChip_pipo.json"
         }, 
         {
-         "firstgid":1067,
+         "firstgid":1065,
          "source":"Mazmorra3.tsx"
+        }, 
+        {
+         "firstgid":1065,
+         "source":"Enemy 06-1.tsx"
         }],
  "tilewidth":32,
  "type":"map",
