@@ -397,6 +397,24 @@
                  "width":0,
                  "x":809,
                  "y":472.333333333333
+                }, 
+                {
+                 "gid":1594,
+                 "height":32,
+                 "id":42,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"type",
+                         "type":"string",
+                         "value":"skeleton"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":867.333333333333,
+                 "y":120
                 }],
          "offsetx":0,
          "offsety":-1.33333333333333,
@@ -768,7 +786,7 @@
          "y":0
         }],
  "nextlayerid":12,
- "nextobjectid":42,
+ "nextobjectid":43,
  "orientation":"orthogonal",
  "properties":[
         {
@@ -785,8 +803,12 @@
          "source":"..\/tilesets\/[Base]BaseChip_pipo.json"
         }, 
         {
-         "firstgid":1067,
+         "firstgid":1065,
          "source":"..\/tilesets\/[A]Grass_pipo.json"
+        }, 
+        {
+         "firstgid":1593,
+         "source":"Enemy 06-1.tsx"
         }],
  "tilewidth":32,
  "type":"map",
