@@ -36,13 +36,7 @@ class SettingsView(arcade.View):
     def setup_ui(self):
         v_box = UIBoxLayout(space_between=30)
 
-        titulo = UILabel(
-            text="OPCIONES",
-            font_size=32,
-            font_name="Arial",
-            text_color=arcade.color.ALLOY_ORANGE
-        )
-        v_box.add(titulo.with_space_around(bottom=40))
+
 
         # Volumen
         fila_volumen = UIBoxLayout(vertical=False, space_between=15)
@@ -88,7 +82,14 @@ class SettingsView(arcade.View):
 
     def on_draw(self):
         self.clear()
-
+        arcade.draw_text(
+            "Opciones",
+            self.window.width / 2,
+            self.window.height - 80,
+            arcade.color.ALLOY_ORANGE,
+            48,
+            anchor_x="center",
+        )
         valor_brillo = 255 - int((ConfiguracionGlobal.brillo / 100) * 255)
         arcade.draw_lrtb_rectangle_filled(
             0, self.window.width, self.window.height, 0,
