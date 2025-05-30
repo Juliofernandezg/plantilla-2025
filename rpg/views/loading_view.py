@@ -26,7 +26,7 @@ class LoadingView(arcade.View):
     def on_draw(self):
         arcade.start_render()
         arcade.draw_text(
-            "Loading game...",
+            "Cargando la aventura ...",
             self.window.width / 2,
             self.window.height / 2,
             arcade.color.ALLOY_ORANGE,

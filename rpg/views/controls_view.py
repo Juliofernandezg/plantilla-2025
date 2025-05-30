@@ -26,7 +26,7 @@ class ControlsView(arcade.View):
         self.manager.draw()
 
         arcade.draw_text(
-            "CONTROLS",
+            "Controles",
             self.window.width / 2,
             self.window.height - 80,
             arcade.color.ALLOY_ORANGE,

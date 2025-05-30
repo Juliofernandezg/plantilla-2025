@@ -45,7 +45,7 @@ class InventoryView(arcade.View):
         center_y_sprite = self.window.height/2
         arcade.start_render()
         arcade.draw_text(
-            "Inventory",
+            "Inventario",
             self.window.width / 2,
             self.window.height - 50,
             arcade.color.ALLOY_ORANGE,

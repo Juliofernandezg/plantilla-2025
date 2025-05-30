@@ -27,22 +27,22 @@ class TitleView(arcade.View):
         self.v_box = arcade.gui.UIBoxLayout()
 
 
-        play_button = arcade.gui.UIFlatButton(text="PLAY", width=350, style=button_style)
+        play_button = arcade.gui.UIFlatButton(text="COMENZAR AVENTURA", width=350, style=button_style)
         self.v_box.add(play_button.with_space_around(bottom=40))
         play_button.on_click = self.on_click_play
 
 
-        settings_button = arcade.gui.UIFlatButton(text="SETTINGS", width=350, style=button_style)
+        settings_button = arcade.gui.UIFlatButton(text="OPCIONES", width=350, style=button_style)
         self.v_box.add(settings_button.with_space_around(bottom=40))
         settings_button.on_click = self.on_click_settings
 
 
-        controls_button = arcade.gui.UIFlatButton(text="CONTROLS", width=350, style=button_style)
+        controls_button = arcade.gui.UIFlatButton(text="CONTROLES", width=350, style=button_style)
         self.v_box.add(controls_button.with_space_around(bottom=40))
         controls_button.on_click = self.on_click_controls
 
 
-        quit_button = arcade.gui.UIFlatButton(text="QUIT", width=350, style=button_style)
+        quit_button = arcade.gui.UIFlatButton(text="SALIR", width=350, style=button_style)
         self.v_box.add(quit_button.with_space_around(bottom=40))
         quit_button.on_click = self.on_click_quit
 

@@ -24,7 +24,7 @@ class MainSettingsView(arcade.View):
 
     def on_draw(self):
         arcade.start_render()
-        arcade.draw_text("Settings", self.window.width / 2, self.window.height - 50,
+        arcade.draw_text("Opciones", self.window.width / 2, self.window.height - 50,
                          arcade.color.ALLOY_ORANGE, 44, anchor_x="center")
 
         self.draw_bar(self.volume_bar_pos, self.volume, "Volumen")
