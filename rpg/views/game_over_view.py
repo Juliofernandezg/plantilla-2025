@@ -17,15 +17,14 @@ class GameOver(arcade.View):
         arcade.draw_text("LO HAN REVENTAO AL POBRE", self.window.width / 2,
                          self.window.height / 2 + 60,
                          arcade.color.DARK_RED, 50, anchor_x="center")
-        arcade.draw_text("Pulsa cualquier tecla para volver al menú principal", self.window.width / 2,
+        arcade.draw_text("Pulsa cualquier tecla para volver a empezar", self.window.width / 2,
                          (self.window.height / 2) - 40,
                          arcade.color.DARK_RED, 30, anchor_x="center")
 
     def on_update(self, delta_time: float):
-        from rpg.views import TitleView
-        self.window.views["title_view"] = TitleView()
-        self.window.views["title_view"].setup()
+        pass
 
     def on_key_press(self, symbol: int, modifiers: int):
-
-        self.window.show_view(self.window.views["title_view"])
+        print("restart game")
+        self.window.views["game"].setup()
+        self.window.show_view(self.window.views["game"])
