@@ -179,8 +179,7 @@ Con diferentes niveles y un laberinto.
 ### Tareas no completadas
  - No se ha podido realizar colisiones con los enemigos
 
- - La música si bien se ha conseguido implementar no hemos conseguido hacer que sea 
-   una por zona y adaptada a la situación
+ - La música da errores por el tamaño de la canción 
 
  - No hemos conseguido implementar al herrero que funcionaría como un nivel de tutorial
 
