@@ -767,7 +767,7 @@ class GameView(arcade.View):
 
         for character in hit_list:
             character_properties = character.properties
-            if character_properties.get("type") in ["skeleton", "demon", "red_wizard", "skeleton_king","hermano","cartel_informacion","fuente","buzon", "fantasma","teddy"]:
+            if character_properties.get("type") in ["skeleton", "demon", "red_wizard", "skeleton_king","hermano","cartel_informacion","fuente","buzon", "fantasma","teddy","novia","calabaza","jefe","mago"]:
                 character_id = character_properties.get("name") or "skeleton"
 
                 with open("../resources/data/characters_dictionary.json", "r") as f:

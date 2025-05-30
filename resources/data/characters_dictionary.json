@@ -136,6 +136,42 @@
 
   ]
   },
+  "novia": {
+    "images": "Enemy/Enemy 06-1.png",
+    "interaction_type": "battle",
+    "type": "Hola funciono",
+    "name": "novia",
+    "intro": ["Te casas conmigo"],
+    "hp": 120
+
+  },
+  "calabaza": {
+    "images": "Enemy/Enemy 06-1.png",
+    "interaction_type": "battle",
+    "type": "Hola funciono",
+    "name": "calabaza",
+    "intro": ["Estoy sembrado"],
+    "hp": 120
+
+  },
+  "mago": {
+    "images": "Enemy/Enemy 06-1.png",
+    "interaction_type": "battle",
+    "type": "Hola funciono",
+    "name": "mago",
+    "intro": ["Te miro y te hechizo"],
+    "hp": 120
+
+  },
+  "jefe": {
+    "images": "Enemy/Enemy 06-1.png",
+    "interaction_type": "battle",
+    "type": "Hola funciono",
+    "name": "jefe",
+    "intro": ["Soy tu fin"],
+    "hp": 150
+
+  },
   "skeleton": {
     "images": "Enemy/Enemy 06-1.png",
     "interaction_type": "battle",
