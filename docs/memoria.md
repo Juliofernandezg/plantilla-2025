@@ -3,10 +3,16 @@
 ## Nombre del videojuego: La Maldición del Peluche Infernal
 
 ## Memoria
+El primer paso del grupo en el progreso del videojuego se presenta con la etapa de diseño y lluvia de ideas sobre el videojuego que queriamos lograr, para ello exploramos la plantilla entregada por el profesor e investigamos las herramientas de Tiled empezamos a hacer pruebas modificando el main map.
+
+Para poder seguir el progreso del juego realizamos una lista de objetivos/tareas en forma de Issues de gitHub. Desde un principio tuvimos claro que el juego iba a ser un estilo Zelda con toques de humor y batalla por turnos.
+
+Al tener todos tareas asignadas el resto del tiempo se baso en la resolucion de dichas tareas, cada uno por su cuenta y con la ayuda de todos si surgia alguna duda.
+///////////////////////////////////////////////////////////////////////////////////////
 El primer día, se nos presentó el proyecto y descargamos el repositorio de la plantilla
 para probarla y ver donde se ubicaban las cosas dentro de este proyecto. Ese día nos
 centramos en conocer al grupo y destacar que cosas eran necesarias de arreglar de la 
-plantilla.
+plantilla. 
 
 El segundo día nos reunimos en el laboratorio y hicimos una lluvia de ideas de como iba
 a ser el juego, entre todos decidimos que este juego sería un juego basado en el humor
@@ -24,31 +30,26 @@ más tiempo y problemas (como la interacción del jugador con los npcs), pero fu
 para la fecha de entrega.
 
 ## Manual de usuario
-Inicia la aventura La Maldición del Peluche Infernal, al entrar al juego verás una interfaz
-de usuario de un menu con las siguientes opciones:
-![img.png](img.png)
-Los controles son:
-![img_1.png](img_1.png)
-Las opcienes de ajuste son:
-![img_2.png](img_2.png)
-Al iniciar la aventura aparecerás en el jardín.
-![img_3.png](img_3.png)
-Arriba podrás encontrar tu casa.
-![img_4.png](img_4.png)
-Al sur encotrarás la herrería.
-![img_5.png](img_5.png)
-Y al este el cementerio.
-![img_6.png](img_6.png)
-En el cementerio encontrarás enemigos con los que combatir.
-![img_7.png](img_7.png)
-Y objetos para curarte.
-![img_12.png](img_12.png)
-En el cementerio investigarás una mazmorra para rescatar el osito de peluche de tu hermano.
-![img_8.png](img_8.png)
-Con diferentes niveles y un laberinto.
-![img_10.png](img_10.png)
-![img_11.png](img_11.png)
-![img_9.png](img_9.png)
+Inicia la aventura La Maldición del Peluche Infernal, este es el punto de no retorno en el que decidiras si vives la emocionante aventura de nuestro protagonista Linkillo o seguiras con tu triste y monotona vida de jugador.
+
+Si te decides por el camino de la libertad y la emocion, apareceras en este alegre y colorido campo junto a tu casa, en la que convives con tu querido hermano.
+
+Todo parece un sueño inimaginable y parece imposible que algo malo suceda... 
+Eso pensabas hasta que hablaste con tu hermano en la casa...
+
+En tu camino a la peligrosa y "supermegaimportante" mision que te ha sido encomendada encontraras diferentes estructuras y monumentos, algunos mas vivos que otros.
+Esta es ***_¡LA FUENTE INÚTIL DE LOS DESEOS!_***, el nombre lo dice todo..
+
+Un paso adelante en tu aventura te encontraras con la ***Herreria Abandonada***, dejemoslo ahi..
+
+Finalmente llegas a las oficinas de Nokia, ah no solo es un triste cementerio..
+
+Pero **¡OJO!** algo maligno se esconde en su interior.. Te acercas y **¡ZASCA!** esta oscuro y no ves, procedes a encender una luz
+
+En su interior te topas con innumerables Venezolanos en plenas elecciones
+
+Mas alla de la mazmorra de la primera cueva la oscuridad asusta tanto como quedarte a 1HP en una boss fight, pero oye quien sabe igual incluso encuentras el amor..
+
 
 ## Tareas completadas
  ### Diseño
@@ -58,7 +59,7 @@ Con diferentes niveles y un laberinto.
 
  - Diseñar al antagonista: Rey Demonio Patatón.
 
- - Diseñar a los 4 minibosses con sus estilos de combate únicos.
+ - Diseñar a los 3 minibosses con caracteristicas y comportamientos diferentes.
 
  - Diseñar al NPC Don Yunque. (Si está hecho, pero no está implementado)
 
@@ -66,7 +67,7 @@ Con diferentes niveles y un laberinto.
 
  - Diseñar los objeto interactuables del mapa.
 
- - Diseñar las mecánicas del juego (combate, inventario, diálogo, objetos).
+ - Implementar y ampliar las mecánicas del juego (combate, inventario, diálogo, objetos).
 
  - Definir las físicas (colisiones, desbloqueo de puertas, etc.).
 
@@ -129,7 +130,9 @@ Con diferentes niveles y un laberinto.
  - Implementar vista de diálogo/NPCs.
 
  - Implementar transiciones entre niveles.
+ - 
 ### Integración de niveles
+
  - Crear nivel 1 (casa pacífica).
 
  - Crear nivel 2 (jardín exterior).
@@ -146,38 +149,35 @@ Con diferentes niveles y un laberinto.
  - Agregar música ambiental.
 
 ### Mecánicas
- - Tenemos una pantalla inicial que ofrece a los jugadores un sitio para ver los controles
-   Ajustar el volumen y brillo, salir del juego y obviamente iniciar aventura.
+ - Pantalla inicial que ofrece a los jugadores un sitio para ver los controles
+   Ajustar el volumen y brillo, salir del juego y obviamente iniciar aventura,
+   a la cual se puede acceder en medio de la partida al apretar la tecla ESC.
+   
+   ![Controles](img.png)
 
- - Dentro de la propia partida hay un menu pulsando escape para salir del juego, ajustar el
-   brillo y el volumen, ver los controles y reiniciar.
+ - Inventario donde el jugador puede almacenar los diferentes objetos que obtiene a lo largo de su aventura.
+   Si alguno de dichos objetos tiene la capacidad de curar se puede interactuar con el objeto para realizar dicha opcion.
 
- - Hay una opción en los dos menus del jugador para ajustar el volumen y el brillo de la 
-   pantalla.
+   ![Inventario](img.png)
 
- - El jugador puede acceder a un inventario donde tiene guardado diferentes objetos con
-   diferentes funciones como por ejemplo curar al jugado.
-
- - Hay diferentes objetos repartidos por el mapa, que desempeñan funciones utiles para la 
-   aventura como por ejemplo curar al jugador.
 
  - Hay una mecánica de combate en la que puedes luchar contra diferentes enemigos, en la 
    pantalla de batalla puedes seleccionar la opción de utilizar magia, atacar, usar objetos
-   y huir, es un combate por turnos contra diferentes oponentes.
+   y huir. Ten cuidado existe la posibilidad de fallar al intentar escapar.
 
  - El jugador posee tres barras con las estadísticas de vida, mana y experiencia.
 
- - El jugador puede utilizar mana para hacer magia y hacer más daños, el mana se
-   restaurará con el tiempo mientras no estes combatiendo.
+ - El jugador puede utilizar mana para hacer magia y hacer más daño a la hora de atacar, dicho mana se
+   restaurará con el tiempo mientras no estes en combate.
 
- - Al terminar el combate el usuario recibirá experiencia con la que podrá subir de nivel
-   y aumentar sus estadísticas 
+ - Al terminar el combate el jugador recibirá experiencia con la que podrá subir de nivel
+   y aumentar sus estadísticas.
 
- - El usuario puede interactuar con personajes, objetos y enemigos a través de cuadros de 
-   diálogo
+ - El jugador puede interactuar con personajes, objetos y enemigos a través de cuadros de 
+   diálogo.
 
 ### Tareas no completadas
- - No se ha podido realizar colisiones con los enemigos
+ - No se ha podido implementar colisiones ni movimiento en los enemigos
 
  - La música da errores por el tamaño de la canción 
 
