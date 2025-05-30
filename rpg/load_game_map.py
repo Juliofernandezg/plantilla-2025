@@ -92,6 +92,9 @@ def load_map(map_name):
                         f":characters:{character_data['images']}"
                     )
                 character_sprite.position = shape
+                character_sprite.data = character_data
+                character_sprite.character_name = character_type
+
             elif isinstance(shape, list) and len(shape[0]) == 2:
                 # Rect or polygon.
                 location = [shape[0][0], shape[0][1]]
@@ -99,11 +102,15 @@ def load_map(map_name):
                     f":characters:{character_data['images']}"
                 )
                 character_sprite.position = location
+
                 path = []
                 for point in shape:
                     location = [point[0], point[1]]
                     path.append(location)
                 character_sprite.path = path
+                character_sprite.data = character_data
+                character_sprite.character_name = character_type
+
             else:
                 print(
                     f"Unknown shape type for character with shape '{shape}' in map {map_name}."

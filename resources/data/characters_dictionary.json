@@ -49,7 +49,14 @@
 
   },
   "white_cat": {
-    "images": "Animal/Cat 01-1.png"
+    "images": "Animal/Cat 01-1.png",
+      "interaction_type": "dialogue",
+    "name": "white_cat",
+    "dialogue": [
+        "¡Miau! Soy un gato misterioso.",
+        "¿Tienes comida para mí?",
+        "¡Te ayudaré en tu misión si me das una lata de atún!"
+    ]
 
   },
   "grey_cat": {

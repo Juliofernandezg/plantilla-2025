@@ -746,6 +746,21 @@ class GameView(arcade.View):
             # No doors, scroll normally
             self.scroll_to_player()
 
+    def check_interaction(self):
+        if "characters" in self.my_map.scene.name_mapping:
+            for character in self.my_map.scene["characters"]:
+                if arcade.check_for_collision(self.player_sprite, character):
+                    character_data = character.data
+                    if character_data.get("interaction_type") == "dialogue":
+                        # Iniciar diálogo correctamente
+                        dialogue_view = DialogueView(self)
+                        dialogue_view.set_npc(character.character_name, character_data)
+                        self.window.show_view(dialogue_view)
+                    else:
+                        # Iniciar batalla
+                        self.battle_view.set_enemy(character.name, character_data, character)
+                        self.window.show_view(self.battle_view)
+
     def interact_with_npc(self):
         """Interacción con personajes NPC del mapa (enemigos, etc.)"""
 
@@ -819,6 +834,7 @@ class GameView(arcade.View):
         elif key in constants.SEARCH:
             self.search()
             self.interact_with_npc()
+            self.check_interaction()
         # HotBar
         elif key == arcade.key.KEY_1:
             self.selected_item = 1
@@ -894,6 +910,7 @@ class GameView(arcade.View):
                 self.message_box = MessageBox(
                     self, f"Found: {sprite.properties['type']}"
                 )
+
             elif "herrero_dungeon" in sprite.properties:
                 print("DIALOGO DE HERRRERO ATRAPADO EN MAZMORRA")
                 herrero = True

@@ -321,6 +321,11 @@
                          "value":"random"
                         }, 
                         {
+                         "name":"name",
+                         "type":"string",
+                         "value":"white_cat"
+                        }, 
+                        {
                          "name":"type",
                          "type":"string",
                          "value":"white_cat"
