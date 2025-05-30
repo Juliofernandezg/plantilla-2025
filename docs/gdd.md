@@ -10,12 +10,11 @@
 
 ### **Objetivos del juego.**
 
-- Obtener el primer arma y obtener objetos.
+- Obtener objetos.
 - Desbloquear herrería.
 - Salvar herrero.
 - Desbloquear la dungeon.
-- Hermano entra en accion, salvar peluche del hermano.
-- 4 minibosses
+- 3 minibosses
 - Salas secretas
 - Pistas
 - un boss final.Salvar peluche del hermano/a.
