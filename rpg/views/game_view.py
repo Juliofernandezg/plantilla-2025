@@ -872,6 +872,7 @@ class GameView(arcade.View):
                 self.message_box = MessageBox(
                     self, f"Derrotado: {sprite.properties['type']}"
                 )
+                sprite.visible = False
         for sprite in sprites_in_range:
             if "item" in sprite.properties:
                 self.message_box = MessageBox(
