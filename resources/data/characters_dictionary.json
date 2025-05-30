@@ -2,8 +2,22 @@
   "ghost": {
     "images": "Enemy/Enemy 09-1.png"
   },
-  "ghost2": {
-    "images": "Enemy/Enemy 10-1.png"
+  "skeleton_king": {
+    "images": "Enemy/Enemy 10-1.png",
+    "interaction_type": "dialogue",
+    "dialogue": [
+      "*El Rey esqueleto viene caminando hacia ti...*",
+      "*Da un paso en falso y se cae...*",
+      "*Solo queda de el una calavera*",
+    "Ahora que he perdido el jefe me va a mandar al SEPE...",
+      "NOOOOOOO...",
+      "Bueno, aun asi, cobro mas en el paro YUHUUUU",
+      "Tu crees que me daran la carta de recomendacion?",
+      "y en el paro tendre que hacer mucha cola?",
+      "Como sea, ahora tengo mas tiempo para mis hobbies esqueleticos",
+      "*Se fue rodando y silbando un tema de ultratumba :)*"
+
+  ]
   },
   "demon2": {
     "images": "Enemy/Enemy 14-1.png"
@@ -30,7 +44,7 @@
     "interaction_type": "battle",
     "type": "Hola funciono",
     "name": "skeleton",
-    "intro": ["A que te enchufo"],
+    "intro": ["Te voy a crujir"],
     "hp": 100
 
   },
