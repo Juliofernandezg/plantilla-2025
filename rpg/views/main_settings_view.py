@@ -59,7 +59,7 @@ class MainSettingsView(arcade.View):
 
         # Brillo
         fila_brillo = UIBoxLayout(vertical=False, space_between=15)
-        fila_brillo.add(UILabel(text="Brillo:", font_size=18, font_name="Arial", width=120))
+        fila_brillo.add(UILabel(text="Oscuridad:", font_size=18, font_name="Arial", width=120))
 
         boton_menos_bri = UIFlatButton(text="-", width=40, style=self.boton_style)
         boton_menos_bri.on_click = self.disminuir_brillo
@@ -120,7 +120,19 @@ class MainSettingsView(arcade.View):
 
     def actualizar_volumen(self):
         self.etiqueta_volumen.text = f"{ConfiguracionGlobal.volumen}%"
-        arcade.set_sound_volume(ConfiguracionGlobal.volumen / 100)
+
+        # Actualizar volumen si hay música reproduciéndose
+        if hasattr(self.window, "music_player") and self.window.music_player:
+            self.window.music_player.volume = ConfiguracionGlobal.volumen / 100
+
+        # Guardar configuración si procede
+        ConfiguracionGlobal.guardar()
+
+
+        # Si hay un reproductor de música activo, actualiza su volumen
+        if hasattr(self.window, "music_player") and self.window.music_player:
+            self.window.music_player.volume = ConfiguracionGlobal.volumen / 100
+
         ConfiguracionGlobal.guardar()
 
     def aumentar_brillo(self, event):

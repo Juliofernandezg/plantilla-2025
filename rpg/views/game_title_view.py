@@ -24,6 +24,12 @@ class TitleView(arcade.View):
             "border_width": 4,
         }
 
+        self.music_player = None
+        self.window.music_player = self.music_player
+
+        self.main_theme_sound = arcade.load_sound(":sounds:CHILL MUSIC.wav", streaming=True)
+
+
         self.manager = arcade.gui.UIManager()
         self.v_box = arcade.gui.UIBoxLayout()
 
@@ -86,6 +92,9 @@ class TitleView(arcade.View):
         arcade.set_background_color(arcade.color.ALMOND)
         arcade.set_viewport(0, self.window.width, 0, self.window.height)
 
+        if not self.music_player or not self.music_player.playing:
+            self.music_player = self.main_theme_sound.play(volume=ConfiguracionGlobal.volumen / 100)
+
     def on_hide_view(self):
         self.manager.disable()
 
@@ -101,6 +110,9 @@ class TitleView(arcade.View):
         self.window.views["main_settings"].setup()
         self.window.views["main_controls"] = MainControlsView()
         self.window.views["main_controls"].setup()
+
+
+
 
     # call back methods for buttons:
     def on_click_play(self, event):
