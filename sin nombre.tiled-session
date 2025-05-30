@@ -69,10 +69,10 @@
                 8
             ],
             "scale": 1.5,
-            "selectedLayer": 6,
+            "selectedLayer": 1,
             "viewCenter": {
-                "x": 256.3333333333333,
-                "y": 402.99999999999994
+                "x": 341,
+                "y": 205.66666666666669
             }
         },
         "resources/maps/graveyard_dungeon.json#[Base]BaseChip_pipo": {
