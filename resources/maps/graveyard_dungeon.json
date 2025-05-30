@@ -20,6 +20,7 @@
         {
          "draworder":"topdown",
          "id":8,
+         "locked":true,
          "name":"characters",
          "objects":[
                 {
@@ -167,7 +168,7 @@
                  "y":908.666666666667
                 }, 
                 {
-                 "gid":2155,
+                 "gid":1090,
                  "height":32,
                  "id":88,
                  "name":"",
@@ -478,7 +479,7 @@
                  "width":32,
                  "x":416.414417645477,
                  "y":990.563211691922
-                }, 
+                },
                 {
                  "gid":2068,
                  "height":32,
@@ -496,7 +497,7 @@
                  "width":32,
                  "x":450.666666666667,
                  "y":484.666666666667
-                }, 
+                },
                 {
                  "gid":2068,
                  "height":32,
@@ -514,7 +515,7 @@
                  "width":32,
                  "x":94.6666666666667,
                  "y":869.333333333333
-                }, 
+                },
                 {
                  "gid":2068,
                  "height":32,
@@ -680,13 +681,13 @@
          "source":"Enemy 06-1.tsx"
         }, 
         {
-         "firstgid":1083,
+         "firstgid":1087,
          "source":"Enemy 05-1.tsx"
-        }, 
+        },
         {
          "firstgid":1087,
          "source":"..\/tilesets\/[Base]BaseChip_pipo.json"
-        }, 
+        },
         {
          "firstgid":2151,
          "source":"Enemy 05-1.tsx"

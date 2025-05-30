@@ -9,20 +9,34 @@
     "images": "Enemy/Enemy 14-1.png"
   },
   "demon": {
-    "images": "Enemy/Enemy 13-1.png"
+    "images": "Enemy/Enemy 13-1.png",
+    "interaction_type": "dialogue",
+    "dialogue": [
+    "¡Por los calzones de mi tatarabuela!",
+    "¡Eres más valiente que un gato encima de una Roomba!",
+    "Toma esta espada, con ella podrás incluso abrir cajas fuertes... o rebanar baguettes."
+  ]
   },
   "red_wizard": {
-    "images": "Enemy/Enemy 15-3.png"
+    "images": "Enemy/Enemy 15-3.png",
+   "interaction_type": "dialogue",
+    "dialogue": [
+      "Hola funciono"
+
+  ]
   },
   "skeleton": {
     "images": "Enemy/Enemy 06-1.png",
+    "interaction_type": "battle",
     "type": "Hola funciono",
     "name": "skeleton",
     "intro": ["A que te enchufo"],
     "hp": 100
+
   },
   "white_cat": {
     "images": "Animal/Cat 01-1.png"
+
   },
   "grey_cat": {
     "images": "Animal/Cat 01-2.png"

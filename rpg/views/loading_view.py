@@ -11,6 +11,8 @@ from rpg.views.inventory_view import InventoryView
 from rpg.views.main_menu_view import MainMenuView
 from rpg.views.settings_view import SettingsView
 from rpg.views.controls_view import ControlsView
+from rpg.views.dialogue_view import DialogueView
+
 
 
 class LoadingView(arcade.View):
@@ -65,6 +67,7 @@ class LoadingView(arcade.View):
                 self.window.views["controls"].setup()
                 self.window.views["battle"] = BattleView(self.window.views["game"])
                 self.window.views["battle"].setup()
+                self.window.views["dialogue"] = DialogueView(self.window.views["game"])
 
 
                 self.window.show_view(self.window.views["game"])

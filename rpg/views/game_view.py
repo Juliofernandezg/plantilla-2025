@@ -12,7 +12,7 @@ from arcade.experimental.lights import Light
 from pyglet.math import Vec2
 from rpg.message_box import MessageBox
 from rpg.sprites.player_sprite import PlayerSprite
-
+from rpg.views.dialogue_view import DialogueView
 
 class DebugMenu(arcade.gui.UIBorder, arcade.gui.UIWindowLikeMixin):
     def __init__(
@@ -745,34 +745,47 @@ class GameView(arcade.View):
 
         for character in hit_list:
             character_properties = character.properties
-            if character_properties.get("type") == "skeleton":
+            if character_properties.get("type") in ["skeleton", "demon", "red_wizard"]:
                 character_id = character_properties.get("name") or "skeleton"
 
                 with open("../resources/data/characters_dictionary.json", "r") as f:
                     characters_dict = json.load(f)
 
-                enemy_info = characters_dict.get(character_id)
+                npc_info = characters_dict.get(character_id)
 
-                if enemy_info:
-                    from rpg.views.battle_view import BattleView
-                    battle_view = BattleView(self.window.views["game"])
+                if npc_info:
+                    interaction_type = npc_info.get("interaction_type", "battle")
 
-                    # Guardamos la posición y el mapa actual para volver después
-                    battle_view.previous_view = self
-                    battle_view.return_map = self.cur_map_name
-                    battle_view.return_position = (
-                        GameView.player_sprite.center_x,
-                        GameView.player_sprite.center_y
-                    )
+                    if interaction_type == "battle":
+                        from rpg.views.battle_view import BattleView
+                        battle_view = BattleView(self.window.views["game"])
 
-                    battle_view.set_enemy(character_id, {
-                        "sprite": f":characters:{enemy_info['images']}",
-                        "name": enemy_info.get("name", character_id),
-                        "intro": enemy_info.get("intro", []),
-                        "hp": enemy_info.get("hp", 100)
-                    })
+                        # Guardamos la posición y el mapa actual para volver después
+                        battle_view.previous_view = self
+                        battle_view.return_map = self.cur_map_name
+                        battle_view.return_position = (
+                            GameView.player_sprite.center_x,
+                            GameView.player_sprite.center_y
+                        )
 
-                    self.window.show_view(battle_view)
+                        battle_view.set_enemy(character_id, {
+                            "sprite": f":characters:{npc_info['images']}",
+                            "name": npc_info.get("name", character_id),
+                            "intro": npc_info.get("intro", []),
+                            "hp": npc_info.get("hp", 100)
+                        })
+
+                        self.window.show_view(battle_view)
+
+                    elif interaction_type == "dialogue":
+                        dialogue_view = self.window.views["dialogue"]
+                        dialogue_view.set_npc(character_id, {
+                            "name": npc_info.get("name", character_id),
+                            "dialogue": npc_info.get("dialogue", [])
+                        })
+                        self.window.show_view(dialogue_view)
+
+
                 else:
                     print(f"[ERROR] Personaje '{character_id}' no encontrado en el diccionario.")
 
