@@ -324,8 +324,7 @@
                          "name":"type",
                          "type":"string",
                          "value":"white_cat"
-                        }
-                 ],
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -358,15 +357,15 @@
                  "name":"",
                  "properties":[
                         {
+                         "name":"name",
+                         "type":"string",
+                         "value":"red_wizard"
+                        }, 
+                        {
                          "name":"type",
                          "type":"string",
-                         "value":"demon"
-                        },
-                 {
-                    "name": "name",
-                    "type": "string",
-                    "value": "demon"
-                  }],
+                         "value":"red_wizard"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
