@@ -1,10 +1,10 @@
 # La Maldición del Peluche Infernal
 
 ## Equipo
-- <Julio- Programación, diseño de niveles, pruebas y diseño gráfico.>
+- <Julio- Programación, diseño de niveles, pruebas, diseño gráfico y Jefe de proyecto.>
 - <Pablo-Programación, diseño de niveles, pruebas y diseño gráfico>
 - <Oscar- Diseño de niveles, sonido, pruebas y programación>
-- <Marcos- Diseño de niveles, Sonido, Pruebas>
+- <Marcos- Diseño de niveles, Sonido>
 - <Diego- Diseño de niveles, pruebas y programación>
 - <Hector- Diseño de niveles, diseño gráfico>
 
