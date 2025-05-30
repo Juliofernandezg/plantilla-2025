@@ -148,7 +148,7 @@ def load_map(map_name):
         game_map.light_layer.add(dummy_light)
         print("Added default light")
 
-    # Get all the tiled sprite lists
+
     # Get all the tiled sprite lists
     game_map.map_layers = my_map.sprite_lists
 

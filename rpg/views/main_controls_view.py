@@ -19,16 +19,16 @@ class ControlsUI:
 
         # Lista ordenada de controles
         controls_list = [
-            "W / ↑ : Move Up",
-            "A / ← : Move Left",
-            "S / ↓ : Move Down",
-            "D / → : Move Right",
+            "W / ↑ : Ir pa riba",
+            "A / ← : Ir pa la izquierda",
+            "S / ↓ : Ir pa bajo",
+            "D / → : Ir pa la derecha",
             " ",
-            "E: Search",
-            "I: Inventory",
-            "L: Light",
+            "E: Buscar",
+            "I: Inventario",
+            "L: Encender luz",
             " ",
-            "ESC : Pause / Go back"
+            "ESC : Pausa / Volver"
         ]
 
         # Añadir cada control como una etiqueta separada
