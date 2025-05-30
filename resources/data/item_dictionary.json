@@ -7,12 +7,12 @@
   "Dagger": {
     "short_name": "Dagger",
     "type": "weapon",
-    "damage_amount": 20
+    "heal_amount": 20
   },
   "Sword": {
     "short_name": "Sword",
     "type": "weapon",
-    "damage_amount": 10
+    "heal_amount": 10
   },
   "Lesser_Healing_Potion": {
     "short_name": "Lesser Healing Potion",
@@ -22,10 +22,6 @@
   "Key": {
     "short_name": "Key",
     "type": "item"
-  },
-  "skeleton": {
-    "short_name": "skeleton",
-    "type": "enemy",
-    "images": "Enemy/Enemy 06-1.png"
   }
+
 }

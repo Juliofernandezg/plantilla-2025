@@ -27,7 +27,7 @@ class TitleView(arcade.View):
         self.music_player = None
         self.window.music_player = self.music_player
 
-        self.main_theme_sound = arcade.load_sound(":sounds:CHILL MUSIC.wav", streaming=True)
+        # self.main_theme_sound = arcade.load_sound(":sounds:CHILL MUSIC.wav", streaming=True)
 
 
         self.manager = arcade.gui.UIManager()
@@ -92,8 +92,8 @@ class TitleView(arcade.View):
         arcade.set_background_color(arcade.color.ALMOND)
         arcade.set_viewport(0, self.window.width, 0, self.window.height)
 
-        if not self.music_player or not self.music_player.playing:
-            self.music_player = self.main_theme_sound.play(volume=ConfiguracionGlobal.volumen / 100)
+        # if not self.music_player or not self.music_player.playing:                                    NO IMPLEMENTADO
+            #self.music_player = self.main_theme_sound.play(volume=ConfiguracionGlobal.volumen / 100)
 
     def on_hide_view(self):
         self.manager.disable()

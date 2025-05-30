@@ -262,10 +262,11 @@ class BattleView(arcade.View):
             elif symbol == arcade.key.I:   # Item
                 player_sprite = self.window.views["game"].player_sprite
                 if player_sprite.hotbar:
-                    heal = random.randint(20, 30)
+                    heal = 20
                     self.player_hp += heal
                     self.player_hp = min(self.player_hp, 100)
                     GameView.apply_heal(self, heal)
+
                     item = player_sprite.hotbar.pop(0)
                     self.battle_log.append(f"Usaste {item['short_name']}, recuperaste {heal} HP.")
                 else:
