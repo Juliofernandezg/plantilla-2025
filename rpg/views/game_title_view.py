@@ -1,6 +1,7 @@
 """
 First game menu
 """
+from rpg.configuracion_global import ConfiguracionGlobal
 from rpg.views.loading_view import LoadingView
 
 import arcade
@@ -61,6 +62,12 @@ class TitleView(arcade.View):
     def on_draw(self):
         self.clear()
         self.manager.draw()
+
+        valor_brillo = 255 - int((ConfiguracionGlobal.brillo / 100) * 255)
+        arcade.draw_lrtb_rectangle_filled(
+            0, self.window.width, self.window.height, 0,
+            (valor_brillo, valor_brillo, valor_brillo, 50)
+        )
 
         arcade.draw_text(
             "GAME_TITLE",

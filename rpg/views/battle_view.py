@@ -1,6 +1,7 @@
 import arcade
 import random
 import rpg.constants as constants
+from rpg.configuracion_global import ConfiguracionGlobal
 from rpg.views.game_view import GameView
 from rpg.sprites import player_sprite
 from rpg.views.game_over_view import GameOver
@@ -110,6 +111,12 @@ class BattleView(arcade.View):
 
     def on_draw(self):
         arcade.start_render()
+
+        valor_brillo = 255 - int((ConfiguracionGlobal.brillo / 100) * 255)
+        arcade.draw_lrtb_rectangle_filled(
+            0, self.window.width, self.window.height, 0,
+            (valor_brillo, valor_brillo, valor_brillo, 50)
+        )
 
         self.draw_linkillo()
 

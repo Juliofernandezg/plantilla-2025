@@ -4,6 +4,7 @@ Inventory
 import arcade
 from arcade.color import BLACK, WHITE, REDWOOD, ASH_GREY
 
+from rpg.configuracion_global import ConfiguracionGlobal
 from rpg.views.game_view import GameView
 
 
@@ -34,6 +35,13 @@ class InventoryView(arcade.View):
         
     def on_draw(self):
         colores = [WHITE, ASH_GREY]
+
+        valor_brillo = 255 - int((ConfiguracionGlobal.brillo / 100) * 255)
+        arcade.draw_lrtb_rectangle_filled(
+            0, self.window.width, self.window.height, 0,
+            (valor_brillo, valor_brillo, valor_brillo, 50)
+        )
+
         inv_left = 50
         inv_right = (self.window.width / 2) + 100
         ancho = inv_right - inv_left
