@@ -464,6 +464,29 @@
                  "width":32,
                  "x":285.476583023825,
                  "y":99.0249116767823
+                }, 
+                {
+                 "gid":1066,
+                 "height":32,
+                 "id":22,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"name",
+                         "type":"string",
+                         "value":"hermano"
+                        }, 
+                        {
+                         "name":"type",
+                         "type":"string",
+                         "value":"hermano"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":126.666666666667,
+                 "y":194
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -472,7 +495,7 @@
          "y":0
         }],
  "nextlayerid":17,
- "nextobjectid":22,
+ "nextobjectid":23,
  "orientation":"orthogonal",
  "properties":[
         {
@@ -487,6 +510,10 @@
         {
          "firstgid":1,
          "source":"..\/tilesets\/[Base]BaseChip_pipo.json"
+        }, 
+        {
+         "firstgid":1065,
+         "source":"Male 10-2.tsx"
         }],
  "tilewidth":32,
  "type":"map",

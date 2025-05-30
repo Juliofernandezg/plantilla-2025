@@ -745,21 +745,20 @@ class GameView(arcade.View):
         else:
             # No doors, scroll normally
             self.scroll_to_player()
-
     def check_interaction(self):
         if "characters" in self.my_map.scene.name_mapping:
             for character in self.my_map.scene["characters"]:
                 if arcade.check_for_collision(self.player_sprite, character):
-                    character_data = character.data
-                    if character_data.get("interaction_type") == "dialogue":
-                        # Iniciar diálogo correctamente
-                        dialogue_view = DialogueView(self)
-                        dialogue_view.set_npc(character.character_name, character_data)
-                        self.window.show_view(dialogue_view)
-                    else:
-                        # Iniciar batalla
-                        self.battle_view.set_enemy(character.name, character_data, character)
-                        self.window.show_view(self.battle_view)
+                    if hasattr(character, "data"):  # 💡 Verificamos que tenga "data"
+                        character_data = character.data
+                        if character_data.get("interaction_type") == "dialogue":
+                            dialogue_view = DialogueView(self)
+                            dialogue_view.set_npc(character.character_name, character_data)
+                            self.window.show_view(dialogue_view)
+                        else:
+                            self.battle_view.set_enemy(character.character_name, character_data, character)
+                            self.window.show_view(self.battle_view)
+
 
     def interact_with_npc(self):
         """Interacción con personajes NPC del mapa (enemigos, etc.)"""
@@ -768,7 +767,7 @@ class GameView(arcade.View):
 
         for character in hit_list:
             character_properties = character.properties
-            if character_properties.get("type") in ["skeleton", "demon", "red_wizard", "skeleton_king"]:
+            if character_properties.get("type") in ["skeleton", "demon", "red_wizard", "skeleton_king","hermano","cartel_informacion","fuente","buzon", "fantasma"]:
                 character_id = character_properties.get("name") or "skeleton"
 
                 with open("../resources/data/characters_dictionary.json", "r") as f:
