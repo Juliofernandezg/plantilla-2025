@@ -1,4 +1,4 @@
- di# Memoria
+
 
 ## Nombre del videojuego: La Maldición del Peluche Infernal
 
@@ -26,13 +26,29 @@ para la fecha de entrega.
 ## Manual de usuario
 Inicia la aventura La Maldición del Peluche Infernal, al entrar al juego verás una interfaz
 de usuario de un menu con las siguientes opciones:
+![img.png](img.png)
 Los controles son:
-al iniciar la aventura aparecerás en el jardín.
-arriba podrás encontrar tu casa.
-Al sur encotrarás la herrería 
+![img_1.png](img_1.png)
+Las opcienes de ajuste son:
+![img_2.png](img_2.png)
+Al iniciar la aventura aparecerás en el jardín.
+![img_3.png](img_3.png)
+Arriba podrás encontrar tu casa.
+![img_4.png](img_4.png)
+Al sur encotrarás la herrería.
+![img_5.png](img_5.png)
 Y al este el cementerio.
-En el cementerio investigarás una mazmorra para rescatar el osito de peluche de tu hermano
-Con diferentes niveles y un laberinto 
+![img_6.png](img_6.png)
+En el cementerio encontrarás enemigos con los que combatir.
+![img_7.png](img_7.png)
+Y objetos para curarte.
+![img_12.png](img_12.png)
+En el cementerio investigarás una mazmorra para rescatar el osito de peluche de tu hermano.
+![img_8.png](img_8.png)
+Con diferentes niveles y un laberinto.
+![img_10.png](img_10.png)
+![img_11.png](img_11.png)
+![img_9.png](img_9.png)
 
 ## Tareas completadas
  ### Diseño
@@ -40,11 +56,11 @@ Con diferentes niveles y un laberinto
 
  - Diseñar al protagonista: Linkillo.
 
- // - Diseñar al antagonista: Rey Demonio Patatón.
+ - Diseñar al antagonista: Rey Demonio Patatón.
 
- // - Diseñar a los 4 minibosses con sus estilos de combate únicos.
+ - Diseñar a los 4 minibosses con sus estilos de combate únicos.
 
- - Diseñar al NPC Don Yunque.
+ - Diseñar al NPC Don Yunque. (Si está hecho, pero no está implementado)
 
  - Diseñar al NPC Mochito.
 
@@ -104,8 +120,6 @@ Con diferentes niveles y un laberinto
 
  - Implementar vista de arranque.
 
- - Implementar vista de ayuda.
-
  - Implementar vista de batalla.
 
  - Implementar vista de inventario.
@@ -129,9 +143,57 @@ Con diferentes niveles y un laberinto
  - Integrar todos los niveles en la lógica del juego.
 
 ### Audio y ambientación
- - Agregar música ambiental dinámica según nivel.
+ - Agregar música ambiental.
 
- - Efectos para diálogos (ej. sonido de voz tipo Zelda).
+### Mecánicas
+ - Tenemos una pantalla inicial que ofrece a los jugadores un sitio para ver los controles
+   Ajustar el volumen y brillo, salir del juego y obviamente iniciar aventura.
 
--  Efectos para ataques especiales (cheesy rayos del boss, perfume, etc).
+ - Dentro de la propia partida hay un menu pulsando escape para salir del juego, ajustar el
+   brillo y el volumen, ver los controles y reiniciar.
+
+ - Hay una opción en los dos menus del jugador para ajustar el volumen y el brillo de la 
+   pantalla.
+
+ - El jugador puede acceder a un inventario donde tiene guardado diferentes objetos con
+   diferentes funciones como por ejemplo curar al jugado.
+
+ - Hay diferentes objetos repartidos por el mapa, que desempeñan funciones utiles para la 
+   aventura como por ejemplo curar al jugador.
+
+ - Hay una mecánica de combate en la que puedes luchar contra diferentes enemigos, en la 
+   pantalla de batalla puedes seleccionar la opción de utilizar magia, atacar, usar objetos
+   y huir, es un combate por turnos contra diferentes oponentes.
+
+ - El jugador posee tres barras con las estadísticas de vida, mana y experiencia.
+
+ - El jugador puede utilizar mana para hacer magia y hacer más daños, el mana se
+   restaurará con el tiempo mientras no estes combatiendo.
+
+ - Al terminar el combate el usuario recibirá experiencia con la que podrá subir de nivel
+   y aumentar sus estadísticas 
+
+ - El usuario puede interactuar con personajes, objetos y enemigos a través de cuadros de 
+   diálogo
+
+### Tareas no completadas
+ - No se ha podido realizar colisiones con los enemigos
+
+ - La música si bien se ha conseguido implementar no hemos conseguido hacer que sea 
+   una por zona y adaptada a la situación
+
+ - No hemos conseguido implementar al herrero que funcionaría como un nivel de tutorial
+
+ - No hemos logrado el bloqueo de puertas 
+
+### Dificultades
+ - Con diferencia lo que más nos ha costado han sido las interacciones con los objetos y
+   los enemigos, con estos últimos pensábamos que los habíamos logrado poner a la primera con 
+   una ruta de movimiento y que funcionarían según lo esperado, pero al ser polígonos no 
+   interactuaban según lo esperado, eso nos ha frenado mucho al no poder interactuar con los
+   enemigos para poder seguir con la mecánica y seguir con el resto de cosas.
+
+ - La battle view nos ha costado más de lo esperado el pasarle los datos de los jugadores y
+   los enemigos y que al acabar la batalla modifique las barras de vida, mana, y experiencia
+   del jugador.
 

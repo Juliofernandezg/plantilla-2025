@@ -1,12 +1,12 @@
-# Nombre del juego
+# La Maldición del Peluche Infernal
 
 ## Equipo
-- <Nombre 1 y roles>
-- <Nombre 2 y roles>
-- <Nombre 3 y roles>
-- <Nombre 4 y roles>
-- <Nombre 5 y roles>
-- <Nombre 6 y roles>
+- <Julio- Programación, diseño de niveles, pruebas y diseño gráfico.>
+- <Pablo-Programación, diseño de niveles, pruebas y diseño gráfico>
+- <Oscar- Diseño de niveles, sonido, pruebas y programación>
+- <Marcos- Diseño de niveles, Sonido, Pruebas>
+- <Diego- Diseño de niveles, pruebas y programación>
+- <Hector- Diseño de niveles, diseño gráfico>
 
 Modificar lo que sigue a voluntad para que queden unas instrucciones mínimas de cómo ejecutar el juego y de cómo es el *gameplay*.
 
