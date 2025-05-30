@@ -21,7 +21,30 @@
          "draworder":"topdown",
          "id":7,
          "name":"characters",
-         "objects":[],
+         "objects":[
+                {
+                 "gid":1083,
+                 "height":41.714,
+                 "id":24,
+                 "name":"novia",
+                 "properties":[
+                        {
+                         "name":"name",
+                         "type":"string",
+                         "value":"novia"
+                        }, 
+                        {
+                         "name":"type",
+                         "type":"string",
+                         "value":"novia"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":37.9363,
+                 "x":131.03185,
+                 "y":207.809666666667
+                }],
          "opacity":1,
          "type":"objectgroup",
          "visible":true,
@@ -55,29 +78,6 @@
                  "width":0,
                  "x":191.667902149741,
                  "y":192.142327650111
-                }, 
-                {
-                 "gid":1083,
-                 "height":41.714,
-                 "id":23,
-                 "name":"novia",
-                 "properties":[
-                        {
-                         "name":"name",
-                         "type":"string",
-                         "value":"novia"
-                        }, 
-                        {
-                         "name":"type",
-                         "type":"string",
-                         "value":"novia"
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":37.9363,
-                 "x":125.122918793479,
-                 "y":201.4857728199
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -195,7 +195,7 @@
          "y":0
         }],
  "nextlayerid":8,
- "nextobjectid":24,
+ "nextobjectid":25,
  "orientation":"orthogonal",
  "properties":[
         {

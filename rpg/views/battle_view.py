@@ -100,6 +100,34 @@ class BattleView(arcade.View):
             texture = arcade.load_texture(":characters:skeleton_picture.png")
             arcade.draw_scaled_texture_rectangle(center_x_sprite, center_y_sprite, texture, 0.3)
 
+        if name == "calabaza":
+            center_x_sprite = (self.window.width / 2) - 400
+            center_y_sprite = (self.window.height / 2) + 70
+
+            texture = arcade.load_texture(":characters:calabaza_picture.png")
+            arcade.draw_scaled_texture_rectangle(center_x_sprite, center_y_sprite, texture, 0.3)
+
+        if name == "novia":
+            center_x_sprite = (self.window.width / 2) - 400
+            center_y_sprite = (self.window.height / 2) + 70
+
+            texture = arcade.load_texture(":characters:novia_picture.png")
+            arcade.draw_scaled_texture_rectangle(center_x_sprite, center_y_sprite, texture, 0.3)
+
+        if name == "mago":
+            center_x_sprite = (self.window.width / 2) - 400
+            center_y_sprite = (self.window.height / 2) + 70
+
+            texture = arcade.load_texture(":characters:mago_picture.png")
+            arcade.draw_scaled_texture_rectangle(center_x_sprite, center_y_sprite, texture, 0.3)
+
+        if name == "jefe":
+            center_x_sprite = (self.window.width / 2) - 400
+            center_y_sprite = (self.window.height / 2) + 70
+
+            texture = arcade.load_texture(":characters:jefe_picture.png")
+            arcade.draw_scaled_texture_rectangle(center_x_sprite, center_y_sprite, texture, 0.3)
+
         # STATS
         arcade.draw_text(f"{name} HP: {self.enemy_hp}", (self.window.width / 2) - 500,
                          (self.window.height / 2) - 200,

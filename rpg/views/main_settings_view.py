@@ -74,20 +74,6 @@ class MainSettingsView(arcade.View):
 
         v_box.add(fila_brillo)
 
-        # Pantalla completa
-        fila_pantalla = UIBoxLayout(vertical=False, space_between=15)
-        fila_pantalla.add(UILabel(text="Pantalla completa:", font_size=18, font_name="Arial", width=200))
-
-        self.boton_pantalla = UIFlatButton(
-            text="ON" if ConfiguracionGlobal.pantalla_completa else "OFF",
-            width=100,
-            style=self.boton_style
-        )
-        self.boton_pantalla.on_click = self.cambiar_pantalla_completa
-        fila_pantalla.add(self.boton_pantalla)
-
-        v_box.add(fila_pantalla)
-
         # Botón volver
         volver_button = UIFlatButton(text="VOLVER", width=200, style=self.boton_style)
         volver_button.on_click = self.volver_al_menu
@@ -145,12 +131,6 @@ class MainSettingsView(arcade.View):
 
     def actualizar_brillo(self):
         self.etiqueta_brillo.text = f"{ConfiguracionGlobal.brillo}%"
-        ConfiguracionGlobal.guardar()
-
-    def cambiar_pantalla_completa(self, event):
-        ConfiguracionGlobal.pantalla_completa = not ConfiguracionGlobal.pantalla_completa
-        self.boton_pantalla.text = "ON" if ConfiguracionGlobal.pantalla_completa else "OFF"
-        self.window.set_fullscreen(ConfiguracionGlobal.pantalla_completa)
         ConfiguracionGlobal.guardar()
 
     def volver_al_menu(self, event):
