@@ -32,19 +32,33 @@ para la fecha de entrega.
 ## Manual de usuario
 Inicia la aventura La Maldición del Peluche Infernal, este es el punto de no retorno en el que decidiras si vives la emocionante aventura de nuestro protagonista Linkillo o seguiras con tu triste y monotona vida de jugador.
 
+![Opciones](opciones.png)
+
 Si te decides por el camino de la libertad y la emocion, apareceras en este alegre y colorido campo junto a tu casa, en la que convives con tu querido hermano.
+
+![Jardin](jardin.png)
 
 Todo parece un sueño inimaginable y parece imposible que algo malo suceda... 
 Eso pensabas hasta que hablaste con tu hermano en la casa...
 
+![Casa](casa.png)
+
 En tu camino a la peligrosa y "supermegaimportante" mision que te ha sido encomendada encontraras diferentes estructuras y monumentos, algunos mas vivos que otros.
 Esta es ***_¡LA FUENTE INÚTIL DE LOS DESEOS!_***, el nombre lo dice todo..
 
+![Fuente](fuente.png)
+
 Un paso adelante en tu aventura te encontraras con la ***Herreria Abandonada***, dejemoslo ahi..
+
+![Herreria](herreria.png)
 
 Finalmente llegas a las oficinas de Nokia, ah no solo es un triste cementerio..
 
+![Cementerio](cementerio.png)
+
 Pero **¡OJO!** algo maligno se esconde en su interior.. Te acercas y **¡ZASCA!** esta oscuro y no ves, procedes a encender una luz
+
+![Cueva](dungeon.png)
 
 En su interior te topas con innumerables Venezolanos en plenas elecciones
 
@@ -153,17 +167,20 @@ Mas alla de la mazmorra de la primera cueva la oscuridad asusta tanto como queda
    Ajustar el volumen y brillo, salir del juego y obviamente iniciar aventura,
    a la cual se puede acceder en medio de la partida al apretar la tecla ESC.
    
-   ![Controles](img.png)
+   ![Controles](controles.png)
 
  - Inventario donde el jugador puede almacenar los diferentes objetos que obtiene a lo largo de su aventura.
    Si alguno de dichos objetos tiene la capacidad de curar se puede interactuar con el objeto para realizar dicha opcion.
 
-   ![Inventario](img.png)
+   ![Inventario](inventario.png)
 
 
  - Hay una mecánica de combate en la que puedes luchar contra diferentes enemigos, en la 
    pantalla de batalla puedes seleccionar la opción de utilizar magia, atacar, usar objetos
    y huir. Ten cuidado existe la posibilidad de fallar al intentar escapar.
+
+   ![Combate](combate.png)
+
 
  - El jugador posee tres barras con las estadísticas de vida, mana y experiencia.
 
