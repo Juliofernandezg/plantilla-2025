@@ -10,6 +10,8 @@ import arcade.gui
 import rpg.constants as constants
 from arcade.experimental.lights import Light
 from pyglet.math import Vec2
+
+from rpg.configuracion_global import ConfiguracionGlobal
 from rpg.message_box import MessageBox
 from rpg.sprites.player_sprite import PlayerSprite
 from rpg.views.dialogue_view import DialogueView
@@ -404,6 +406,12 @@ class GameView(arcade.View):
         # the screen to the background color, and erase what we drew last frame.
         arcade.start_render()
         cur_map = self.map_list[self.cur_map_name]
+
+        valor_brillo = 255 - int((ConfiguracionGlobal.brillo / 100) * 255)
+        arcade.draw_lrtb_rectangle_filled(
+            0, self.window.width, self.window.height, 0,
+            (valor_brillo, valor_brillo, valor_brillo, 50)
+        )
 
         # --- Light related ---
         # Everything that should be affected by lights gets rendered inside this
@@ -872,6 +880,7 @@ class GameView(arcade.View):
                 self.message_box = MessageBox(
                     self, f"Derrotado: {sprite.properties['type']}"
                 )
+                sprite.visible = False
         for sprite in sprites_in_range:
             if "item" in sprite.properties:
                 self.message_box = MessageBox(

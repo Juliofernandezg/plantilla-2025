@@ -1,5 +1,7 @@
 import arcade
 
+from rpg.configuracion_global import ConfiguracionGlobal
+
 
 class GameOver(arcade.View):
     def __init__(self):
@@ -14,6 +16,13 @@ class GameOver(arcade.View):
 
     def on_draw(self):
         arcade.start_render()
+
+        valor_brillo = 255 - int((ConfiguracionGlobal.brillo / 100) * 255)
+        arcade.draw_lrtb_rectangle_filled(
+            0, self.window.width, self.window.height, 0,
+            (valor_brillo, valor_brillo, valor_brillo, 50)
+        )
+
         arcade.draw_text("LO HAN REVENTAO AL POBRE", self.window.width / 2,
                          self.window.height / 2 + 60,
                          arcade.color.DARK_RED, 50, anchor_x="center")

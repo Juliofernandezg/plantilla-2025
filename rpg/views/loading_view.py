@@ -3,6 +3,7 @@ Loading screen
 """
 import arcade
 
+from rpg.configuracion_global import ConfiguracionGlobal
 from rpg.draw_bar import draw_bar
 from rpg.load_game_map import load_maps
 from rpg.views.battle_view import BattleView
@@ -25,6 +26,13 @@ class LoadingView(arcade.View):
 
     def on_draw(self):
         arcade.start_render()
+
+        valor_brillo = 255 - int((ConfiguracionGlobal.brillo / 100) * 255)
+        arcade.draw_lrtb_rectangle_filled(
+            0, self.window.width, self.window.height, 0,
+            (valor_brillo, valor_brillo, valor_brillo, 50)
+        )
+
         arcade.draw_text(
             "Cargando la aventura ...",
             self.window.width / 2,
