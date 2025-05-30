@@ -32,8 +32,8 @@
             "scale": 1.5,
             "selectedLayer": 6,
             "viewCenter": {
-                "x": 456.33333333333326,
-                "y": 198.66666666666666
+                "x": 288.3333333333333,
+                "y": 191.66666666666666
             }
         },
         "resources/maps/dungeon_lvl_three_maze.json": {
@@ -59,20 +59,20 @@
             "scale": 1.0780273437499999,
             "selectedLayer": 4,
             "viewCenter": {
-                "x": 367.8014312890661,
-                "y": 496.2768366699883
+                "x": 255.55938037865747,
+                "y": 239.7898360358729
             }
         },
         "resources/maps/graveyard_dungeon.json": {
             "expandedObjectLayers": [
-                8,
-                6
+                6,
+                8
             ],
             "scale": 1.5,
             "selectedLayer": 6,
             "viewCenter": {
-                "x": 432.33333333333326,
-                "y": 1006.6666666666666
+                "x": 256.3333333333333,
+                "y": 402.99999999999994
             }
         },
         "resources/maps/graveyard_dungeon.json#[Base]BaseChip_pipo": {
@@ -82,8 +82,8 @@
             "scale": 1.5,
             "selectedLayer": 7,
             "viewCenter": {
-                "x": 610.3333333333333,
-                "y": 139.33333333333331
+                "x": 480.33333333333326,
+                "y": 320.3333333333333
             }
         },
         "resources/maps/main_map.json": {
@@ -91,7 +91,7 @@
             "selectedLayer": 8,
             "viewCenter": {
                 "x": 1045,
-                "y": 1078
+                "y": 1079
             }
         },
         "resources/tilesets/[A]Grass_pipo.json": {

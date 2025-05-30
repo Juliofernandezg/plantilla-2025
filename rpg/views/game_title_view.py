@@ -76,7 +76,7 @@ class TitleView(arcade.View):
         )
 
         arcade.draw_text(
-            "GAME_TITLE",
+            "La Maldición del Peluche Infernal",
             self.window.width / 2,
             self.window.height / 1.2,
             arcade.color.ALLOY_ORANGE,
