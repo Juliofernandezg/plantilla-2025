@@ -19,6 +19,51 @@
         }, 
         {
          "draworder":"topdown",
+         "id":7,
+         "name":"Capa de Objetos 3",
+         "objects":[],
+         "opacity":1,
+         "type":"objectgroup",
+         "visible":true,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "draworder":"topdown",
+         "id":8,
+         "name":"characters",
+         "objects":[
+                {
+                 "gid":1069,
+                 "height":41.7140046377626,
+                 "id":22,
+                 "name":"teddy",
+                 "properties":[
+                        {
+                         "name":"name",
+                         "type":"string",
+                         "value":"calabaza"
+                        }, 
+                        {
+                         "name":"type",
+                         "type":"string",
+                         "value":"calabaza"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":37.9363361675216,
+                 "x":199.327102803738,
+                 "y":191.771765863256
+                }],
+         "opacity":1,
+         "type":"objectgroup",
+         "visible":true,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "draworder":"topdown",
          "id":4,
          "name":"lights",
          "objects":[
@@ -216,8 +261,8 @@
          "x":0,
          "y":0
         }],
- "nextlayerid":7,
- "nextobjectid":22,
+ "nextlayerid":9,
+ "nextobjectid":23,
  "orientation":"orthogonal",
  "properties":[
         {
@@ -232,6 +277,10 @@
         {
          "firstgid":1,
          "source":"..\/tilesets\/[Base]BaseChip_pipo.json"
+        }, 
+        {
+         "firstgid":1065,
+         "source":"Enemy 03-1.tsx"
         }],
  "tilewidth":32,
  "type":"map",

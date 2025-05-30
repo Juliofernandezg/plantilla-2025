@@ -19,6 +19,40 @@
         }, 
         {
          "draworder":"topdown",
+         "id":7,
+         "name":"characters",
+         "objects":[
+                {
+                 "gid":1081,
+                 "height":41.714,
+                 "id":23,
+                 "name":"teddy",
+                 "properties":[
+                        {
+                         "name":"name",
+                         "type":"string",
+                         "value":"mago"
+                        }, 
+                        {
+                         "name":"type",
+                         "type":"string",
+                         "value":"mago"
+                        }],
+                 "rotation":1.05488754253792,
+                 "type":"",
+                 "visible":true,
+                 "width":37.9363,
+                 "x":195.438518674981,
+                 "y":198.97436239857
+                }],
+         "opacity":1,
+         "type":"objectgroup",
+         "visible":true,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "draworder":"topdown",
          "id":4,
          "name":"lights",
          "objects":[
@@ -216,8 +250,8 @@
          "x":0,
          "y":0
         }],
- "nextlayerid":7,
- "nextobjectid":23,
+ "nextlayerid":8,
+ "nextobjectid":24,
  "orientation":"orthogonal",
  "properties":[
         {
@@ -232,6 +266,14 @@
         {
          "firstgid":1,
          "source":"..\/tilesets\/[Base]BaseChip_pipo.json"
+        }, 
+        {
+         "firstgid":1065,
+         "source":"Enemy 03-1.tsx"
+        }, 
+        {
+         "firstgid":1077,
+         "source":"Enemy 02-1.tsx"
         }],
  "tilewidth":32,
  "type":"map",

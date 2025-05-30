@@ -2,12 +2,12 @@
   "Apple": {
     "short_name": "Apple",
     "type": "food",
-    "heal_amount": 5
+    "heal_amount": 20
   },
   "Dagger": {
     "short_name": "Dagger",
     "type": "weapon",
-    "damage_amount": 5
+    "damage_amount": 20
   },
   "Sword": {
     "short_name": "Sword",
@@ -17,7 +17,7 @@
   "Lesser_Healing_Potion": {
     "short_name": "Lesser Healing Potion",
     "type": "Potion",
-    "heal_amount": 10
+    "heal_amount": 20
   },
   "Key": {
     "short_name": "Key",
